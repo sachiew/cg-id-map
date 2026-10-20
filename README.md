@@ -92,6 +92,10 @@ name, a different ticker after a rebrand) are USD price (default ±5%) and marke
 both sides have it) used to pick a candidate. Anything still unclear is flagged with every
 candidate listed, never guessed.
 
+A match that depends on price is only *newly* accepted within those thresholds, but once it is
+published it stays until prices drift past a wider buffer (default ±10%, market cap ±50%). That
+way coins sitting near the line don't flip in and out of the published file every day.
+
 When two CMC coins claim the same CoinGecko coin (CMC lists some copycats with identical name and
 ticker), a contract match wins; otherwise only the claimant whose price agrees keeps the mapping.
 

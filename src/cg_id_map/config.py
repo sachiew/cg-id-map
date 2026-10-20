@@ -75,6 +75,9 @@ class Thresholds:
     name_fuzzy_min: float = 85.0
     price_diff_pct: float = 5.0
     mcap_diff_pct: float = 25.0
+    # A price-gated match that is already published stays until it drifts past these.
+    price_keep_diff_pct: float = 10.0
+    mcap_keep_diff_pct: float = 50.0
     # Daily-run safety checks
     min_coin_count_ratio: float = 0.90
     max_match_rate_drop_pts: float = 2.0

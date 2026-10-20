@@ -14,6 +14,10 @@ network_small_min_name_score = 90.0
 name_fuzzy_min = 85.0          # 0-100 fuzzy name score for a same-ticker candidate
 price_diff_pct = 5.0
 mcap_diff_pct = 25.0
+# Buffer zone: a price-gated match that is already published is kept until prices drift past
+# these, so coins sitting near the thresholds don't flip in and out every day.
+price_keep_diff_pct = 10.0
+mcap_keep_diff_pct = 50.0
 
 # Daily-run safety checks
 min_coin_count_ratio = 0.90             # fail if a provider returns < 90% of last run's coins

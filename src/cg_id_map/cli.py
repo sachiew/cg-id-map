@@ -141,7 +141,7 @@ def _match_and_write(
 ) -> tuple[list[MatchRow], Changes, GoldResult | None]:
     inp = p.load()
     nets = p.networks(inp)
-    rows = p.match(inp, nets)
+    rows = p.match(inp, nets, _published(out, p.name))
     t = State.config.thresholds
     gold = evaluate(rows, load_gold(State.gold_dir / f"{p.name}.yaml"))
     now = datetime.now(UTC)
@@ -178,6 +178,12 @@ def _match_and_write(
         _step_summary("> ⚠️ Forced run: safety-check baseline reset to this run's numbers.\n")
     _step_summary(_success_markdown(p.name, rows, changes, gold))
     return rows, changes, gold
+
+
+def _published(out: Path, provider: str) -> dict[str, str]:
+    """The last published {provider id: cg_id}, used for the matcher's price buffer zone."""
+    rows = read_csv_by_id(out / f"{provider}_to_cg.csv", f"{provider}_id")
+    return {pid: r["cg_id"] for pid, r in rows.items()}
 
 
 def _step_summary(markdown: str) -> None:
@@ -288,13 +294,14 @@ def run(
 def lookup(
     id: Annotated[str, typer.Option("--id", help="Provider coin ID, e.g. 1027.")],
     provider: ProviderOpt = "cmc",
+    out: OutOpt = Path("data"),
     as_json: Annotated[bool, typer.Option("--json", help="Print the full row as JSON.")] = False,
 ) -> None:
     """Explain how one coin maps (many-to-one checks need a full run)."""
     p = _pipeline(provider, refresh=False)
     try:
         inp = p.load()
-        r = p.lookup(inp, p.networks(inp), id)
+        r = p.lookup(inp, p.networks(inp), id, _published(out, provider))
     except (ApiError, KeyError) as exc:
         raise _fail(exc) from None
     if as_json:

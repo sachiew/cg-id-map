@@ -409,3 +409,35 @@ def test_many_to_one_prefers_exact_name_over_price_match() -> None:
         cg_md={"stratis": md(0.05)},
     )
     assert rows["30168"].cg_id == "stratis" and rows["1343"].status is Status.FLAGGED
+
+
+def run_prev(
+    coins: list[ProviderCoin],
+    cg_coins: list[CGCoin],
+    prov_md: dict[str, MarketData],
+    cg_md: dict[str, MarketData],
+    previous: dict[str, str],
+) -> dict[str, MatchRow]:
+    m = Matcher(
+        cg_coins, CGAddressIndex(cg_coins, CG_PLATFORMS), NETWORKS, {}, Thresholds(), previous
+    )
+    return {r.provider_id: r for r in match_all(m, [m.plan(c) for c in coins], prov_md, cg_md)}
+
+
+def test_buffer_zone_keeps_a_published_price_match() -> None:
+    # "Regen Network" vs "Regen": accepted only on price. 7% apart: too far for a new match,
+    # inside the 10% keep threshold for one that is already published.
+    coins, cgs = [pc("11646", "Regen Network", "REGEN")], [cg("regen", "regen", "Regen")]
+    prov, cgm = {"11646": md(1.07)}, {"regen": md(1.00)}
+    assert run_prev(coins, cgs, prov, cgm, {})["11646"].status is Status.FLAGGED
+    kept = run_prev(coins, cgs, prov, cgm, {"11646": "regen"})["11646"]
+    assert (kept.status, kept.cg_id, kept.method) == (Status.ACCEPTED, "regen", Method.NAME_PRICE)
+    # Past the keep threshold it drops out.
+    gone = run_prev(coins, cgs, {"11646": md(1.15)}, cgm, {"11646": "regen"})["11646"]
+    assert gone.status is Status.FLAGGED
+
+
+def test_buffer_zone_only_applies_to_the_previously_published_cg_id() -> None:
+    coins, cgs = [pc("11646", "Regen Network", "REGEN")], [cg("regen", "regen", "Regen")]
+    r = run_prev(coins, cgs, {"11646": md(1.07)}, {"regen": md(1.00)}, {"11646": "other-coin"})
+    assert r["11646"].status is Status.FLAGGED

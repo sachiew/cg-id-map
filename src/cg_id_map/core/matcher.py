@@ -94,12 +94,16 @@ class Matcher:
         networks: Iterable[NetworkMapping],
         overrides: dict[str, CoinOverride],
         t: Thresholds,
+        previous: dict[str, str] | None = None,
     ) -> None:
         self.cg = {c.id: c for c in cg_coins}
         self.index = index
         self.networks = {n.key: n for n in networks}
         self.overrides = overrides
         self.t = t
+        # Last published {provider id: cg_id}. Price-gated matches already published keep their
+        # mapping inside the wider *_keep_* thresholds, so borderline coins don't flip daily.
+        self.previous = previous or {}
         self.by_symbol: dict[str, list[str]] = defaultdict(list)
         self.by_name: dict[str, list[str]] = defaultdict(list)
         for c in self.cg.values():
@@ -256,7 +260,7 @@ class Matcher:
         if md.price_usd is None:
             row.flag(Flag.NO_MARKET_DATA)
             return self._unresolved(row, plausible, Status.FLAGGED, Confidence.LOW)
-        passing = [c for c in plausible if self._market_ok(c)]
+        passing = [c for c in plausible if self._market_ok(c, keep=self._was(coin.id, c.cg_id))]
         if len(passing) == 1:
             c = passing[0]
             self._accept(row, c.cg_id, Method.NAME_PRICE, Confidence.MEDIUM, cg_md)
@@ -281,10 +285,11 @@ class Matcher:
 
     # ------------------------------------------------------------------ helpers
 
-    def _market_ok(self, c: Candidate) -> bool:
-        if c.price_diff_pct is None or c.price_diff_pct > self.t.price_diff_pct:
-            return False
-        return c.mcap_diff_pct is None or c.mcap_diff_pct <= self.t.mcap_diff_pct
+    def _was(self, provider_id: str, cg_id: str) -> bool:
+        return self.previous.get(provider_id) == cg_id
+
+    def _market_ok(self, c: Candidate, keep: bool = False) -> bool:
+        return within(c.price_diff_pct, c.mcap_diff_pct, self.t, keep)
 
     def _flag_market(self, row: MatchRow, c: Candidate) -> None:
         if c.price_diff_pct is not None and c.price_diff_pct > self.t.price_diff_pct:
@@ -345,7 +350,18 @@ def _candidate_order(c: Candidate) -> tuple[int, float, float, str]:
     return (tier, -c.name_score, price, c.cg_id)
 
 
-def resolve_many_to_one(rows: list[MatchRow], t: Thresholds) -> None:
+def within(price_diff: float | None, mcap_diff: float | None, t: Thresholds, keep: bool) -> bool:
+    """Price (required) and mcap (when known) within the entry or the wider keep thresholds."""
+    max_price = t.price_keep_diff_pct if keep else t.price_diff_pct
+    max_mcap = t.mcap_keep_diff_pct if keep else t.mcap_diff_pct
+    if price_diff is None or price_diff > max_price:
+        return False
+    return mcap_diff is None or mcap_diff <= max_mcap
+
+
+def resolve_many_to_one(
+    rows: list[MatchRow], t: Thresholds, previous: dict[str, str] | None = None
+) -> None:
     """Flag every row sharing an accepted cg_id and keep at most one name-based claimant.
 
     Providers often list copycats with the same name and ticker (a second "Dogecoin"), so a
@@ -367,7 +383,9 @@ def resolve_many_to_one(rows: list[MatchRow], t: Thresholds) -> None:
             priced = [
                 r
                 for r in by_name
-                if r.price_diff_pct is not None and r.price_diff_pct <= t.price_diff_pct
+                if within(
+                    r.price_diff_pct, None, t, keep=(previous or {}).get(r.provider_id) == r.cg_id
+                )
             ]
             exact = [r for r in priced if r.method is Method.NAME_SYMBOL]
             if len(exact) == 1:
@@ -386,5 +404,5 @@ def match_all(
     cg_md: dict[str, MarketData],
 ) -> list[MatchRow]:
     rows = [matcher.decide(p, prov_md, cg_md) for p in plans]
-    resolve_many_to_one(rows, matcher.t)
+    resolve_many_to_one(rows, matcher.t, matcher.previous)
     return rows

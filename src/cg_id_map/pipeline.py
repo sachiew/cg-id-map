@@ -72,12 +72,16 @@ class Pipeline:
             inp.platforms, inp.coins, inp.cg_platforms, inp.index, overrides, self.config.thresholds
         )
 
-    def matcher(self, inp: Inputs, networks: list[NetworkMapping]) -> Matcher:
+    def matcher(
+        self, inp: Inputs, networks: list[NetworkMapping], previous: dict[str, str] | None = None
+    ) -> Matcher:
         overrides = load_coin_overrides(self.overrides_dir / f"coins.{self.name}.yaml")
         validate_targets(
             "coin", {o.cg_id for o in overrides.values()}, {c.id for c in inp.cg_coins}
         )
-        return Matcher(inp.cg_coins, inp.index, networks, overrides, self.config.thresholds)
+        return Matcher(
+            inp.cg_coins, inp.index, networks, overrides, self.config.thresholds, previous
+        )
 
     def market_data(
         self, plans: list[CoinPlan]
@@ -93,18 +97,27 @@ class Pipeline:
             sorted(cg_ids)
         )
 
-    def match(self, inp: Inputs, networks: list[NetworkMapping]) -> list[MatchRow]:
-        m = self.matcher(inp, networks)
+    def match(
+        self, inp: Inputs, networks: list[NetworkMapping], previous: dict[str, str] | None = None
+    ) -> list[MatchRow]:
+        """`previous` is the last published {provider id: cg_id}, for the price buffer zone."""
+        m = self.matcher(inp, networks, previous)
         plans = [m.plan(c) for c in inp.coins]
         prov_md, cg_md = self.market_data(plans)
         return match_all(m, plans, prov_md, cg_md)
 
-    def lookup(self, inp: Inputs, networks: list[NetworkMapping], provider_id: str) -> MatchRow:
+    def lookup(
+        self,
+        inp: Inputs,
+        networks: list[NetworkMapping],
+        provider_id: str,
+        previous: dict[str, str] | None = None,
+    ) -> MatchRow:
         """Match one coin. Many-to-one checks need the full run, so they are not applied here."""
         coin = next((c for c in inp.coins if c.id == provider_id), None)
         if coin is None:
             raise KeyError(f"{self.name} id {provider_id} not found among active coins")
-        m = self.matcher(inp, networks)
+        m = self.matcher(inp, networks, previous)
         plan = m.plan(coin)
         prov_md, cg_md = self.market_data([plan])
         return m.decide(plan, prov_md, cg_md)
