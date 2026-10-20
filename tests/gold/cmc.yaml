@@ -1,0 +1,49 @@
+# Gold set: CMC ID -> CoinGecko ID pairs that must always resolve exactly like this.
+# Used by the tests, by the run report ("Gold set" precision) and by the daily safety checks.
+# Every pair was checked against live CMC and CoinGecko data (names and tickers agree) on 2026-10-20.
+
+# Majors
+- {id: "1", cg_id: bitcoin, note: 'native coin'}
+- {id: "1027", cg_id: ethereum, note: 'native coin'}
+- {id: "1839", cg_id: binancecoin, note: 'native coin; CG id differs from ticker'}
+- {id: "5426", cg_id: solana, note: 'native coin'}
+- {id: "52", cg_id: ripple, note: 'CG id differs from name (XRP)'}
+- {id: "2010", cg_id: cardano, note: 'native coin'}
+- {id: "1958", cg_id: tron, note: 'native coin'}
+- {id: "5805", cg_id: avalanche-2, note: 'CG id has a numeric suffix'}
+- {id: "6636", cg_id: polkadot, note: 'native coin'}
+- {id: "2", cg_id: litecoin, note: 'native coin'}
+- {id: "1831", cg_id: bitcoin-cash, note: 'name contains another coin''s name'}
+- {id: "1321", cg_id: ethereum-classic, note: 'name contains another coin''s name'}
+- {id: "6535", cg_id: near, note: 'native coin'}
+- {id: "512", cg_id: stellar, note: 'native coin'}
+
+# Stablecoins
+- {id: "825", cg_id: tether, note: 'contract match; names differ (Tether USDt vs Tether)'}
+- {id: "3408", cg_id: usd-coin, note: 'contract match'}
+- {id: "4943", cg_id: dai, note: 'contract match'}
+
+# Tokens matched by contract address
+- {id: "1975", cg_id: chainlink, note: 'ERC-20'}
+- {id: "5994", cg_id: shiba-inu, note: 'ERC-20'}
+- {id: "7083", cg_id: uniswap, note: 'ERC-20'}
+- {id: "18876", cg_id: apecoin, note: 'ERC-20; CMC also lists an "APEcoin.dev" APE copycat'}
+- {id: "29210", cg_id: jupiter-exchange-solana, note: 'Solana SPL token; CMC also has an older JUP'}
+- {id: "24478", cg_id: pepe, note: 'ERC-20; several PEPE copies exist'}
+- {id: "6719", cg_id: the-graph, note: 'symbol collision (GRT)'}
+
+# Bridged / wrapped
+- {id: "3717", cg_id: wrapped-bitcoin, note: 'bridged BTC on Ethereum'}
+- {id: "2396", cg_id: weth, note: 'wrapped ETH'}
+
+# Rebrands
+- {id: "28321", cg_id: polygon-ecosystem-token, note: 'rebrand MATIC -> POL; names differ'}
+- {id: "11419", cg_id: the-open-network, note: 'rebrand Toncoin -> Gram; CG id kept the old name'}
+- {id: "30168", cg_id: stratis, note: 'rebrand Stratis -> Xertra; CMC also lists "Stratis [Old]"'}
+
+# Non-EVM address formats and copycat listings
+- {id: "4642", cg_id: hedera-hashgraph, note: 'Hedera'}
+- {id: "20947", cg_id: sui, note: 'Sui (Move)'}
+- {id: "21794", cg_id: aptos, note: 'Aptos (Move)'}
+- {id: "74", cg_id: dogecoin, note: 'CMC also lists a copycat Dogecoin/DOGE; price must pick this one'}
+- {id: "1376", cg_id: neo, note: 'CMC also lists a copycat NEO; price must pick this one'}
