@@ -42,7 +42,9 @@ def test_coin_count_drop_fails_for_either_provider() -> None:
 def test_match_rate_drops() -> None:
     res = check(stats(match_rate_pct=77.5), stats(), Changes(), 6400, None, T)
     assert any("overall match rate" in f for f in res.failures)
-    res = check(stats(top1000_match_rate_pct=97.9), stats(), Changes(), 6400, None, T)
+    # Top-1000 tolerates 0.5 pts (rank shuffles move a coin or two in and out daily).
+    assert check(stats(top1000_match_rate_pct=97.9), stats(), Changes(), 6400, None, T).ok
+    res = check(stats(top1000_match_rate_pct=97.4), stats(), Changes(), 6400, None, T)
     assert any("top-1000" in f for f in res.failures)
 
 

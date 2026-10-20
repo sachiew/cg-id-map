@@ -78,7 +78,7 @@ class Thresholds:
     # Daily-run safety checks
     min_coin_count_ratio: float = 0.90
     max_match_rate_drop_pts: float = 2.0
-    max_top1000_match_rate_drop_pts: float = 0.0
+    max_top1000_match_rate_drop_pts: float = 0.5
     max_cg_id_change_ratio: float = 0.01
 
 

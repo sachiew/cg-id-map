@@ -18,7 +18,8 @@ mcap_diff_pct = 25.0
 # Daily-run safety checks
 min_coin_count_ratio = 0.90             # fail if a provider returns < 90% of last run's coins
 max_match_rate_drop_pts = 2.0           # fail if overall match rate drops more than this
-max_top1000_match_rate_drop_pts = 0.0   # fail if the top-1000 match rate drops at all
+max_top1000_match_rate_drop_pts = 0.5   # fail if the top-1000 match rate drops > 0.5 pts (5 coins);
+                                        # 0 trips on everyday rank shuffles
 max_cg_id_change_ratio = 0.01           # fail if > 1% of accepted mappings change cg_id
 
 [http]

@@ -26,11 +26,13 @@ publishes nothing, if any of these is true:
 
 - either provider returns fewer than 90% of the previous run's coins
 - the overall match rate drops by more than 2 points
-- the top-1,000 match rate drops at all
+- the top-1,000 match rate drops by more than 0.5 points
 - any gold-set pair resolves wrongly
 - more than 1% of existing mappings change `cg_id`
 
-The thresholds are in [`config.toml`](config.toml).
+The thresholds are in [`config.toml`](config.toml). When a check fails because of a real, intended
+change, a maintainer can let it through with **Actions → Daily update → Run workflow → force**.
+That skips the checks for one run and resets the baseline (`data/stats.json`). Scheduled runs always check.
 
 ## Quickstart
 

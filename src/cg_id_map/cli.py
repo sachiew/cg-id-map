@@ -137,7 +137,7 @@ def networks(
 
 
 def _match_and_write(
-    p: Pipeline, out: Path, full_out: Path, *, check: bool
+    p: Pipeline, out: Path, full_out: Path, *, check: bool, reset_baseline: bool = False
 ) -> tuple[list[MatchRow], Changes, GoldResult | None]:
     inp = p.load()
     nets = p.networks(inp)
@@ -170,10 +170,12 @@ def _match_and_write(
             raise typer.Exit(1)
 
     changes = write_published(out, p.name, rows, nets, t, now, gold)
-    if changes.any or prev_stats is None:
+    if changes.any or prev_stats is None or reset_baseline:
         new_stats.save(stats_path)
     full_out.mkdir(parents=True, exist_ok=True)
     (full_out / "change_summary.txt").write_text(changes.summary() + "\n")
+    if reset_baseline:
+        _step_summary("> ⚠️ Forced run: safety-check baseline reset to this run's numbers.\n")
     _step_summary(_success_markdown(p.name, rows, changes, gold))
     return rows, changes, gold
 
@@ -232,6 +234,13 @@ def _print_summary(rows: list[MatchRow], changes: Changes, gold: GoldResult | No
     typer.echo(f"changes vs previous published data: {changes.summary()}")
 
 
+ResetOpt = Annotated[
+    bool,
+    typer.Option(
+        "--reset-baseline",
+        help="Save this run's stats.json as the new safety baseline even if no mapping changed.",
+    ),
+]
 CheckOpt = Annotated[
     bool,
     typer.Option(
@@ -248,11 +257,14 @@ def match(
     full_out: FullOutOpt = Path("output"),
     refresh: RefreshOpt = False,
     check: CheckOpt = False,
+    reset_baseline: ResetOpt = False,
 ) -> None:
     """Match coins (Steps 2-4) and write outputs, using cached API data where fresh."""
     p = _pipeline(provider, refresh)
     try:
-        rows, changes, gold = _match_and_write(p, out, full_out, check=check)
+        rows, changes, gold = _match_and_write(
+            p, out, full_out, check=check, reset_baseline=reset_baseline
+        )
     except ApiError as exc:
         _step_summary(f"## ❌ {provider} → CoinGecko update failed\n\n- API error: {exc}")
         raise _fail(exc) from None
@@ -266,9 +278,10 @@ def run(
     full_out: FullOutOpt = Path("output"),
     refresh: RefreshOpt = False,
     check: CheckOpt = False,
+    reset_baseline: ResetOpt = False,
 ) -> None:
     """All steps: fetch, network map, match, outputs. Use --check for unattended runs."""
-    match(provider, out, full_out, refresh, check)
+    match(provider, out, full_out, refresh, check, reset_baseline)
 
 
 @app.command()

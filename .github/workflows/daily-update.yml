@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 3 * * *" # daily 03:17 UTC; off the hour, when scheduled jobs are delayed most
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Skip safety checks for this run and reset the baseline (use after reviewing a failed run)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write # commit data/ and update the "latest" release; nothing else
@@ -35,7 +40,13 @@ jobs:
           CG_API_KEY: ${{ secrets.CG_API_KEY }}
           CG_API_TIER: ${{ secrets.CG_API_TIER }}
           CMC_API_KEY: ${{ secrets.CMC_API_KEY }}
-        run: uv run cg-id-map run --provider cmc --out data --full-out output --check
+          FORCE: ${{ inputs.force }}
+        run: |
+          if [ "$FORCE" = "true" ]; then
+            uv run cg-id-map run --provider cmc --out data --full-out output --no-check --reset-baseline
+          else
+            uv run cg-id-map run --provider cmc --out data --full-out output --check
+          fi
 
       - name: Validate published files
         run: |
