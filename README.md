@@ -10,6 +10,28 @@ overrides and tests; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 > Rows with `confidence=medium` or any flags should be checked before production use.
 
+## Get the mapping
+
+The mapping is regenerated daily (03:17 UTC) by a GitHub Action and committed to [`data/`](data/)
+when it changes. Stable download URLs, without cloning:
+
+- CSV: `https://github.com/sachiew/cg-id-map/releases/download/latest/cmc_to_cg.csv`
+- JSON: `https://github.com/sachiew/cg-id-map/releases/download/latest/cmc_to_cg.json`
+
+Both contain accepted matches only. What changed and when is in
+[`data/CHANGELOG.md`](data/CHANGELOG.md).
+
+Every unattended run passes safety checks before anything is published. A run fails, and
+publishes nothing, if any of these is true:
+
+- either provider returns fewer than 90% of the previous run's coins
+- the overall match rate drops by more than 2 points
+- the top-1,000 match rate drops at all
+- any gold-set pair resolves wrongly
+- more than 1% of existing mappings change `cg_id`
+
+The thresholds are in [`config.toml`](config.toml).
+
 ## Quickstart
 
 Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/).
@@ -41,7 +63,8 @@ and are never logged or cached.
 | `cg-id-map lookup --provider cmc --id 1027` | explain one coin's match and list its candidates |
 
 Common options: `--out` (published files, default `data/`), `--full-out` (full detail, default
-`output/`), `--refresh` (ignore the cache), `-v`. Thresholds live in [`config.toml`](config.toml)
+`output/`), `--refresh` (ignore the cache), `--check` (run the safety checks; on failure write
+nothing to `--out` and exit 1), `-v`. Thresholds live in [`config.toml`](config.toml)
 and can be overridden per run, e.g. `cg-id-map --price-diff-pct 3 run --provider cmc`.
 
 ## How matching works
@@ -84,6 +107,7 @@ prices, rounded numbers. A run with no real changes leaves every file byte-ident
 | `networks_cmc_cg.csv` | the network map with its evidence: chain IDs, overlap count and share, runner-up, name score |
 | `report.md` | counts by status, method and flag; match rate overall and for the top 100/1,000/5,000; gold-set precision; thresholds |
 | `CHANGELOG.md` | one section per run that changed something: new and removed mappings, `cg_id` changes, confidence/method/flag changes |
+| `stats.json` | coin counts and match rates; the baseline for the next run's safety checks |
 
 `last_verified` is the date a mapping last changed (new, or its `cg_id`, method, confidence or
 flags changed). It does not move on every run, so diffs stay meaningful. `generated_at` is when the

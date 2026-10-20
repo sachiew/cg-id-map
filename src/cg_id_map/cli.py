@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 from collections import Counter
 from datetime import UTC, datetime
 from pathlib import Path
@@ -15,7 +16,18 @@ from cg_id_map.config import Config
 from cg_id_map.core.gold import evaluate, load_gold
 from cg_id_map.core.matcher import MatchRow
 from cg_id_map.core.networks import NetworkMapping
-from cg_id_map.core.output import Changes, GoldResult, match_rate, write_full, write_published
+from cg_id_map.core.output import (
+    Changes,
+    GoldResult,
+    diff_slim,
+    match_rate,
+    read_csv_by_id,
+    slim_rows,
+    write_full,
+    write_published,
+)
+from cg_id_map.core.safety import RunStats
+from cg_id_map.core.safety import check as safety_check
 from cg_id_map.http import ApiError
 from cg_id_map.pipeline import Pipeline
 
@@ -125,17 +137,85 @@ def networks(
 
 
 def _match_and_write(
-    p: Pipeline, out: Path, full_out: Path
+    p: Pipeline, out: Path, full_out: Path, *, check: bool
 ) -> tuple[list[MatchRow], Changes, GoldResult | None]:
     inp = p.load()
     nets = p.networks(inp)
     rows = p.match(inp, nets)
+    t = State.config.thresholds
     gold = evaluate(rows, load_gold(State.gold_dir / f"{p.name}.yaml"))
     now = datetime.now(UTC)
-    write_full(full_out, p.name, rows, nets, State.config.thresholds, now, gold)
-    changes = write_published(out, p.name, rows, nets, State.config.thresholds, now, gold)
     typer.echo(f"networks: {_network_summary(nets)}")
+    # Full detail is always written (CI uploads it as an artifact, also on failure).
+    write_full(full_out, p.name, rows, nets, t, now, gold)
+
+    stats_path = out / "stats.json"
+    prev_stats = RunStats.load(stats_path)
+    new_stats = RunStats.compute(rows, len(inp.cg_coins))
+    if check:
+        id_col = f"{p.name}_id"
+        previous = read_csv_by_id(out / f"{p.name}_to_cg.csv", id_col)
+        new_slim = {
+            r[id_col]: r for r in slim_rows(rows, p.name, previous, now.strftime("%Y-%m-%d"))
+        }
+        result = safety_check(
+            new_stats, prev_stats, diff_slim(previous, new_slim), len(previous), gold, t
+        )
+        for note in result.notes:
+            typer.echo(f"note: {note}")
+        if not result.ok:
+            for f in result.failures:
+                typer.secho(f"SAFETY CHECK FAILED: {f}", fg=typer.colors.RED, err=True)
+            _step_summary(_failure_markdown(p.name, result.failures))
+            raise typer.Exit(1)
+
+    changes = write_published(out, p.name, rows, nets, t, now, gold)
+    if changes.any or prev_stats is None:
+        new_stats.save(stats_path)
+    full_out.mkdir(parents=True, exist_ok=True)
+    (full_out / "change_summary.txt").write_text(changes.summary() + "\n")
+    _step_summary(_success_markdown(p.name, rows, changes, gold))
     return rows, changes, gold
+
+
+def _step_summary(markdown: str) -> None:
+    """Append to the GitHub Actions job summary when running in Actions."""
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if path:
+        with open(path, "a") as f:
+            f.write(markdown + "\n")
+
+
+def _failure_markdown(provider: str, failures: list[str]) -> str:
+    lines = [f"## ❌ {provider} → CoinGecko update blocked by safety checks", ""]
+    lines += [f"- {f}" for f in failures]
+    lines += ["", "Nothing was published. Full outputs are attached as the `full-output` artifact."]
+    return "\n".join(lines)
+
+
+def _success_markdown(
+    provider: str, rows: list[MatchRow], changes: Changes, gold: GoldResult | None
+) -> str:
+    statuses = Counter(r.status.value for r in rows)
+    lines = [f"## ✅ {provider} → CoinGecko update", "", f"**Changes:** {changes.summary()}", ""]
+    lines += ["| scope | accepted |", "|---|---:|"]
+    for top in (None, 100, 1000, 5000):
+        ok, n = match_rate(rows, top)
+        label = "all" if top is None else f"top {top:,}"
+        lines.append(f"| {label} | {ok}/{n} ({ok / n * 100 if n else 0:.2f}%) |")
+    lines += ["", "**Status:** " + ", ".join(f"{k} {v}" for k, v in sorted(statuses.items()))]
+    if gold is not None:
+        lines.append(f"**Gold set:** {gold.correct}/{gold.total}")
+    if changes.cg_id_changed:
+        lines += ["", "### cg_id changed", ""]
+        lines += [f"- `{i}`: `{a}` → `{b}`" for i, a, b in changes.cg_id_changed[:20]]
+    if changes.added:
+        lines += ["", f"### New mappings (first {min(20, len(changes.added))})", ""]
+        lines += [f"- `{i}`" for i in changes.added[:20]]
+    if changes.removed:
+        lines += ["", f"### Removed mappings (first {min(20, len(changes.removed))})", ""]
+        lines += [f"- `{i}`" for i in changes.removed[:20]]
+    return "\n".join(lines)
 
 
 def _print_summary(rows: list[MatchRow], changes: Changes, gold: GoldResult | None) -> None:
@@ -152,18 +232,29 @@ def _print_summary(rows: list[MatchRow], changes: Changes, gold: GoldResult | No
     typer.echo(f"changes vs previous published data: {changes.summary()}")
 
 
+CheckOpt = Annotated[
+    bool,
+    typer.Option(
+        "--check/--no-check",
+        help="Run safety checks against the previous run; on failure publish nothing, exit 1.",
+    ),
+]
+
+
 @app.command()
 def match(
     provider: ProviderOpt = "cmc",
     out: OutOpt = Path("data"),
     full_out: FullOutOpt = Path("output"),
     refresh: RefreshOpt = False,
+    check: CheckOpt = False,
 ) -> None:
     """Match coins (Steps 2-4) and write outputs, using cached API data where fresh."""
     p = _pipeline(provider, refresh)
     try:
-        rows, changes, gold = _match_and_write(p, out, full_out)
+        rows, changes, gold = _match_and_write(p, out, full_out, check=check)
     except ApiError as exc:
+        _step_summary(f"## ❌ {provider} → CoinGecko update failed\n\n- API error: {exc}")
         raise _fail(exc) from None
     _print_summary(rows, changes, gold)
 
@@ -174,9 +265,10 @@ def run(
     out: OutOpt = Path("data"),
     full_out: FullOutOpt = Path("output"),
     refresh: RefreshOpt = False,
+    check: CheckOpt = False,
 ) -> None:
-    """All steps: fetch, network map, match, outputs."""
-    match(provider, out, full_out, refresh)
+    """All steps: fetch, network map, match, outputs. Use --check for unattended runs."""
+    match(provider, out, full_out, refresh, check)
 
 
 @app.command()
