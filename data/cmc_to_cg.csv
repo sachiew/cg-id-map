@@ -2886,7 +2886,6 @@ cmc_id,cmc_symbol,cmc_name,cg_id,match_method,confidence,flags,last_verified
 31153,MONKE,Monke,monke-coin,matched_contract,high,,2026-10-20
 31155,CROAK,Croakey,croakey,matched_contract,high,,2026-10-20
 31160,PLN,Plearn,plearn,matched_contract,high,symbol_mismatch,2026-10-20
-31162,BDAG,BlockDAG Network,blockdag,matched_name_price,medium,name_mismatch,2026-10-20
 31163,SLOTH,Slothana,slothana,matched_contract,high,,2026-10-20
 31167,CRODIE,Crodie,crodie,matched_contract,high,,2026-10-20
 31169,VOPO,VOPO,vopo,matched_contract,high,,2026-10-20

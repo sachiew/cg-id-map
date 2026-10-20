@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T15:38:42Z",
+ "generated_at": "2026-10-20T15:40:48Z",
  "mappings": [
   {
    "cmc_id": "1",
@@ -28869,16 +28869,6 @@
    "match_method": "matched_contract",
    "confidence": "high",
    "flags": "symbol_mismatch",
-   "last_verified": "2026-10-20"
-  },
-  {
-   "cmc_id": "31162",
-   "cmc_symbol": "BDAG",
-   "cmc_name": "BlockDAG Network",
-   "cg_id": "blockdag",
-   "match_method": "matched_name_price",
-   "confidence": "medium",
-   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
