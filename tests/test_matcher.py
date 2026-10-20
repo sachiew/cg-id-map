@@ -376,3 +376,36 @@ def test_market_ids_cover_candidates_and_overrides() -> None:
     )
     prov, cgids = Matcher.market_ids([m.plan(pc("1", "Bitcoin", "BTC")), m.plan(pc("2", "Y", "Y"))])
     assert prov == {"1", "2"} and cgids == {"bitcoin", "x"}
+
+
+def test_many_to_one_copycat_resolved_by_price() -> None:
+    # CMC lists a second "Dogecoin"/DOGE; only the one whose price agrees keeps the mapping.
+    rows = run(
+        [pc("74", "Dogecoin", "DOGE"), pc("31093", "Dogecoin", "DOGE")],
+        [cg("dogecoin", "doge", "Dogecoin")],
+        prov_md={"74": md(0.20), "31093": md(0.0001)},
+        cg_md={"dogecoin": md(0.2001)},
+    )
+    assert (rows["74"].status, rows["74"].cg_id) == (Status.ACCEPTED, "dogecoin")
+    assert (rows["31093"].status, rows["31093"].cg_id) == (Status.FLAGGED, None)
+    assert Flag.MANY_TO_ONE in rows["74"].flags and Flag.MANY_TO_ONE in rows["31093"].flags
+
+
+def test_many_to_one_without_a_price_winner_demotes_all() -> None:
+    rows = run(
+        [pc("1", "Dogecoin", "DOGE"), pc("2", "Dogecoin", "DOGE")],
+        [cg("dogecoin", "doge", "Dogecoin")],
+        prov_md={"1": md(0.20), "2": md(0.20)},
+        cg_md={"dogecoin": md(0.20)},
+    )
+    assert all(r.status is Status.FLAGGED for r in rows.values())
+
+
+def test_many_to_one_prefers_exact_name_over_price_match() -> None:
+    rows = run(
+        [pc("30168", "Xertra", "STRAX"), pc("1343", "Stratis [Old]", "STRAX", slug="stratis")],
+        [cg("stratis", "strax", "Xertra")],
+        prov_md={"30168": md(0.05), "1343": md(0.05)},
+        cg_md={"stratis": md(0.05)},
+    )
+    assert rows["30168"].cg_id == "stratis" and rows["1343"].status is Status.FLAGGED

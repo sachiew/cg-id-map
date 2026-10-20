@@ -218,6 +218,15 @@ def build_network_map(
                 emit(top, NetworkMethod.NAME_OVERLAP, A, "high")
             else:
                 emit(top, NetworkMethod.OVERLAP_ONLY, A, "medium")
+        elif (
+            top is not None
+            and lead_ok
+            and n1 >= t.network_small_min_overlap
+            and n1 / ev.total >= t.network_small_min_share
+            and name_score(p, cg_by_id[top]) >= t.network_small_min_name_score
+        ):
+            note = f"small network: {n1}/{ev.total} addresses shared"
+            emit(top, NetworkMethod.NAME_OVERLAP, A, "medium", note)
         elif top is not None:
             note = (
                 f"only {n1} shared addresses (< {t.network_min_overlap})"

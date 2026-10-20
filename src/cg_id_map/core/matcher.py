@@ -345,8 +345,13 @@ def _candidate_order(c: Candidate) -> tuple[int, float, float, str]:
     return (tier, -c.name_score, price, c.cg_id)
 
 
-def resolve_many_to_one(rows: list[MatchRow]) -> None:
-    """Flag every row sharing an accepted cg_id; demote name-based ones (one of them is wrong)."""
+def resolve_many_to_one(rows: list[MatchRow], t: Thresholds) -> None:
+    """Flag every row sharing an accepted cg_id and keep at most one name-based claimant.
+
+    Providers often list copycats with the same name and ticker (a second "Dogecoin"), so a
+    name-based claim survives only if no contract/override row claims the same coin and it is the
+    single claimant whose price agrees (an exact name+symbol match preferred). The rest are demoted.
+    """
     by_cg: dict[str, list[MatchRow]] = defaultdict(list)
     for r in rows:
         if r.status is Status.ACCEPTED and r.cg_id:
@@ -356,7 +361,21 @@ def resolve_many_to_one(rows: list[MatchRow]) -> None:
             continue
         for r in group:
             r.flag(Flag.MANY_TO_ONE)
-            if r.method in (Method.NAME_SYMBOL, Method.NAME_PRICE):
+        by_name = [r for r in group if r.method in (Method.NAME_SYMBOL, Method.NAME_PRICE)]
+        keep: MatchRow | None = None
+        if len(by_name) == len(group):
+            priced = [
+                r
+                for r in by_name
+                if r.price_diff_pct is not None and r.price_diff_pct <= t.price_diff_pct
+            ]
+            exact = [r for r in priced if r.method is Method.NAME_SYMBOL]
+            if len(exact) == 1:
+                keep = exact[0]
+            elif not exact and len(priced) == 1:
+                keep = priced[0]
+        for r in by_name:
+            if r is not keep:
                 r.status, r.confidence, r.cg_id = Status.FLAGGED, Confidence.LOW, None
 
 
@@ -367,5 +386,5 @@ def match_all(
     cg_md: dict[str, MarketData],
 ) -> list[MatchRow]:
     rows = [matcher.decide(p, prov_md, cg_md) for p in plans]
-    resolve_many_to_one(rows)
+    resolve_many_to_one(rows, matcher.t)
     return rows

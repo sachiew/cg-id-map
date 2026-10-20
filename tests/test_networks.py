@@ -228,3 +228,28 @@ def test_threshold_is_configurable() -> None:
         t=Thresholds(network_min_overlap=5),
     )["47"]
     assert m.status == NetworkStatus.ACCEPTED
+
+
+def test_small_network_accepted_on_share_and_name() -> None:
+    addrs = [f"addr1{i}" for i in range(23)]
+    m = run(
+        [ProviderPlatform(key="29", name="Solana")],
+        provider_coins("29", addrs),
+        cg_coins("solana", addrs[:18]),
+    )["29"]
+    assert (m.cg_platform_id, m.method, m.confidence) == (
+        "solana",
+        NetworkMethod.NAME_OVERLAP,
+        "medium",
+    )
+    assert m.note == "small network: 18/23 addresses shared"
+
+
+def test_small_network_with_low_share_still_needs_review() -> None:
+    addrs = [f"addr1{i}" for i in range(23)]
+    m = run(
+        [ProviderPlatform(key="29", name="Solana")],
+        provider_coins("29", addrs),
+        cg_coins("solana", addrs[:4]),
+    )["29"]
+    assert m.status == NetworkStatus.NEEDS_REVIEW

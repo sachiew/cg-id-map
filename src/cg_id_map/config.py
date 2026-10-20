@@ -62,6 +62,10 @@ class Thresholds:
     network_min_overlap: int = 20
     network_lead_ratio: float = 2.0
     network_min_name_score: float = 70.0
+    # Small networks can never reach network_min_overlap; accept them (medium) on strong evidence.
+    network_small_min_overlap: int = 3
+    network_small_min_share: float = 0.5
+    network_small_min_name_score: float = 90.0
     # Name matching (Steps 3-4)
     name_fuzzy_min: float = 85.0
     price_diff_pct: float = 5.0
