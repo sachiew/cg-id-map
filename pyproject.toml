@@ -1,0 +1,46 @@
+[project]
+name = "cg-id-map"
+version = "0.1.0"
+description = "Map other providers' coin IDs (CoinMarketCap first) to CoinGecko coin IDs, with match method, confidence and review flags."
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "httpx>=0.27",
+    "pydantic>=2.7",
+    "typer>=0.12",
+    "rapidfuzz>=3.9",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+cg-id-map = "cg_id_map.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cg_id_map"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "types-PyYAML>=6.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
