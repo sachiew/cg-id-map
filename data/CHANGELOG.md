@@ -4,6 +4,58 @@ One section per run that changed the published mappings.
 
 ## 2026-10-20
 
++0 new, -0 removed, ~44 changed
+
+### Confidence / method / flag changes (44)
+
+- `1660` flags: - → price_discrepancy
+- `1834` flags: price_discrepancy → -
+- `1902` flags: price_discrepancy → -
+- `2313` flags: price_discrepancy → -
+- `2653` flags: price_discrepancy → -
+- `2667` flags: name_mismatch|price_discrepancy → name_mismatch
+- `2882` flags: price_discrepancy → -
+- `3079` flags: price_discrepancy → -
+- `3779` flags: - → price_discrepancy
+- `4467` flags: price_discrepancy → -
+- `5187` flags: name_mismatch|price_discrepancy → name_mismatch
+- `6218` flags: - → price_discrepancy
+- `6500` flags: price_discrepancy → -
+- `7230` flags: price_discrepancy → -
+- `7281` flags: price_discrepancy → -
+- `7678` flags: price_discrepancy → -
+- `7742` flags: price_discrepancy → -
+- `7750` flags: price_discrepancy → -
+- `8411` flags: price_discrepancy → -
+- `8622` flags: price_discrepancy → -
+- `8691` flags: - → price_discrepancy
+- `9110` flags: price_discrepancy → -
+- `9198` flags: - → price_discrepancy
+- `9487` flags: price_discrepancy → -
+- `10778` flags: price_discrepancy → -
+- `10893` flags: name_mismatch → name_mismatch|price_discrepancy
+- `11218` flags: - → price_discrepancy
+- `11821` flags: - → price_discrepancy
+- `14534` flags: price_discrepancy → -
+- `16946` flags: price_discrepancy → -
+- `23445` flags: price_discrepancy → -
+- `24220` flags: - → price_discrepancy
+- `24763` flags: - → price_discrepancy
+- `26599` flags: price_discrepancy → -
+- `26854` flags: - → price_discrepancy
+- `27009` flags: - → price_discrepancy
+- `28377` flags: name_mismatch|price_discrepancy → name_mismatch
+- `29212` flags: price_discrepancy → -
+- `29349` flags: price_discrepancy → -
+- `30101` flags: - → price_discrepancy
+- `33785` flags: - → price_discrepancy
+- `34023` flags: - → price_discrepancy
+- `38411` flags: price_discrepancy → -
+- `40740` flags: name_mismatch|price_discrepancy → name_mismatch
+
+
+## 2026-10-20
+
 +6443 new, -0 removed, ~0 changed
 
 ### New mappings (6443)

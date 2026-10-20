@@ -1,6 +1,6 @@
 # CMC → CoinGecko mapping report
 
-Generated: 2026-10-20T15:18:32Z
+Generated: 2026-10-20T15:21:35Z
 
 ## Match rate
 
@@ -9,7 +9,7 @@ Generated: 2026-10-20T15:18:32Z
 | all | 6443/8125 (79.30%) |
 | top 100 by CMC rank | 99/100 (99.00%) |
 | top 1,000 by CMC rank | 984/1000 (98.40%) |
-| top 5,000 by CMC rank | 4529/5000 (90.58%) |
+| top 5,000 by CMC rank | 4526/5000 (90.52%) |
 
 ## Gold set
 
@@ -48,8 +48,8 @@ Precision: 34/34 (100.0%)
 | value | count |
 |---|---:|
 | name_mismatch | 1717 |
-| price_discrepancy | 620 |
 | ambiguous_multiple_candidates | 608 |
+| price_discrepancy | 606 |
 | symbol_mismatch | 156 |
 | network_unmapped | 100 |
 | matched_contract_other_network | 63 |
