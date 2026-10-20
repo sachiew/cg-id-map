@@ -4,6 +4,15 @@ One section per run that changed the published mappings.
 
 ## 2026-10-20
 
++0 new, -1 removed, ~0 changed
+
+### Removed mappings (1)
+
+- `11646` REGEN (Regen Network) → `regen`
+
+
+## 2026-10-20
+
 +1 new, -1 removed, ~465 changed
 
 ### New mappings (1)

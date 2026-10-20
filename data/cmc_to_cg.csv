@@ -1145,7 +1145,6 @@ cmc_id,cmc_symbol,cmc_name,cg_id,match_method,confidence,flags,last_verified
 11599,ALI,Alita Finance,alita,matched_contract,high,name_mismatch,2026-10-20
 11620,IXS,IXS,ix-swap,matched_contract,high,,2026-10-20
 11621,PUNK,Punk Vault (NFTX),punk-vault-nftx,matched_contract,high,,2026-10-20
-11646,REGEN,Regen Network,regen,matched_name_price,medium,name_mismatch,2026-10-20
 11649,WNT,Wicrypt,wicrypt,matched_contract,high,,2026-10-20
 11664,YAY,YAY Network,yay-games,matched_contract,high,,2026-10-20
 11670,FIWA,DeFi Warrior (FIWA),defi-warrior,matched_contract,high,name_mismatch,2026-10-20

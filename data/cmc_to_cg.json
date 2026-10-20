@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T15:31:07Z",
+ "generated_at": "2026-10-20T15:33:15Z",
  "mappings": [
   {
    "cmc_id": "1",
@@ -11459,16 +11459,6 @@
    "match_method": "matched_contract",
    "confidence": "high",
    "flags": "",
-   "last_verified": "2026-10-20"
-  },
-  {
-   "cmc_id": "11646",
-   "cmc_symbol": "REGEN",
-   "cmc_name": "Regen Network",
-   "cg_id": "regen",
-   "match_method": "matched_name_price",
-   "confidence": "medium",
-   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
