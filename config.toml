@@ -1,0 +1,35 @@
+# cg-id-map settings. CLI flags override [thresholds] values for a single run.
+
+[thresholds]
+# Network map (Step 1)
+network_min_overlap = 20       # shared contract addresses to auto-accept without a chain ID
+network_lead_ratio = 2.0       # winner must have >= this many times the runner-up's overlap
+network_min_name_score = 70.0  # 0-100; separates name+overlap (high) from overlap_only (medium)
+# Small networks (can't reach network_min_overlap): accept as name+overlap (medium) when all hold
+network_small_min_overlap = 3
+network_small_min_share = 0.5         # share of the provider's tokens on this network that overlap
+network_small_min_name_score = 90.0
+
+# Coin matching (Steps 3-4): price/mcap are only a guardrail for uncertain cases
+name_fuzzy_min = 85.0          # 0-100 fuzzy name score for a same-ticker candidate
+price_diff_pct = 5.0
+mcap_diff_pct = 25.0
+
+# Daily-run safety checks
+min_coin_count_ratio = 0.90             # fail if a provider returns < 90% of last run's coins
+max_match_rate_drop_pts = 2.0           # fail if overall match rate drops more than this
+max_top1000_match_rate_drop_pts = 0.0   # fail if the top-1000 match rate drops at all
+max_cg_id_change_ratio = 0.01           # fail if > 1% of accepted mappings change cg_id
+
+[http]
+cache_dir = ".cache"
+cache_max_age_hours = 20.0
+max_retries = 5
+timeout_s = 60.0
+cmc_rate_per_min_keyed = 25.0
+cmc_rate_per_min_keyless = 4.0
+
+[http.cg_rate_per_min]
+pro = 250.0
+demo = 30.0
+public = 3.0

@@ -1,0 +1,7 @@
+# CMC platform key -> CoinGecko asset_platform id (null = no CG equivalent).
+# Overrides always win over the computed network map.
+#
+# - key: "14"
+#   cg_platform_id: binance-smart-chain
+#   reason: why this pin exists
+[]

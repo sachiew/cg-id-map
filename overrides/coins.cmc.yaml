@@ -1,0 +1,7 @@
+# CMC coin id -> CoinGecko coin id (null = no CG equivalent).
+# Overrides always win and are reported with match_method=override.
+#
+# - id: "1027"
+#   cg_id: ethereum
+#   reason: why this pin exists
+[]
