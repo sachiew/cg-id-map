@@ -4,6 +4,73 @@ One section per run that changed the published mappings.
 
 ## 2026-10-20
 
++1 new, -1 removed, ~465 changed
+
+### New mappings (1)
+
+- `39109` XNT (Neptune) → `neptune-privacy`
+
+### Removed mappings (1)
+
+- `31162` BDAG (BlockDAG Network) → `blockdag`
+
+### Confidence / method / flag changes (465)
+
+- `3` flags: price_discrepancy → -
+- `22` flags: price_discrepancy → -
+- `25` flags: price_discrepancy → -
+- `35` flags: price_discrepancy → -
+- `42` flags: price_discrepancy → -
+- `45` flags: price_discrepancy → -
+- `77` flags: price_discrepancy → -
+- `118` flags: price_discrepancy → -
+- `122` flags: price_discrepancy → -
+- `260` flags: price_discrepancy → -
+- `372` flags: price_discrepancy → -
+- `638` flags: price_discrepancy → -
+- `1020` flags: price_discrepancy → -
+- `1104` flags: price_discrepancy → -
+- `1320` flags: price_discrepancy → -
+- `1521` flags: price_discrepancy → -
+- `1556` flags: price_discrepancy → -
+- `1619` flags: price_discrepancy → -
+- `1660` flags: price_discrepancy → -
+- `1807` flags: price_discrepancy → -
+- `1817` flags: price_discrepancy → -
+- `1918` flags: price_discrepancy → -
+- `2001` flags: price_discrepancy → -
+- `2076` flags: price_discrepancy → -
+- `2083` flags: price_discrepancy → -
+- `2297` flags: price_discrepancy → -
+- `2320` flags: price_discrepancy → -
+- `2359` flags: price_discrepancy → -
+- `2363` flags: price_discrepancy → -
+- `2424` flags: price_discrepancy → -
+- `2447` flags: price_discrepancy → -
+- `2475` flags: price_discrepancy → -
+- `2502` flags: price_discrepancy → -
+- `2553` flags: price_discrepancy → -
+- `2570` flags: price_discrepancy → -
+- `2588` flags: name_mismatch|price_discrepancy → name_mismatch
+- `2758` flags: price_discrepancy → -
+- `2847` flags: price_discrepancy → -
+- `2883` flags: price_discrepancy → -
+- `2896` flags: price_discrepancy → -
+- `2921` flags: price_discrepancy → -
+- `2941` flags: price_discrepancy → -
+- `2998` flags: price_discrepancy → -
+- `3142` flags: price_discrepancy → -
+- `3449` flags: price_discrepancy → -
+- `3667` flags: price_discrepancy → -
+- `3724` flags: price_discrepancy → -
+- `3779` flags: price_discrepancy → -
+- `3874` flags: price_discrepancy → -
+- `3951` flags: price_discrepancy → -
+- … and 415 more
+
+
+## 2026-10-20
+
 +0 new, -0 removed, ~44 changed
 
 ### Confidence / method / flag changes (44)

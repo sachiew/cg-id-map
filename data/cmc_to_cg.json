@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T15:21:35Z",
+ "generated_at": "2026-10-20T15:31:07Z",
  "mappings": [
   {
    "cmc_id": "1",
@@ -28,7 +28,7 @@
    "cg_id": "namecoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -48,7 +48,7 @@
    "cg_id": "luckycoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -58,7 +58,7 @@
    "cg_id": "goldcoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -78,7 +78,7 @@
    "cg_id": "phoenixcoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -88,7 +88,7 @@
    "cg_id": "primecoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -98,7 +98,7 @@
    "cg_id": "casinocoin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -128,7 +128,7 @@
    "cg_id": "diamond",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -168,7 +168,7 @@
    "cg_id": "reddcoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -178,7 +178,7 @@
    "cg_id": "potcoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -228,7 +228,7 @@
    "cg_id": "petrodollar-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -258,7 +258,7 @@
    "cg_id": "bytecoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -308,7 +308,7 @@
    "cg_id": "trollcoin-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -368,7 +368,7 @@
    "cg_id": "axiom",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -408,7 +408,7 @@
    "cg_id": "augur",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -508,7 +508,7 @@
    "cg_id": "ardor",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -628,7 +628,7 @@
    "cg_id": "komodo",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -648,7 +648,7 @@
    "cg_id": "chronobank",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -678,7 +678,7 @@
    "cg_id": "skycoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -708,7 +708,7 @@
    "cg_id": "tokencard",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -928,7 +928,7 @@
    "cg_id": "santiment-network-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -958,7 +958,7 @@
    "cg_id": "ethos",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1058,7 +1058,7 @@
    "cg_id": "achain",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1148,7 +1148,7 @@
    "cg_id": "colossuscoinxt",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1228,7 +1228,7 @@
    "cg_id": "blue-protocol",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1238,7 +1238,7 @@
    "cg_id": "bitcoin-gold",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1358,7 +1358,7 @@
    "cg_id": "storm",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1418,7 +1418,7 @@
    "cg_id": "utrust",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1478,7 +1478,7 @@
    "cg_id": "polis",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1488,7 +1488,7 @@
    "cg_id": "zap",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1558,7 +1558,7 @@
    "cg_id": "singularitynet",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1568,7 +1568,7 @@
    "cg_id": "crypterium",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1608,7 +1608,7 @@
    "cg_id": "garlicoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1658,7 +1658,7 @@
    "cg_id": "huobi-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1718,7 +1718,7 @@
    "cg_id": "refereum",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1748,7 +1748,7 @@
    "cg_id": "tomochain",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -1798,7 +1798,7 @@
    "cg_id": "loom-network-new",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -1928,7 +1928,7 @@
    "cg_id": "unibright",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2018,7 +2018,7 @@
    "cg_id": "the-abyss",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2088,7 +2088,7 @@
    "cg_id": "zinc-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2108,7 +2108,7 @@
    "cg_id": "mainframe",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2148,7 +2148,7 @@
    "cg_id": "one-ledger",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2188,7 +2188,7 @@
    "cg_id": "coinex-token",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2248,7 +2248,7 @@
    "cg_id": "vexanium",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2338,7 +2338,7 @@
    "cg_id": "baasid",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2488,7 +2488,7 @@
    "cg_id": "mmocoin-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2578,7 +2578,7 @@
    "cg_id": "atomic-wallet-coin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2688,7 +2688,7 @@
    "cg_id": "solve-care",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2738,7 +2738,7 @@
    "cg_id": "cotrader",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2878,7 +2878,7 @@
    "cg_id": "iris-network",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -2978,7 +2978,7 @@
    "cg_id": "pirate-chain",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3078,7 +3078,7 @@
    "cg_id": "motacoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3218,7 +3218,7 @@
    "cg_id": "force-protocol",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3308,7 +3308,7 @@
    "cg_id": "ultra",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3348,7 +3348,7 @@
    "cg_id": "ferrum-network",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3388,7 +3388,7 @@
    "cg_id": "swipe",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3398,7 +3398,7 @@
    "cg_id": "perlin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3468,7 +3468,7 @@
    "cg_id": "digitalbits",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3538,7 +3538,7 @@
    "cg_id": "rupiah-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3548,7 +3548,7 @@
    "cg_id": "banano",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3578,7 +3578,7 @@
    "cg_id": "velas",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3598,7 +3598,7 @@
    "cg_id": "dforce-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3858,7 +3858,7 @@
    "cg_id": "neutrino",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -3868,7 +3868,7 @@
    "cg_id": "tap",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -3878,7 +3878,7 @@
    "cg_id": "insure",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -4108,7 +4108,7 @@
    "cg_id": "cofinex-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -4268,7 +4268,7 @@
    "cg_id": "ptokens-btc",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -4378,7 +4378,7 @@
    "cg_id": "keep-network",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -4418,7 +4418,7 @@
    "cg_id": "xdai-stake",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -4488,7 +4488,7 @@
    "cg_id": "orion-protocol",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -4668,7 +4668,7 @@
    "cg_id": "defichain",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -4788,7 +4788,7 @@
    "cg_id": "frontier-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -4998,7 +4998,7 @@
    "cg_id": "arcona",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -5098,7 +5098,7 @@
    "cg_id": "rio-defi",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -5168,7 +5168,7 @@
    "cg_id": "unilayer",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -5258,7 +5258,7 @@
    "cg_id": "chain-games",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -5418,7 +5418,7 @@
    "cg_id": "bnsd-finance",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -5518,7 +5518,7 @@
    "cg_id": "reef",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -5578,7 +5578,7 @@
    "cg_id": "autobahn-network",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -5588,7 +5588,7 @@
    "cg_id": "golff",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -5668,7 +5668,7 @@
    "cg_id": "bridge-oracle",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -5708,7 +5708,7 @@
    "cg_id": "burger-swap",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -5818,7 +5818,7 @@
    "cg_id": "derivadao",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -5978,7 +5978,7 @@
    "cg_id": "digital-reserve-currency",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -6038,7 +6038,7 @@
    "cg_id": "barnbridge",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -6128,7 +6128,7 @@
    "cg_id": "keep3rv1",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -6178,7 +6178,7 @@
    "cg_id": "smartcredit-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -6218,7 +6218,7 @@
    "cg_id": "bitcoiva",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -6318,7 +6318,7 @@
    "cg_id": "kryptokrona",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -6388,7 +6388,7 @@
    "cg_id": "pancake-bunny",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -6408,7 +6408,7 @@
    "cg_id": "basis-cash",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -6468,7 +6468,7 @@
    "cg_id": "monavale",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -6508,7 +6508,7 @@
    "cg_id": "bondly",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -6748,7 +6748,7 @@
    "cg_id": "rally-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -6958,7 +6958,7 @@
    "cg_id": "ai-network",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -6998,7 +6998,7 @@
    "cg_id": "poolz-finance-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7028,7 +7028,7 @@
    "cg_id": "koinos",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7078,7 +7078,7 @@
    "cg_id": "binance-eth",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -7088,7 +7088,7 @@
    "cg_id": "bitcicoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7098,7 +7098,7 @@
    "cg_id": "bridge-mutual",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7118,7 +7118,7 @@
    "cg_id": "venus-beth",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7128,7 +7128,7 @@
    "cg_id": "masq",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7158,7 +7158,7 @@
    "cg_id": "umbrella-network",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7178,7 +7178,7 @@
    "cg_id": "auto",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7188,7 +7188,7 @@
    "cg_id": "bamboo-defi",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7298,7 +7298,7 @@
    "cg_id": "goose-finance",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7358,7 +7358,7 @@
    "cg_id": "apeswap-finance",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7458,7 +7458,7 @@
    "cg_id": "prcy-coin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7518,7 +7518,7 @@
    "cg_id": "wowswap",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7698,7 +7698,7 @@
    "cg_id": "dextf",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7758,7 +7758,7 @@
    "cg_id": "oddz",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -7958,7 +7958,7 @@
    "cg_id": "strike",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy|symbol_mismatch",
+   "flags": "symbol_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -7998,7 +7998,7 @@
    "cg_id": "catapult",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -8078,7 +8078,7 @@
    "cg_id": "cook",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -8268,7 +8268,7 @@
    "cg_id": "mobox",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -8318,7 +8318,7 @@
    "cg_id": "occamfi",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -8338,7 +8338,7 @@
    "cg_id": "hord",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -8408,7 +8408,7 @@
    "cg_id": "signata",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -8458,7 +8458,7 @@
    "cg_id": "unizen",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -8558,7 +8558,7 @@
    "cg_id": "vulcan-forged",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -8838,7 +8838,7 @@
    "cg_id": "coldstack",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -8928,7 +8928,7 @@
    "cg_id": "don-key",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -8968,7 +8968,7 @@
    "cg_id": "terran-coin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -8998,7 +8998,7 @@
    "cg_id": "venus-reward-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -9048,7 +9048,7 @@
    "cg_id": "dot-finance",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -9188,7 +9188,7 @@
    "cg_id": "xcad-network",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -9248,7 +9248,7 @@
    "cg_id": "rune-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -9308,7 +9308,7 @@
    "cg_id": "safeblast",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -9388,7 +9388,7 @@
    "cg_id": "karura",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -9558,7 +9558,7 @@
    "cg_id": "smilek",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -9598,7 +9598,7 @@
    "cg_id": "qi-dao",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -9638,7 +9638,7 @@
    "cg_id": "thorstarter",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -9778,7 +9778,7 @@
    "cg_id": "apwine",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -9848,7 +9848,7 @@
    "cg_id": "kommunitas-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -10248,7 +10248,7 @@
    "cg_id": "black-phoenix",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -10308,7 +10308,7 @@
    "cg_id": "signum",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -10408,7 +10408,7 @@
    "cg_id": "mimo-parallel-governance-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy|symbol_mismatch",
+   "flags": "name_mismatch|symbol_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -10488,7 +10488,7 @@
    "cg_id": "brokoli",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -10498,7 +10498,7 @@
    "cg_id": "alitas",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -10858,7 +10858,7 @@
    "cg_id": "topgoal",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "network_unmapped|price_discrepancy",
+   "flags": "network_unmapped",
    "last_verified": "2026-10-20"
   },
   {
@@ -10908,7 +10908,7 @@
    "cg_id": "boringdao",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -11458,7 +11458,7 @@
    "cg_id": "punk-vault-nftx",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -11688,7 +11688,7 @@
    "cg_id": "swarm-markets",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -11838,7 +11838,7 @@
    "cg_id": "radix",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -12168,7 +12168,7 @@
    "cg_id": "mars4",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -12268,7 +12268,7 @@
    "cg_id": "wjewel",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy|symbol_mismatch",
+   "flags": "name_mismatch|symbol_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -12788,7 +12788,7 @@
    "cg_id": "magnetgold",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -13158,7 +13158,7 @@
    "cg_id": "world-mobile-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -13278,7 +13278,7 @@
    "cg_id": "phoenix-global",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -13558,7 +13558,7 @@
    "cg_id": "checkdot",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -13568,7 +13568,7 @@
    "cg_id": "bit-hotel",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -13678,7 +13678,7 @@
    "cg_id": "reallink",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -13778,7 +13778,7 @@
    "cg_id": "maiar-dex",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -13848,7 +13848,7 @@
    "cg_id": "keys-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -14038,7 +14038,7 @@
    "cg_id": "lyra-3",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -14078,7 +14078,7 @@
    "cg_id": "flux-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -14268,7 +14268,7 @@
    "cg_id": "league-of-ancients",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -14308,7 +14308,7 @@
    "cg_id": "silo-finance-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -14448,7 +14448,7 @@
    "cg_id": "day-by-day",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -14488,7 +14488,7 @@
    "cg_id": "okratech-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -14648,7 +14648,7 @@
    "cg_id": "opendao",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -15028,7 +15028,7 @@
    "cg_id": "vcgamers",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -15038,7 +15038,7 @@
    "cg_id": "multichain",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -15068,7 +15068,7 @@
    "cg_id": "wrapped-memory",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -15098,7 +15098,7 @@
    "cg_id": "ix-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -15108,7 +15108,7 @@
    "cg_id": "league-of-kingdoms",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -15158,7 +15158,7 @@
    "cg_id": "bnbtiger",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy|symbol_mismatch",
+   "flags": "name_mismatch|symbol_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -15218,7 +15218,7 @@
    "cg_id": "catcoin-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -15338,7 +15338,7 @@
    "cg_id": "cipher-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -15508,7 +15508,7 @@
    "cg_id": "nexum",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -15878,7 +15878,7 @@
    "cg_id": "football-world-community",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -15958,7 +15958,7 @@
    "cg_id": "functionland",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -15968,7 +15968,7 @@
    "cg_id": "kompete",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -16088,7 +16088,7 @@
    "cg_id": "xxcoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -16108,7 +16108,7 @@
    "cg_id": "radioshack",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -16128,7 +16128,7 @@
    "cg_id": "spacepi-token",
    "match_method": "matched_contract_other_network",
    "confidence": "medium",
-   "flags": "matched_contract_other_network|price_discrepancy",
+   "flags": "matched_contract_other_network",
    "last_verified": "2026-10-20"
   },
   {
@@ -16278,7 +16278,7 @@
    "cg_id": "wrapped-fuse",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -16328,7 +16328,7 @@
    "cg_id": "aurigami",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -16638,7 +16638,7 @@
    "cg_id": "sovrun",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -16848,7 +16848,7 @@
    "cg_id": "hash-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -16908,7 +16908,7 @@
    "cg_id": "krypton-dao",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -17058,7 +17058,7 @@
    "cg_id": "graviton",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -17078,7 +17078,7 @@
    "cg_id": "qtoken",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -17188,7 +17188,7 @@
    "cg_id": "legacy-ichi",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -17258,7 +17258,7 @@
    "cg_id": "bluesparrow",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -17308,7 +17308,7 @@
    "cg_id": "liquid-ksm",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -17378,7 +17378,7 @@
    "cg_id": "nelore-coin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -17438,7 +17438,7 @@
    "cg_id": "bombcrypto-coin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy|symbol_mismatch",
+   "flags": "name_mismatch|symbol_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -17788,7 +17788,7 @@
    "cg_id": "wrapped-dione",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -17798,7 +17798,7 @@
    "cg_id": "ego-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -17848,7 +17848,7 @@
    "cg_id": "usdtez",
    "match_method": "matched_contract_other_network",
    "confidence": "medium",
-   "flags": "matched_contract_other_network|network_unmapped|price_discrepancy",
+   "flags": "matched_contract_other_network|network_unmapped",
    "last_verified": "2026-10-20"
   },
   {
@@ -17898,7 +17898,7 @@
    "cg_id": "skeb",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -18048,7 +18048,7 @@
    "cg_id": "diamond-launch",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -18088,7 +18088,7 @@
    "cg_id": "new-world-order",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -18208,7 +18208,7 @@
    "cg_id": "atlantis-coin-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -18388,7 +18388,7 @@
    "cg_id": "the-protocol",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -18408,7 +18408,7 @@
    "cg_id": "hippopotamus",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -18428,7 +18428,7 @@
    "cg_id": "ashswap",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -18478,7 +18478,7 @@
    "cg_id": "palmpay",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -18488,7 +18488,7 @@
    "cg_id": "italian-national-football-team-fan-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -18588,7 +18588,7 @@
    "cg_id": "eq9-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -18618,7 +18618,7 @@
    "cg_id": "chain4energy",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -18698,7 +18698,7 @@
    "cg_id": "hooked-protocol",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -18858,7 +18858,7 @@
    "cg_id": "verse-bitcoin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -18978,7 +18978,7 @@
    "cg_id": "alongside-crypto-market-index",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -19128,7 +19128,7 @@
    "cg_id": "lyfe-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -19208,7 +19208,7 @@
    "cg_id": "bitcointry-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -19568,7 +19568,7 @@
    "cg_id": "pendulum-chain",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -19578,7 +19578,7 @@
    "cg_id": "arcadeum",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -19648,7 +19648,7 @@
    "cg_id": "carbon-browser",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -19818,7 +19818,7 @@
    "cg_id": "lfgswap-finance-core",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -19988,7 +19988,7 @@
    "cg_id": "roko-network",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -20008,7 +20008,7 @@
    "cg_id": "staika",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -20038,7 +20038,7 @@
    "cg_id": "luffy-inu",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -20068,7 +20068,7 @@
    "cg_id": "pomerium-ecosystem",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -20168,7 +20168,7 @@
    "cg_id": "golden-inu-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -20208,7 +20208,7 @@
    "cg_id": "hairdao",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -20258,7 +20258,7 @@
    "cg_id": "microvisionchain",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -20278,7 +20278,7 @@
    "cg_id": "propchain",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -20398,7 +20398,7 @@
    "cg_id": "crypto-sdg",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -20458,7 +20458,7 @@
    "cg_id": "kinesis-silver",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -20528,7 +20528,7 @@
    "cg_id": "wojak",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -20568,7 +20568,7 @@
    "cg_id": "per-project",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -20738,7 +20738,7 @@
    "cg_id": "saiyan-pepe",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -20758,7 +20758,7 @@
    "cg_id": "wefi-finance",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -21088,7 +21088,7 @@
    "cg_id": "crazypepe-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -21098,7 +21098,7 @@
    "cg_id": "kevin-3",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -21228,7 +21228,7 @@
    "cg_id": "trac",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -21368,7 +21368,7 @@
    "cg_id": "twelve-zodiac",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -21378,7 +21378,7 @@
    "cg_id": "pulsex",
    "match_method": "matched_contract_other_network",
    "confidence": "medium",
-   "flags": "matched_contract_other_network|network_unmapped|price_discrepancy",
+   "flags": "matched_contract_other_network|network_unmapped",
    "last_verified": "2026-10-20"
   },
   {
@@ -21398,7 +21398,7 @@
    "cg_id": "empyreal",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -21638,7 +21638,7 @@
    "cg_id": "ai-meta-club",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -21648,7 +21648,7 @@
    "cg_id": "valentine-floki",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -21668,7 +21668,7 @@
    "cg_id": "crossfi-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -21798,7 +21798,7 @@
    "cg_id": "inu-token-63736428-0d5c-4281-8038-3e62c35ac278",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -21878,7 +21878,7 @@
    "cg_id": "elixir-finance",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -21978,7 +21978,7 @@
    "cg_id": "unibot",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -22038,7 +22038,7 @@
    "cg_id": "pin-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -22068,7 +22068,7 @@
    "cg_id": "luckysleprecoin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -22558,7 +22558,7 @@
    "cg_id": "zeebu",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -22708,7 +22708,7 @@
    "cg_id": "web3shot",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -23048,7 +23048,7 @@
    "cg_id": "kizuna",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -23088,7 +23088,7 @@
    "cg_id": "ztx",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -23148,7 +23148,7 @@
    "cg_id": "bridged-usd-coin-ton-bridge",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -23458,7 +23458,7 @@
    "cg_id": "plastichero",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -23508,7 +23508,7 @@
    "cg_id": "the-root-network",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -23518,7 +23518,7 @@
    "cg_id": "blast",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -24108,7 +24108,7 @@
    "cg_id": "turtsat",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -24228,7 +24228,7 @@
    "cg_id": "frencoin-3",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -24238,7 +24238,7 @@
    "cg_id": "zkfair",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "network_unmapped|price_discrepancy",
+   "flags": "network_unmapped",
    "last_verified": "2026-10-20"
   },
   {
@@ -24298,7 +24298,7 @@
    "cg_id": "ait-protocol",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -24408,7 +24408,7 @@
    "cg_id": "hex-pulsechain",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "matched_contract_other_network|network_unmapped|price_discrepancy",
+   "flags": "matched_contract_other_network|network_unmapped",
    "last_verified": "2026-10-20"
   },
   {
@@ -24508,7 +24508,7 @@
    "cg_id": "windoge98",
    "match_method": "matched_contract_other_network",
    "confidence": "medium",
-   "flags": "matched_contract_other_network|network_unmapped|price_discrepancy",
+   "flags": "matched_contract_other_network|network_unmapped",
    "last_verified": "2026-10-20"
   },
   {
@@ -24678,7 +24678,7 @@
    "cg_id": "stablr-euro",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -24788,7 +24788,7 @@
    "cg_id": "web3war",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -24918,7 +24918,7 @@
    "cg_id": "befi-labs",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -25208,7 +25208,7 @@
    "cg_id": "pandora",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -25288,7 +25288,7 @@
    "cg_id": "worldwide-usd",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -25378,7 +25378,7 @@
    "cg_id": "vitalik-smart-gas",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "network_unmapped|price_discrepancy",
+   "flags": "network_unmapped",
    "last_verified": "2026-10-20"
   },
   {
@@ -25428,7 +25428,7 @@
    "cg_id": "landx-governance-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -25438,7 +25438,7 @@
    "cg_id": "utility-nexusmind",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -25458,7 +25458,7 @@
    "cg_id": "crypto-trading-fund",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -25708,7 +25708,7 @@
    "cg_id": "nodewaves",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -25738,7 +25738,7 @@
    "cg_id": "masa-finance",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -26078,7 +26078,7 @@
    "cg_id": "gogopool-ggavax",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -26408,7 +26408,7 @@
    "cg_id": "grow",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -26838,7 +26838,7 @@
    "cg_id": "genius-ai",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -26848,7 +26848,7 @@
    "cg_id": "wisdomise",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -27158,7 +27158,7 @@
    "cg_id": "mumu-the-bull-4",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -27208,7 +27208,7 @@
    "cg_id": "omni-network",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -27378,7 +27378,7 @@
    "cg_id": "dodo-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -27498,7 +27498,7 @@
    "cg_id": "sillynubcat",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -27758,7 +27758,7 @@
    "cg_id": "xzk",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -27788,7 +27788,7 @@
    "cg_id": "gambex",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -27948,7 +27948,7 @@
    "cg_id": "blue-on-base",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -28148,7 +28148,7 @@
    "cg_id": "colle-ai",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -28218,7 +28218,7 @@
    "cg_id": "catamoto",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -28478,7 +28478,7 @@
    "cg_id": "book-of-billionaires",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -28718,7 +28718,7 @@
    "cg_id": "friend-tech",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -28888,17 +28888,7 @@
    "cg_id": "plearn",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy|symbol_mismatch",
-   "last_verified": "2026-10-20"
-  },
-  {
-   "cmc_id": "31162",
-   "cmc_symbol": "BDAG",
-   "cmc_name": "BlockDAG Network",
-   "cg_id": "blockdag",
-   "match_method": "matched_name_price",
-   "confidence": "medium",
-   "flags": "name_mismatch",
+   "flags": "symbol_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -29388,7 +29378,7 @@
    "cg_id": "midnight",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -29398,7 +29388,7 @@
    "cg_id": "radx-ai",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy|symbol_mismatch",
+   "flags": "symbol_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -29638,7 +29628,7 @@
    "cg_id": "pixelverse-xyz",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -29648,7 +29638,7 @@
    "cg_id": "shib-on-solana",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -29698,7 +29688,7 @@
    "cg_id": "pepe-in-a-memes-world",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -30038,7 +30028,7 @@
    "cg_id": "maga",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -30298,7 +30288,7 @@
    "cg_id": "b-money",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -30418,7 +30408,7 @@
    "cg_id": "kendu-inu-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -30468,7 +30458,7 @@
    "cg_id": "laika-ai",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -30488,7 +30478,7 @@
    "cg_id": "lovebit",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -30508,7 +30498,7 @@
    "cg_id": "trumpcoin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -30528,7 +30518,7 @@
    "cg_id": "lil-pump",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -30548,7 +30538,7 @@
    "cg_id": "alloy-tether",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -30718,7 +30708,7 @@
    "cg_id": "email-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -30788,7 +30778,7 @@
    "cg_id": "zeuspepesdog",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -30908,7 +30898,7 @@
    "cg_id": "caterpillar",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -31328,7 +31318,7 @@
    "cg_id": "matt-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -31348,7 +31338,7 @@
    "cg_id": "aark-digital",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -31468,7 +31458,7 @@
    "cg_id": "pumpbtc",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -31478,7 +31468,7 @@
    "cg_id": "touch-grass-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -31638,7 +31628,7 @@
    "cg_id": "bitcoin-limited-edition",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -31798,7 +31788,7 @@
    "cg_id": "neiro",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -31928,7 +31918,7 @@
    "cg_id": "neuron",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -32038,7 +32028,7 @@
    "cg_id": "joule-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -32048,7 +32038,7 @@
    "cg_id": "skpanax",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -32088,7 +32078,7 @@
    "cg_id": "game-5-ball",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -32288,7 +32278,7 @@
    "cg_id": "wrapped-zkcro",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -32318,7 +32308,7 @@
    "cg_id": "mirai-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -32418,7 +32408,7 @@
    "cg_id": "axondao-governance-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -32738,7 +32728,7 @@
    "cg_id": "parkcoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -32748,7 +32738,7 @@
    "cg_id": "neiro-on-tron",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -32768,7 +32758,7 @@
    "cg_id": "black-agnus",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -33018,7 +33008,7 @@
    "cg_id": "x-empire",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -33388,7 +33378,7 @@
    "cg_id": "sparklife",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -33498,7 +33488,7 @@
    "cg_id": "bob-3",
    "match_method": "matched_contract_other_network",
    "confidence": "medium",
-   "flags": "matched_contract_other_network|network_unmapped|price_discrepancy",
+   "flags": "matched_contract_other_network|network_unmapped",
    "last_verified": "2026-10-20"
   },
   {
@@ -33598,7 +33588,7 @@
    "cg_id": "metamars-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -33638,7 +33628,7 @@
    "cg_id": "icb-network",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -33688,7 +33678,7 @@
    "cg_id": "brian",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -33888,7 +33878,7 @@
    "cg_id": "memefi-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -33898,7 +33888,7 @@
    "cg_id": "seed-3",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -33938,7 +33928,7 @@
    "cg_id": "kima",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -34048,7 +34038,7 @@
    "cg_id": "poor-doge",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -34218,7 +34208,7 @@
    "cg_id": "znd-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -34348,7 +34338,7 @@
    "cg_id": "memes-ai-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -34438,7 +34428,7 @@
    "cg_id": "bog",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -34708,7 +34698,7 @@
    "cg_id": "unit0",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -34868,7 +34858,7 @@
    "cg_id": "ducky-4",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -34938,7 +34928,7 @@
    "cg_id": "philosoraptor-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -34988,7 +34978,7 @@
    "cg_id": "kongswap",
    "match_method": "matched_contract_other_network",
    "confidence": "medium",
-   "flags": "matched_contract_other_network|network_unmapped|price_discrepancy",
+   "flags": "matched_contract_other_network|network_unmapped",
    "last_verified": "2026-10-20"
   },
   {
@@ -35048,7 +35038,7 @@
    "cg_id": "sadcat",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -35058,7 +35048,7 @@
    "cg_id": "teafi-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -35248,7 +35238,7 @@
    "cg_id": "pump",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -35318,7 +35308,7 @@
    "cg_id": "luminous",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -35728,7 +35718,7 @@
    "cg_id": "croak_on_linea",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy|symbol_mismatch",
+   "flags": "symbol_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -35768,7 +35758,7 @@
    "cg_id": "ai-agent-layer",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -35838,7 +35828,7 @@
    "cg_id": "ora-coin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -36018,7 +36008,7 @@
    "cg_id": "bonkey",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -36238,7 +36228,7 @@
    "cg_id": "kango",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -36678,7 +36668,7 @@
    "cg_id": "ai-nexus",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -36788,7 +36778,7 @@
    "cg_id": "reploy",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -36888,7 +36878,7 @@
    "cg_id": "moani",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -37148,7 +37138,7 @@
    "cg_id": "merlin-s-seal-btc",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -37338,7 +37328,7 @@
    "cg_id": "xyzverse",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -37398,7 +37388,7 @@
    "cg_id": "island-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -38098,7 +38088,7 @@
    "cg_id": "ai-rocket-by-virtuals",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -38188,7 +38178,7 @@
    "cg_id": "swarmnode-ai-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -38468,7 +38458,7 @@
    "cg_id": "hunter-by-virtuals",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -38498,7 +38488,7 @@
    "cg_id": "jambo",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -38538,7 +38528,7 @@
    "cg_id": "sui-depin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -38848,7 +38838,7 @@
    "cg_id": "basehoundbot-by-virtuals",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -38988,7 +38978,7 @@
    "cg_id": "stablr-usd",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -39348,7 +39338,7 @@
    "cg_id": "karum",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -39478,7 +39468,7 @@
    "cg_id": "anzen-finance",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -39938,7 +39928,7 @@
    "cg_id": "heurist",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -40108,7 +40098,7 @@
    "cg_id": "siren-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -40188,7 +40178,7 @@
    "cg_id": "drx",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -40358,7 +40348,7 @@
    "cg_id": "yala",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -40508,7 +40498,7 @@
    "cg_id": "xpi",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -40888,7 +40878,7 @@
    "cg_id": "changcoin",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -40938,7 +40928,7 @@
    "cg_id": "nailong",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -40958,7 +40948,7 @@
    "cg_id": "titcoin-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -40988,7 +40978,7 @@
    "cg_id": "mubarakah",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -41148,7 +41138,7 @@
    "cg_id": "pumpbtc-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -42038,7 +42028,7 @@
    "cg_id": "boom-2",
    "match_method": "matched_contract_other_network",
    "confidence": "medium",
-   "flags": "matched_contract_other_network|price_discrepancy",
+   "flags": "matched_contract_other_network",
    "last_verified": "2026-10-20"
   },
   {
@@ -42148,7 +42138,7 @@
    "cg_id": "christ-is-king",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -42158,7 +42148,7 @@
    "cg_id": "tokyo-games-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -42508,7 +42498,7 @@
    "cg_id": "lusd",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -42528,7 +42518,7 @@
    "cg_id": "capx-ai",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -42748,7 +42738,7 @@
    "cg_id": "velora",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -42798,7 +42788,7 @@
    "cg_id": "nura-labs",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -43088,7 +43078,7 @@
    "cg_id": "multi-asset-investment-vehicle",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -43128,7 +43118,7 @@
    "cg_id": "wrapped-soph",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -43268,7 +43258,7 @@
    "cg_id": "torch-of-liberty",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -43278,7 +43268,7 @@
    "cg_id": "lumera-health",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -43288,7 +43278,7 @@
    "cg_id": "lambo-4",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -43448,7 +43438,7 @@
    "cg_id": "u",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -43458,7 +43448,7 @@
    "cg_id": "promptale-ai",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -43928,7 +43918,7 @@
    "cg_id": "xociety",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -43978,7 +43968,7 @@
    "cg_id": "yuru-coin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -44008,7 +43998,7 @@
    "cg_id": "echo-protocol",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -44348,7 +44338,7 @@
    "cg_id": "crowdstrike-xstock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -44438,7 +44428,7 @@
    "cg_id": "tqqq-xstock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -44898,7 +44888,7 @@
    "cg_id": "wrapped-marvell-xstock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -45008,7 +44998,7 @@
    "cg_id": "ceylon",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -45028,7 +45018,7 @@
    "cg_id": "rcade-network",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -45218,7 +45208,7 @@
    "cg_id": "degecoin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy|symbol_mismatch",
+   "flags": "symbol_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -45308,7 +45298,7 @@
    "cg_id": "xing-xing",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -45388,7 +45378,7 @@
    "cg_id": "smartmall-token",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -45908,7 +45898,7 @@
    "cg_id": "mao",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -45998,7 +45988,7 @@
    "cg_id": "darkstar",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -46028,7 +46018,7 @@
    "cg_id": "momofun",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -46078,7 +46068,7 @@
    "cg_id": "wrapped-minotari",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -46368,7 +46358,7 @@
    "cg_id": "xai-prestocks-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -46448,7 +46438,7 @@
    "cg_id": "mecca",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -46538,7 +46528,7 @@
    "cg_id": "bns-token",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -46978,7 +46968,7 @@
    "cg_id": "netflix-ondo-tokenized-stock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -47738,7 +47728,7 @@
    "cg_id": "purgy-pengoon",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -47748,7 +47738,7 @@
    "cg_id": "ttaj",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -47818,7 +47808,7 @@
    "cg_id": "jimmyboss-collective",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -47908,7 +47898,7 @@
    "cg_id": "multiple-network",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -48008,7 +47998,7 @@
    "cg_id": "camp-network",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -48098,7 +48088,7 @@
    "cg_id": "dexlab-3",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -48218,7 +48208,7 @@
    "cg_id": "kek-5",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -48278,7 +48268,7 @@
    "cg_id": "hyperbot",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -48398,7 +48388,7 @@
    "cg_id": "worldshards",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -48508,7 +48498,7 @@
    "cg_id": "switchboard",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -48648,7 +48638,7 @@
    "cg_id": "pingpong",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -48658,7 +48648,7 @@
    "cg_id": "pandu-pandas-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -48828,7 +48818,7 @@
    "cg_id": "digital-gold-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -49208,7 +49198,7 @@
    "cg_id": "griffin-ai",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -49258,7 +49248,7 @@
    "cg_id": "edom",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -49368,7 +49358,7 @@
    "cg_id": "knockout-games",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -49398,7 +49388,7 @@
    "cg_id": "klink-finance",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -49488,7 +49478,7 @@
    "cg_id": "origin-lgns",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -50318,7 +50308,7 @@
    "cg_id": "bitcoin-second-chance",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -50508,7 +50498,7 @@
    "cg_id": "fist",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -50598,7 +50588,7 @@
    "cg_id": "shield-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -50748,7 +50738,7 @@
    "cg_id": "dpin-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -50798,7 +50788,7 @@
    "cg_id": "river-pts",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -50848,7 +50838,7 @@
    "cg_id": "zenix",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -50878,7 +50868,7 @@
    "cg_id": "kite",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -50958,7 +50948,7 @@
    "cg_id": "luxxcoin",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -51038,7 +51028,7 @@
    "cg_id": "hybux",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -51108,7 +51098,7 @@
    "cg_id": "belong",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -51128,7 +51118,7 @@
    "cg_id": "aria-2",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -51348,7 +51338,7 @@
    "cg_id": "official-zuno",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -51518,7 +51508,7 @@
    "cg_id": "horse",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -51588,7 +51578,7 @@
    "cg_id": "dank-doge-2",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -52062,6 +52052,16 @@
    "last_verified": "2026-10-20"
   },
   {
+   "cmc_id": "39109",
+   "cmc_symbol": "XNT",
+   "cmc_name": "Neptune",
+   "cg_id": "neptune-privacy",
+   "match_method": "matched_name_price",
+   "confidence": "medium",
+   "flags": "name_mismatch",
+   "last_verified": "2026-10-20"
+  },
+  {
    "cmc_id": "39110",
    "cmc_symbol": "NPRO",
    "cmc_name": "NPRO",
@@ -52488,7 +52488,7 @@
    "cg_id": "ducky-3",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -52788,7 +52788,7 @@
    "cg_id": "li-auto-ondo-tokenized",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -53818,7 +53818,7 @@
    "cg_id": "idngold",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -53898,7 +53898,7 @@
    "cg_id": "u-s-oil",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -53918,7 +53918,7 @@
    "cg_id": "verified-emeralds",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -54008,7 +54008,7 @@
    "cg_id": "xoge",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -54248,7 +54248,7 @@
    "cg_id": "skytrade-pro",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -54258,7 +54258,7 @@
    "cg_id": "dankdoge-ai-agent",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -54818,7 +54818,7 @@
    "cg_id": "nebula3",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -54928,7 +54928,7 @@
    "cg_id": "hooli",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -55048,7 +55048,7 @@
    "cg_id": "strategy-pp-variable-xstock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -55968,7 +55968,7 @@
    "cg_id": "rocket-3",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -56078,7 +56078,7 @@
    "cg_id": "v-i-t-r-i-o-l-network",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -56278,7 +56278,7 @@
    "cg_id": "wrapped-zera",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -56698,7 +56698,7 @@
    "cg_id": "binibit",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -56728,7 +56728,7 @@
    "cg_id": "peponk",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -56808,7 +56808,7 @@
    "cg_id": "uber-xstock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -56858,7 +56858,7 @@
    "cg_id": "wallitelli",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -56918,7 +56918,7 @@
    "cg_id": "palo-alto-networks-xstock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -57058,7 +57058,7 @@
    "cg_id": "vertiv-holdings-co-xstock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -57168,7 +57168,7 @@
    "cg_id": "applied-materials-inc-xstock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -57358,7 +57358,7 @@
    "cg_id": "spacex4200",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -59718,7 +59718,7 @@
    "cg_id": "ionq-robinhood-tokenized-stock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -60018,7 +60018,7 @@
    "cg_id": "innodata-robinhood-tokenized-stock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -60128,7 +60128,7 @@
    "cg_id": "applied-digital-robinhood-tokenized-stock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -60298,7 +60298,7 @@
    "cg_id": "invesco-s-p-500-momentum-etf-robinhood-tokenized-stock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -60308,7 +60308,7 @@
    "cg_id": "zscaler-robinhood-tokenized-stock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -60358,7 +60358,7 @@
    "cg_id": "intuitive-machines-robinhood-tokenized-stock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -60458,7 +60458,7 @@
    "cg_id": "crowdstrike-holdings-robinhood-tokenized-stock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -61638,7 +61638,7 @@
    "cg_id": "pop-mart-international-xstock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -61668,7 +61668,7 @@
    "cg_id": "mixue-xstock",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -61688,7 +61688,7 @@
    "cg_id": "emerald-security-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -61898,7 +61898,7 @@
    "cg_id": "dominion-silver",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -62328,7 +62328,7 @@
    "cg_id": "goose-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -62358,7 +62358,7 @@
    "cg_id": "ramses",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -63328,7 +63328,7 @@
    "cg_id": "czr-token",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -63348,7 +63348,7 @@
    "cg_id": "bitcoin-cash-ii",
    "match_method": "matched_name_symbol",
    "confidence": "high",
-   "flags": "price_discrepancy",
+   "flags": "",
    "last_verified": "2026-10-20"
   },
   {
@@ -64428,7 +64428,7 @@
    "cg_id": "doge-pepe",
    "match_method": "matched_contract",
    "confidence": "high",
-   "flags": "name_mismatch|price_discrepancy",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   }
  ]

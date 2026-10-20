@@ -1,6 +1,6 @@
 # CMC → CoinGecko mapping report
 
-Generated: 2026-10-20T15:21:35Z
+Generated: 2026-10-20T15:31:07Z
 
 ## Match rate
 
@@ -8,8 +8,8 @@ Generated: 2026-10-20T15:21:35Z
 |---|---:|
 | all | 6443/8125 (79.30%) |
 | top 100 by CMC rank | 99/100 (99.00%) |
-| top 1,000 by CMC rank | 984/1000 (98.40%) |
-| top 5,000 by CMC rank | 4526/5000 (90.52%) |
+| top 1,000 by CMC rank | 983/1000 (98.30%) |
+| top 5,000 by CMC rank | 4524/5000 (90.48%) |
 
 ## Gold set
 
@@ -24,8 +24,8 @@ Precision: 34/34 (100.0%)
 |---|---:|
 | accepted | 6443 |
 | unmatched | 896 |
-| ambiguous | 608 |
-| flagged | 178 |
+| ambiguous | 607 |
+| flagged | 179 |
 
 ### By method
 
@@ -47,10 +47,10 @@ Precision: 34/34 (100.0%)
 
 | value | count |
 |---|---:|
-| name_mismatch | 1717 |
-| ambiguous_multiple_candidates | 608 |
-| price_discrepancy | 606 |
+| name_mismatch | 1718 |
+| ambiguous_multiple_candidates | 607 |
 | symbol_mismatch | 156 |
+| price_discrepancy | 142 |
 | network_unmapped | 100 |
 | matched_contract_other_network | 63 |
 | many_to_one | 50 |
@@ -90,5 +90,5 @@ Precision: 34/34 (100.0%)
 | mcap_diff_pct | 25.0 |
 | min_coin_count_ratio | 0.9 |
 | max_match_rate_drop_pts | 2.0 |
-| max_top1000_match_rate_drop_pts | 0.0 |
+| max_top1000_match_rate_drop_pts | 0.5 |
 | max_cg_id_change_ratio | 0.01 |

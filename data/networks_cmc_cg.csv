@@ -13,7 +13,7 @@ cmc_platform_id,cmc_platform_name,cmc_platform_slug,cmc_chain_id,token_count,cg_
 19,HECO,htx-token,128,2,huobi-token,huobi-token,128,accepted,chain_id+overlap,high,1,0.5000,,0,100.0,
 20,Gnosis Chain,gnosis-gno,100,5,xdai,xdai,100,accepted,chain_id+overlap,high,5,1.0000,,0,100.0,
 21,Wanchain,wanchain,888,1,wanchain,wanchain,888,accepted,chain_id+overlap,high,1,1.0000,,0,100.0,
-24,Fantom,fantom,250,4,fantom,fantom,250,accepted,chain_id+overlap,high,3,0.7500,mantle,1,100.0,
+24,Fantom,fantom,250,4,fantom,fantom,250,accepted,chain_id+overlap,high,3,0.7500,binance-smart-chain,1,100.0,
 25,Polygon,polygon-ecosystem-token,137,145,polygon-pos,polygon-pos,137,accepted,chain_id+overlap,high,104,0.7172,binance-smart-chain,1,100.0,
 26,KAIA,kaia,8217,16,klay-token,klay-token,8217,accepted,chain_id+overlap,high,14,0.8750,,0,100.0,
 27,Stellar,stellar,,5,stellar,stellar,,accepted,name+overlap,medium,5,1.0000,,0,100.0,small network: 5/5 addresses shared
@@ -83,7 +83,7 @@ cmc_platform_id,cmc_platform_name,cmc_platform_slug,cmc_chain_id,token_count,cg_
 241,Bera Chain,berachain,80094,6,berachain,berachain,80094,accepted,chain_id+overlap,high,5,0.8333,,0,94.7,
 244,Mantra,mantra-new,,1,,mantra-evm,5888,needs_review,,low,0,0.0000,,0,100.0,name similarity only
 247,Abstract Chain,abstract,2741,3,abstract,abstract,2741,accepted,chain_id+overlap,high,2,0.6667,,0,100.0,
-248,HyperEVM,hyperliquid,999,21,hyperevm,hyperevm,999,accepted,chain_id+overlap,high,9,0.4286,peaq,1,100.0,
+248,HyperEVM,hyperliquid,999,21,hyperevm,hyperevm,999,accepted,chain_id+overlap,high,9,0.4286,apechain,1,100.0,
 249,Monad,monad,143,2,monad,monad,143,accepted,chain_id+overlap,high,2,1.0000,,0,100.0,
 250,Etherlink,tezos,42793,3,etherlink,etherlink,42793,accepted,chain_id+overlap,high,3,1.0000,ethereum,1,100.0,
 255,Vector Smart Chain,vector-smart-gas,420042,1,,xt-smart-chain,520,needs_review,,low,0,0.0000,,0,88.0,name similarity only
