@@ -4,6 +4,20 @@ One section per run that changed the published mappings.
 
 ## 2026-10-20
 
++2 new, -1 removed, ~0 changed
+
+### New mappings (2)
+
+- `31162` BDAG (BlockDAG Network) → `blockdag`
+- `42381` SECZ (Securitize Corp (Derivatives)) → `securitize-corp`
+
+### Removed mappings (1)
+
+- `26267` SELF (SelfToken) → `self-token`
+
+
+## 2026-10-20
+
 +0 new, -1 removed, ~0 changed
 
 ### Removed mappings (1)

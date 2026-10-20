@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T15:33:15Z",
+ "generated_at": "2026-10-20T15:38:42Z",
  "mappings": [
   {
    "cmc_id": "1",
@@ -21672,16 +21672,6 @@
    "last_verified": "2026-10-20"
   },
   {
-   "cmc_id": "26267",
-   "cmc_symbol": "SELF",
-   "cmc_name": "SelfToken",
-   "cg_id": "self-token",
-   "match_method": "matched_contract",
-   "confidence": "high",
-   "flags": "name_mismatch",
-   "last_verified": "2026-10-20"
-  },
-  {
    "cmc_id": "26386",
    "cmc_symbol": "CONE",
    "cmc_name": "BitCone",
@@ -28879,6 +28869,16 @@
    "match_method": "matched_contract",
    "confidence": "high",
    "flags": "symbol_mismatch",
+   "last_verified": "2026-10-20"
+  },
+  {
+   "cmc_id": "31162",
+   "cmc_symbol": "BDAG",
+   "cmc_name": "BlockDAG Network",
+   "cg_id": "blockdag",
+   "match_method": "matched_name_price",
+   "confidence": "medium",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {
@@ -63579,6 +63579,16 @@
    "match_method": "matched_contract",
    "confidence": "high",
    "flags": "",
+   "last_verified": "2026-10-20"
+  },
+  {
+   "cmc_id": "42381",
+   "cmc_symbol": "SECZ",
+   "cmc_name": "Securitize Corp (Derivatives)",
+   "cg_id": "securitize-corp",
+   "match_method": "matched_name_price",
+   "confidence": "medium",
+   "flags": "name_mismatch",
    "last_verified": "2026-10-20"
   },
   {

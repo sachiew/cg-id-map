@@ -5,9 +5,9 @@ cmc_platform_id,cmc_platform_name,cmc_platform_slug,cmc_chain_id,token_count,cg_
 4,Neo,neo,,4,,neo,,needs_review,,low,1,0.2500,,0,100.0,only 1 shared addresses (< 20)
 8,Chiliz Legacy Chain,chiliz,,2,,chiliz,88888,needs_review,,low,1,0.5000,,0,100.0,only 1 shared addresses (< 20)
 11,WAX,wax,,2,,wax,,needs_review,,low,0,0.0000,,0,100.0,name similarity only
-14,BNB Smart Chain (BEP20),bnb,56,1604,binance-smart-chain,binance-smart-chain,56,accepted,chain_id+overlap,high,1087,0.6777,base,12,100.0,
+14,BNB Smart Chain (BEP20),bnb,56,1603,binance-smart-chain,binance-smart-chain,56,accepted,chain_id+overlap,high,1086,0.6775,base,12,100.0,
 15,BNB Beacon Chain (BEP2),bnb,,8,,binancecoin,,needs_review,,low,3,0.3750,,0,100.0,only 3 shared addresses (< 20)
-16,Solana,solana,,1530,solana,solana,,accepted,name+overlap,high,1350,0.8824,fogo,1,100.0,
+16,Solana,solana,,1530,solana,solana,,accepted,name+overlap,high,1350,0.8824,eclipse,1,100.0,
 17,Algorand,algorand,,1,,algorand,,needs_review,,low,0,0.0000,,0,100.0,name similarity only
 18,ICP,internet-computer,,17,,internet-computer,,needs_review,,low,14,0.8235,,0,20.0,only 14 shared addresses (< 20)
 19,HECO,htx-token,128,2,huobi-token,huobi-token,128,accepted,chain_id+overlap,high,1,0.5000,,0,100.0,
@@ -83,7 +83,7 @@ cmc_platform_id,cmc_platform_name,cmc_platform_slug,cmc_chain_id,token_count,cg_
 241,Bera Chain,berachain,80094,6,berachain,berachain,80094,accepted,chain_id+overlap,high,5,0.8333,,0,94.7,
 244,Mantra,mantra-new,,1,,mantra-evm,5888,needs_review,,low,0,0.0000,,0,100.0,name similarity only
 247,Abstract Chain,abstract,2741,3,abstract,abstract,2741,accepted,chain_id+overlap,high,2,0.6667,,0,100.0,
-248,HyperEVM,hyperliquid,999,21,hyperevm,hyperevm,999,accepted,chain_id+overlap,high,9,0.4286,peaq,1,100.0,
+248,HyperEVM,hyperliquid,999,21,hyperevm,hyperevm,999,accepted,chain_id+overlap,high,9,0.4286,apechain,1,100.0,
 249,Monad,monad,143,2,monad,monad,143,accepted,chain_id+overlap,high,2,1.0000,,0,100.0,
 250,Etherlink,tezos,42793,3,etherlink,etherlink,42793,accepted,chain_id+overlap,high,3,1.0000,ethereum,1,100.0,
 255,Vector Smart Chain,vector-smart-gas,420042,1,,xt-smart-chain,520,needs_review,,low,0,0.0000,,0,88.0,name similarity only

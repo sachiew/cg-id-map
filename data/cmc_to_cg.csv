@@ -2166,7 +2166,6 @@ cmc_id,cmc_symbol,cmc_name,cg_id,match_method,confidence,flags,last_verified
 26198,BDXN,BONDEX,bondex,matched_contract,high,,2026-10-20
 26202,XFI,CrossFi,crossfi-2,matched_name_symbol,high,,2026-10-20
 26227,CRYSTAL STONES,CRYSTAL STONES,crystal-stones,matched_contract,high,,2026-10-20
-26267,SELF,SelfToken,self-token,matched_contract,high,name_mismatch,2026-10-20
 26386,CONE,BitCone,bitcone,matched_contract,high,,2026-10-20
 26396,BANK,BankerCoinAda,bankercoin,matched_contract,high,name_mismatch,2026-10-20
 26413,NBLU,NuriTopia,nuritopia,matched_contract,high,,2026-10-20
@@ -2887,6 +2886,7 @@ cmc_id,cmc_symbol,cmc_name,cg_id,match_method,confidence,flags,last_verified
 31153,MONKE,Monke,monke-coin,matched_contract,high,,2026-10-20
 31155,CROAK,Croakey,croakey,matched_contract,high,,2026-10-20
 31160,PLN,Plearn,plearn,matched_contract,high,symbol_mismatch,2026-10-20
+31162,BDAG,BlockDAG Network,blockdag,matched_name_price,medium,name_mismatch,2026-10-20
 31163,SLOTH,Slothana,slothana,matched_contract,high,,2026-10-20
 31167,CRODIE,Crodie,crodie,matched_contract,high,,2026-10-20
 31169,VOPO,VOPO,vopo,matched_contract,high,,2026-10-20
@@ -6359,6 +6359,7 @@ Pre-IPO stock (Republic)",openai-republic-pre-ipo,matched_contract,high,name_mis
 42364,LUV,Southwest Airlines Co tokenized stock (Backpack),southwest-airlines-co-backpack-securities,matched_contract,high,name_mismatch,2026-10-20
 42365,CAT,Catching Absolute Tops (catchingabsolutetops.com),catching-absolute-tops,matched_contract,high,name_mismatch,2026-10-20
 42366,PAID,Paid,paid,matched_contract,high,,2026-10-20
+42381,SECZ,Securitize Corp (Derivatives),securitize-corp,matched_name_price,medium,name_mismatch,2026-10-20
 42383,PDDB,PDD Holdings Tokenized bStocks,pdd-holdings-bstocks-tokenized-stock,matched_contract,high,name_mismatch,2026-10-20
 42384,ADBEB,Adobe Tokenized bStocks,adobe-bstocks-tokenized-stock,matched_contract,high,name_mismatch,2026-10-20
 42385,HPEB,Hewlett Packard Tokenized bStocks,hewlett-packard-bstocks-tokenized-stock,matched_contract,high,name_mismatch,2026-10-20
