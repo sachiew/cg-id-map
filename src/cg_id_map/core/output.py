@@ -24,11 +24,14 @@ from pathlib import Path
 from typing import Any
 
 from cg_id_map.config import Thresholds
-from cg_id_map.core.flags import Status
+from cg_id_map.core.flags import Flag, Status
 from cg_id_map.core.matcher import Candidate, MatchRow
 from cg_id_map.core.networks import NetworkMapping, NetworkStatus
 
 REVIEW_STATUSES = (Status.FLAGGED, Status.AMBIGUOUS, Status.UNMATCHED)
+# On accepted rows these are informational and flip as prices move; publishing them would churn
+# the mapping files daily. They stay in the full output and in the review queue.
+MARKET_FLAGS = frozenset({Flag.PRICE_DISCREPANCY, Flag.MCAP_DISCREPANCY})
 TRACKED = ("cg_id", "match_method", "confidence", "flags")
 LIST_LIMIT = 50
 
@@ -136,7 +139,7 @@ def slim_rows(
             "cg_id": r.cg_id,
             "match_method": r.method.value,
             "confidence": r.confidence.value,
-            "flags": "|".join(sorted(f.value for f in r.flags)),
+            "flags": "|".join(sorted(f.value for f in r.flags if f not in MARKET_FLAGS)),
         }
         prev = previous.get(r.provider_id)
         unchanged = prev is not None and all(prev.get(k) == row[k] for k in TRACKED)
@@ -283,6 +286,8 @@ def render_report(
     t: Thresholds,
     gold: GoldResult | None,
     generated_at: str,
+    *,
+    published: bool = False,
 ) -> str:
     def table(title: str, counts: Counter[str]) -> list[str]:
         lines = [f"### {title}", "", "| value | count |", "|---|---:|"]
@@ -327,7 +332,13 @@ def render_report(
         "By confidence (accepted)",
         Counter(r.confidence.value for r in rows if r.status is Status.ACCEPTED),
     )
-    lines += table("By flag", Counter(f.value for r in rows for f in r.flags))
+    flags = Counter(
+        f.value
+        for r in rows
+        for f in r.flags
+        if not (published and r.status is Status.ACCEPTED and f in MARKET_FLAGS)
+    )
+    lines += table("By flag", flags)
     lines += ["## Networks", ""]
     lines += table("By status", Counter(n.status.value for n in networks))
     lines += table(
@@ -388,7 +399,7 @@ def write_published(
     write_if_changed(out_dir / f"networks_{p}_cg.csv", to_csv(nh, nrows))
 
     report_path = out_dir / "report.md"
-    report = render_report(rows, networks, p, t, gold, stamp)
+    report = render_report(rows, networks, p, t, gold, stamp, published=True)
     old = report_path.read_text() if report_path.is_file() else ""
     if _without_timestamp(old) != _without_timestamp(report):
         report_path.write_text(report)

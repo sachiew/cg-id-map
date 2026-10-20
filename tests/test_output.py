@@ -154,3 +154,16 @@ def test_sig() -> None:
     assert sig(82390.123456) == "82390.1"
     assert sig(0.000012345678) == "1.23457e-05"
     assert sig(0.1 + 0.2) == "0.3"
+
+
+def test_market_flags_are_not_published_on_accepted_rows(tmp_path: Path) -> None:
+    rows = [row("1", "bitcoin", flags=[Flag.PRICE_DISCREPANCY, Flag.NAME_MISMATCH])]
+    publish(tmp_path, rows, DAY1)
+    assert read(tmp_path / "cmc_to_cg.csv")[0]["flags"] == "name_mismatch"
+    # A price move that only toggles the market flag changes nothing published.
+    before = {p.name: p.read_bytes() for p in tmp_path.iterdir()}
+    changes = publish(tmp_path, [row("1", "bitcoin", flags=[Flag.NAME_MISMATCH])], DAY2)
+    assert not changes.any  # type: ignore[attr-defined]
+    assert before == {p.name: p.read_bytes() for p in tmp_path.iterdir()}
+    write_full(tmp_path / "full", "cmc", rows, [], Thresholds(), DAY1)
+    assert "price_discrepancy" in read(tmp_path / "full" / "cmc_to_cg.csv")[0]["flags"]

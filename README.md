@@ -152,11 +152,16 @@ CMC ID now points to a different CoinGecko coin.
 | `many_to_one` | several CMC IDs claim this CoinGecko coin |
 | `network_unmapped` | the token's CMC network has no accepted CoinGecko network |
 | `matched_contract_other_network` | address found on a different network than the network map says |
-| `price_discrepancy` | prices differ by more than the threshold |
+| `price_discrepancy` | prices differ by more than the threshold (on accepted rows: full output only, see below) |
 | `mcap_discrepancy` | market caps differ by more than the threshold |
 | `no_market_data` | a price was needed to decide but one side has none |
 | `ambiguous_multiple_candidates` | several candidates and nothing decisive |
 | `name_mismatch` / `symbol_mismatch` | the matched coin's name / ticker differs (rebrands, `XBT` vs `BTC`) |
+
+On accepted rows, `price_discrepancy` and `mcap_discrepancy` are informational and move with the
+markets, so the published `cmc_to_cg.csv`/`.json` leave them out (otherwise the files would change
+daily). They are kept in the full output (`--full-out`, and the `full-output` artifact of each
+daily run) and in `review_queue.csv`, where they explain why a row was held back.
 
 ## Reviewing and contributing fixes
 
