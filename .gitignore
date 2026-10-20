@@ -1,0 +1,23 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# raw API responses / local runs
+.cache/
+output/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+
+# tooling
+.claude/
+.DS_Store
