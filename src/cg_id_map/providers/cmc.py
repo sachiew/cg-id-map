@@ -17,7 +17,7 @@ from typing import Any
 
 import httpx
 
-from cg_id_map.config import Config
+from cg_id_map.config import Config, env_secret
 from cg_id_map.http import ApiError, HttpClient, batch_ids
 from cg_id_map.models import MarketData, ProviderCoin, ProviderPlatform
 from cg_id_map.providers import register
@@ -30,15 +30,14 @@ PRICE_BATCH = 500
 PRICE_MAX_ID_CHARS = 6000
 
 
-@register("cmc")
 class CoinMarketCap:
     name = "cmc"
 
     def __init__(
         self,
-        api_key: str | None,
         config: Config,
         *,
+        api_key: str | None = None,
         refresh: bool = False,
         transport: httpx.BaseTransport | None = None,
     ) -> None:
@@ -56,6 +55,11 @@ class CoinMarketCap:
             refresh=refresh,
         )
         self._map: list[dict[str, Any]] | None = None
+
+    @classmethod
+    def from_env(cls, config: Config, *, refresh: bool = False) -> CoinMarketCap:
+        """CMC_API_KEY is optional: without it the keyless /public-api is used."""
+        return cls(config, api_key=env_secret("CMC_API_KEY"), refresh=refresh)
 
     def _get(self, path: str, params: dict[str, Any] | None = None) -> Any:
         body = self.http.get_json(self.prefix + path, params)
@@ -144,3 +148,6 @@ class CoinMarketCap:
                         price_usd=usd.get("price"), mcap_usd=usd.get("market_cap")
                     )
         return out
+
+
+register("cmc", CoinMarketCap.from_env)

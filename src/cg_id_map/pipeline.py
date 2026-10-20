@@ -44,10 +44,9 @@ class Pipeline:
     ) -> Pipeline:
         if provider_name not in PROVIDERS:
             raise ValueError(f"unknown provider {provider_name!r}; known: {sorted(PROVIDERS)}")
-        creds = Credentials.from_env()
-        key = creds.cmc_api_key if provider_name == "cmc" else None
-        provider = PROVIDERS[provider_name](key, config, refresh=refresh)
-        return cls(provider, CoinGecko(creds, config, refresh=refresh), config, overrides_dir)
+        provider = PROVIDERS[provider_name](config, refresh=refresh)
+        cg = CoinGecko(Credentials.from_env(), config, refresh=refresh)
+        return cls(provider, cg, config, overrides_dir)
 
     @property
     def name(self) -> str:

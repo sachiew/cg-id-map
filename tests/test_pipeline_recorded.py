@@ -74,8 +74,8 @@ def result() -> tuple[list[MatchRow], list[NetworkMapping]]:
     cfg.http.cg_rate_per_min = {"pro": 0, "demo": 0, "public": 0}
     transport = httpx.MockTransport(handler)
     p = Pipeline(
-        provider=CoinMarketCap(None, cfg, transport=transport),
-        cg=CoinGecko(Credentials("k", "pro", None), cfg, transport=transport),
+        provider=CoinMarketCap(cfg, transport=transport),
+        cg=CoinGecko(Credentials("k", "pro"), cfg, transport=transport),
         config=cfg,
         overrides_dir=ROOT / "overrides",
     )

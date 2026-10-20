@@ -59,7 +59,7 @@ ETH_PLATFORM = {"id": 1, "name": "Ethereum", "symbol": "ETH", "slug": "ethereum"
 
 
 def make_cmc(handler: Handler, key: str | None = None) -> Any:
-    return PROVIDERS["cmc"](key, cfg(), transport=httpx.MockTransport(handler))
+    return cmc_mod.CoinMarketCap(cfg(), api_key=key, transport=httpx.MockTransport(handler))
 
 
 def test_cmc_is_a_provider() -> None:
@@ -165,7 +165,7 @@ def test_cmc_error_status_raises() -> None:
 
 
 def make_cg(handler: Handler, tier: str = "pro", key: str | None = "k") -> CoinGecko:
-    creds = Credentials(key, tier, None)  # type: ignore[arg-type]
+    creds = Credentials(key, tier)  # type: ignore[arg-type]
     return CoinGecko(creds, cfg(), transport=httpx.MockTransport(handler))
 
 
@@ -275,5 +275,16 @@ def test_batch_ids_respects_count_and_chars() -> None:
 
 
 def test_credentials_repr_hides_keys() -> None:
-    r = repr(Credentials("SECRETCG", "pro", "SECRETCMC"))
+    r = repr(Credentials("SECRETCG", "pro"))
     assert "SECRET" not in r and "set" in r
+
+
+def test_cmc_is_registered_with_an_env_factory() -> None:
+    assert PROVIDERS["cmc"] == cmc_mod.CoinMarketCap.from_env
+
+
+def test_template_satisfies_provider_protocol_and_is_not_registered() -> None:
+    from cg_id_map.providers._template import ExampleProvider
+
+    assert isinstance(ExampleProvider(cfg()), Provider)
+    assert "example" not in PROVIDERS

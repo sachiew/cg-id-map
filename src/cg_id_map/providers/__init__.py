@@ -2,19 +2,25 @@
 
 from __future__ import annotations
 
-from collections.abc import Callable
+from typing import Protocol
 
+from cg_id_map.config import Config
 from cg_id_map.providers.base import Provider
 
-PROVIDERS: dict[str, Callable[..., Provider]] = {}
+
+class ProviderFactory(Protocol):
+    """Builds a provider from config, reading its own credentials (if any) from the env."""
+
+    def __call__(self, config: Config, *, refresh: bool = False) -> Provider: ...
 
 
-def register(name: str) -> Callable[[Callable[..., Provider]], Callable[..., Provider]]:
-    def deco(factory: Callable[..., Provider]) -> Callable[..., Provider]:
-        PROVIDERS[name] = factory
-        return factory
+PROVIDERS: dict[str, ProviderFactory] = {}
 
-    return deco
+
+def register(name: str, factory: ProviderFactory) -> None:
+    if name in PROVIDERS:
+        raise ValueError(f"provider {name!r} registered twice")
+    PROVIDERS[name] = factory
 
 
 def _load_builtin() -> None:

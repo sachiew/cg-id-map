@@ -32,17 +32,22 @@ def load_dotenv(path: Path = Path(".env")) -> None:
             os.environ[key] = value
 
 
+def env_secret(name: str) -> str | None:
+    """Read a provider secret (e.g. CMC_API_KEY) from env or .env; None when unset or empty."""
+    load_dotenv()
+    return os.environ.get(name) or None
+
+
 @dataclass(frozen=True)
 class Credentials:
+    """CoinGecko access. Other providers read their own keys via `env_secret`."""
+
     cg_api_key: str | None
     cg_tier: CGTier
-    cmc_api_key: str | None
 
     def __repr__(self) -> str:  # never show key values
-        return (
-            f"Credentials(cg_api_key={'set' if self.cg_api_key else None}, "
-            f"cg_tier={self.cg_tier!r}, cmc_api_key={'set' if self.cmc_api_key else None})"
-        )
+        key = "set" if self.cg_api_key else None
+        return f"Credentials(cg_api_key={key}, cg_tier={self.cg_tier!r})"
 
     @classmethod
     def from_env(cls) -> Credentials:
@@ -53,7 +58,7 @@ class Credentials:
             raise ValueError(f"CG_API_TIER must be one of pro|demo|public, got {tier!r}")
         if tier != "public" and not cg_key:
             raise ValueError(f"CG_API_TIER={tier} needs CG_API_KEY (or use CG_API_TIER=public)")
-        return cls(cg_key, tier, os.environ.get("CMC_API_KEY") or None)  # type: ignore[arg-type]
+        return cls(cg_key, tier)  # type: ignore[arg-type]
 
 
 @dataclass
