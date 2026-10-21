@@ -4,6 +4,27 @@ One section per run that changed the published mappings.
 
 ## 2026-10-21
 
++6 new, -4 removed, ~0 changed
+
+### New mappings (6)
+
+- `27872` TRUMP (MAGA (magamemecoin.com)) → `maga`
+- `42523` QTC (Quantus) → `quantus`
+- `42534` BBB (Blackberry Tokenized bStocks) → `blackberry-bstocks-tokenized-stock`
+- `42535` MDBB (Mongodb Tokenized bStocks) → `mongodb-bstocks-tokenized-stock`
+- `42536` PENGB (Penguin Solutions Tokenized bStocks) → `penguin-solutions-bstocks-tokenized-stock`
+- `42617` DACITY (Dacity Coin) → `dacity-coin-3`
+
+### Removed mappings (4)
+
+- `11271` COL (Colana) → `dogecola`
+- `15893` RBC (Ruby Coin) → `ruby-coin`
+- `31692` TRUMP (MAGA) → `maga`
+- `36381` ALF (ALF Token) → `alf-token`
+
+
+## 2026-10-21
+
 +5 new, -4 removed, ~0 changed
 
 ### New mappings (5)
