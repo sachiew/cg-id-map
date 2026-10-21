@@ -127,14 +127,21 @@ def read_csv_by_id(path: Path, id_col: str) -> dict[str, dict[str, str]]:
         return {r[id_col]: r for r in csv.DictReader(f)}
 
 
+def _rank_key(r: MatchRow) -> tuple[bool, int, tuple[int, str]]:
+    return (r.rank is None, r.rank or 0, id_key(r.provider_id))
+
+
 def slim_rows(
     rows: Iterable[MatchRow], p: str, previous: dict[str, dict[str, str]], today: str
 ) -> list[dict[str, str]]:
     out = []
-    for r in sorted(rows, key=lambda r: id_key(r.provider_id)):
+    # Sorted by provider rank (unranked last), then ID. Ranks move daily, so this file changes
+    # daily; last_verified and the changelog only track TRACKED fields, never the rank.
+    for r in sorted(rows, key=_rank_key):
         if r.status is not Status.ACCEPTED or not r.cg_id:
             continue
         row = {
+            f"{p}_rank": "" if r.rank is None else str(r.rank),
             f"{p}_id": r.provider_id,
             f"{p}_symbol": r.symbol,
             f"{p}_name": r.name,
@@ -205,7 +212,7 @@ def prepend_changelog(path: Path, section: str) -> None:
 def review_rows(rows: Iterable[MatchRow], p: str, with_market: bool) -> list[dict[str, str]]:
     todo = [r for r in rows if r.status in REVIEW_STATUSES]
     # Most important first: by provider rank (unranked last), then ID.
-    todo.sort(key=lambda r: (r.rank is None, r.rank or 0, id_key(r.provider_id)))
+    todo.sort(key=_rank_key)
     out = []
     for r in todo:
         d = {
@@ -378,6 +385,7 @@ def write_published(
     changes = diff_slim(previous, new)
 
     header = [
+        f"{p}_rank",
         id_col,
         f"{p}_symbol",
         f"{p}_name",

@@ -53,7 +53,7 @@ jobs:
           uv run python - <<'EOF'
           import csv, json
           rows = list(csv.DictReader(open("data/cmc_to_cg.csv")))
-          assert rows and list(rows[0])[:4] == ["cmc_id", "cmc_symbol", "cmc_name", "cg_id"], "bad csv"
+          assert rows and list(rows[0])[:5] == ["cmc_rank", "cmc_id", "cmc_symbol", "cmc_name", "cg_id"], "bad csv"
           assert all(r["cg_id"] for r in rows), "empty cg_id in published csv"
           payload = json.load(open("data/cmc_to_cg.json"))
           assert payload["mappings"] == rows, "csv and json disagree"

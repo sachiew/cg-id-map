@@ -173,7 +173,9 @@ def _match_and_write(
     if changes.any or prev_stats is None or reset_baseline:
         new_stats.save(stats_path)
     full_out.mkdir(parents=True, exist_ok=True)
-    (full_out / "change_summary.txt").write_text(changes.summary() + "\n")
+    # Used in the daily commit message; rank-only days still change the published files.
+    summary = changes.summary() if changes.any else "ranks updated, no mapping changes"
+    (full_out / "change_summary.txt").write_text(summary + "\n")
     if reset_baseline:
         _step_summary("> ⚠️ Forced run: safety-check baseline reset to this run's numbers.\n")
     _step_summary(_success_markdown(p.name, rows, changes, gold))

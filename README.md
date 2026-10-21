@@ -13,7 +13,7 @@ overrides and tests; see [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Get the mapping
 
 The mapping is regenerated daily (03:17 UTC) by a GitHub Action and committed to [`data/`](data/)
-when it changes. Stable download URLs, without cloning:
+(usually every day, since CMC ranks move). Stable download URLs, without cloning:
 
 - CSV: `https://github.com/sachiew/cg-id-map/releases/download/latest/cmc_to_cg.csv`
 - JSON: `https://github.com/sachiew/cg-id-map/releases/download/latest/cmc_to_cg.json`
@@ -108,12 +108,13 @@ Overrides in `overrides/` always win.
 
 ## Output files
 
-`--out` (default `data/`) gets the **published** set. It is deterministic: stable sort, no live
-prices, rounded numbers. A run with no real changes leaves every file byte-identical.
+`--out` (default `data/`) gets the **published** set. It is deterministic: no live prices, rounded
+numbers, stable tie-breaking. Only CMC rank moves change files without a mapping change (the
+mapping file is sorted by rank); `CHANGELOG.md` and `last_verified` ignore rank.
 
 | file | contents |
 |---|---|
-| `cmc_to_cg.csv` / `.json` | accepted matches only: `cmc_id, cmc_symbol, cmc_name, cg_id, match_method, confidence, flags, last_verified`, sorted by `cmc_id`. The JSON is `{"generated_at": …, "mappings": [...]}` |
+| `cmc_to_cg.csv` / `.json` | accepted matches only: `cmc_rank, cmc_id, cmc_symbol, cmc_name, cg_id, match_method, confidence, flags, last_verified`, sorted by CMC rank (unranked last, then `cmc_id`). The JSON is `{"generated_at": …, "mappings": [...]}` |
 | `review_queue.csv` | flagged, ambiguous and unmatched coins, most important (by CMC rank) first, with `suggested_cg_id` and all `candidates` (JSON) |
 | `networks_cmc_cg.csv` | the network map with its evidence: chain IDs, overlap count and share, runner-up, name score |
 | `report.md` | counts by status, method and flag; match rate overall and for the top 100/1,000/5,000; gold-set precision; thresholds |

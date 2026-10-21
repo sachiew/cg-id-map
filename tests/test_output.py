@@ -64,12 +64,15 @@ def publish(tmp: Path, rows: list[MatchRow], now: datetime) -> object:
     return write_published(tmp, "cmc", rows, [], Thresholds(), now, GoldResult(2, 2, []))
 
 
-def test_slim_csv_has_only_accepted_sorted_numerically(tmp_path: Path) -> None:
-    publish(tmp_path, base_rows(), DAY1)
+def test_slim_csv_has_only_accepted_sorted_by_rank(tmp_path: Path) -> None:
+    rows_in = [*base_rows(), row("825", "tether", rank=3), row("999", "unranked")]
+    rows_in[-1].rank = None
+    publish(tmp_path, rows_in, DAY1)
     rows = read(tmp_path / "cmc_to_cg.csv")
-    assert [r["cmc_id"] for r in rows] == ["1", "1027"]
-    assert list(rows[0]) == ["cmc_id", "cmc_symbol", "cmc_name", "cg_id", "match_method",
-                             "confidence", "flags", "last_verified"]  # fmt: skip
+    assert [r["cmc_id"] for r in rows] == ["1", "825", "1027", "999"]  # ranks 1, 3, 1027, none
+    assert [r["cmc_rank"] for r in rows] == ["1", "3", "1027", ""]
+    assert list(rows[0]) == ["cmc_rank", "cmc_id", "cmc_symbol", "cmc_name", "cg_id",
+                             "match_method", "confidence", "flags", "last_verified"]  # fmt: skip
     assert rows[0]["last_verified"] == "2026-10-20"
     payload = json.loads((tmp_path / "cmc_to_cg.json").read_text())
     assert payload["generated_at"] == "2026-10-20T03:17:00Z" and payload["mappings"] == rows
@@ -167,3 +170,14 @@ def test_market_flags_are_not_published_on_accepted_rows(tmp_path: Path) -> None
     assert before == {p.name: p.read_bytes() for p in tmp_path.iterdir()}
     write_full(tmp_path / "full", "cmc", rows, [], Thresholds(), DAY1)
     assert "price_discrepancy" in read(tmp_path / "full" / "cmc_to_cg.csv")[0]["flags"]
+
+
+def test_rank_moves_reorder_the_file_but_are_not_mapping_changes(tmp_path: Path) -> None:
+    publish(tmp_path, base_rows(), DAY1)
+    moved = [r.model_copy(update={"rank": 5000 - (r.rank or 0)}) for r in base_rows()]
+    changes = publish(tmp_path, moved, DAY2)
+    rows = read(tmp_path / "cmc_to_cg.csv")
+    assert [r["cmc_id"] for r in rows] == ["1027", "1"]  # new order
+    assert not changes.any  # type: ignore[attr-defined]
+    assert {r["last_verified"] for r in rows} == {"2026-10-20"}
+    assert "2026-10-21" not in (tmp_path / "CHANGELOG.md").read_text()
