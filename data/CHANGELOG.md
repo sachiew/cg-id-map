@@ -2,6 +2,26 @@
 
 One section per run that changed the published mappings.
 
+## 2026-10-21
+
++5 new, -4 removed, ~0 changed
+
+### New mappings (5)
+
+- `11646` REGEN (Regen Network) → `regen`
+- `15893` RBC (Ruby Coin) → `ruby-coin`
+- `35697` PI (Pi) → `pi-network`
+- `39490` TSM (Taiwan Semiconductor Manufacturing (Derivatives)) → `taiwan-semiconductor-manufacturing-dinari-tokenized-stock`
+- `42537` UVXYB (ProShares Ultra VIX Short-Term Futures ETF  Tokenized bStocks) → `proshares-ultra-vix-short-term-futures-etf-bstocks-tokenized-etf`
+
+### Removed mappings (4)
+
+- `15876` BOMB (Bomb Money) → `bomb-money`
+- `33051` JIN (JinPeng) → `jinpeng`
+- `38456` KO (Kyuzo's Friends) → `kyuzo-s-friends`
+- `38604` HARIKO (Inu Hariko) → `inu-hariko`
+
+
 ## 2026-10-20
 
 +0 new, -1 removed, ~0 changed

@@ -1,19 +1,19 @@
 cmc_platform_id,cmc_platform_name,cmc_platform_slug,cmc_chain_id,token_count,cg_platform_id,suggested_cg_platform_id,chain_identifier,status,method,confidence,overlap_count,overlap_share,runner_up,runner_up_count,name_score,note
-1,Ethereum,ethereum,1,2388,ethereum,ethereum,1,accepted,chain_id+overlap,high,2018,0.8451,binance-smart-chain,139,100.0,
+1,Ethereum,ethereum,1,2387,ethereum,ethereum,1,accepted,chain_id+overlap,high,2017,0.8450,binance-smart-chain,139,100.0,
 2,Tron10,tron,,5,,tron,,needs_review,,low,3,0.6000,,0,80.0,only 3 shared addresses (< 20)
 3,Vaulta,vaulta,,3,,eos,,needs_review,,low,1,0.3333,,0,0.0,only 1 shared addresses (< 20)
 4,Neo,neo,,4,,neo,,needs_review,,low,1,0.2500,,0,100.0,only 1 shared addresses (< 20)
 8,Chiliz Legacy Chain,chiliz,,2,,chiliz,88888,needs_review,,low,1,0.5000,,0,100.0,only 1 shared addresses (< 20)
 11,WAX,wax,,2,,wax,,needs_review,,low,0,0.0000,,0,100.0,name similarity only
-14,BNB Smart Chain (BEP20),bnb,56,1603,binance-smart-chain,binance-smart-chain,56,accepted,chain_id+overlap,high,1086,0.6775,base,12,100.0,
+14,BNB Smart Chain (BEP20),bnb,56,1601,binance-smart-chain,binance-smart-chain,56,accepted,chain_id+overlap,high,1085,0.6777,base,12,100.0,
 15,BNB Beacon Chain (BEP2),bnb,,8,,binancecoin,,needs_review,,low,3,0.3750,,0,100.0,only 3 shared addresses (< 20)
-16,Solana,solana,,1530,solana,solana,,accepted,name+overlap,high,1350,0.8824,fogo,1,100.0,
+16,Solana,solana,,1529,solana,solana,,accepted,name+overlap,high,1349,0.8823,fogo,1,100.0,
 17,Algorand,algorand,,1,,algorand,,needs_review,,low,0,0.0000,,0,100.0,name similarity only
 18,ICP,internet-computer,,17,,internet-computer,,needs_review,,low,14,0.8235,,0,20.0,only 14 shared addresses (< 20)
 19,HECO,htx-token,128,2,huobi-token,huobi-token,128,accepted,chain_id+overlap,high,1,0.5000,,0,100.0,
 20,Gnosis Chain,gnosis-gno,100,5,xdai,xdai,100,accepted,chain_id+overlap,high,5,1.0000,,0,100.0,
 21,Wanchain,wanchain,888,1,wanchain,wanchain,888,accepted,chain_id+overlap,high,1,1.0000,,0,100.0,
-24,Fantom,fantom,250,4,fantom,fantom,250,accepted,chain_id+overlap,high,3,0.7500,arbitrum-one,1,100.0,
+24,Fantom,fantom,250,4,fantom,fantom,250,accepted,chain_id+overlap,high,3,0.7500,canto,1,100.0,
 25,Polygon,polygon-ecosystem-token,137,145,polygon-pos,polygon-pos,137,accepted,chain_id+overlap,high,104,0.7172,binance-smart-chain,1,100.0,
 26,KAIA,kaia,8217,16,klay-token,klay-token,8217,accepted,chain_id+overlap,high,14,0.8750,,0,100.0,
 27,Stellar,stellar,,5,stellar,stellar,,accepted,name+overlap,medium,5,1.0000,,0,100.0,small network: 5/5 addresses shared
@@ -72,7 +72,7 @@ cmc_platform_id,cmc_platform_name,cmc_platform_slug,cmc_chain_id,token_count,cg_
 208,ZKFair,zkfair,,1,,zkfair,,needs_review,,low,0,0.0000,,0,100.0,name similarity only
 210,Blast,blast,81457,3,blast,blast,81457,accepted,chain_id+overlap,high,3,1.0000,,0,100.0,
 213,Atomicals-ARC20,bitcoin,,1,,,,unmapped,,,0,0.0000,,0,0.0,
-216,X Layer,okb,196,62,x-layer,x-layer,196,accepted,chain_id+overlap,high,30,0.4839,arbitrum-one,4,100.0,
+216,X Layer,okb,196,61,x-layer,x-layer,196,accepted,chain_id+overlap,high,30,0.4918,arbitrum-one,4,100.0,
 219,Runes,bitcoin,,4,,,,unmapped,,,0,0.0000,,0,0.0,
 226,Sei v2,sei,1329,1,sei-v2,sei-v2,1329,accepted,chain_id+overlap,high,1,1.0000,,0,100.0,
 228,Metal,metal,,1,,metal-l2,,needs_review,,low,0,0.0000,,0,100.0,name similarity only

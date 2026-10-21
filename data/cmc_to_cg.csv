@@ -1145,6 +1145,7 @@ cmc_id,cmc_symbol,cmc_name,cg_id,match_method,confidence,flags,last_verified
 11599,ALI,Alita Finance,alita,matched_contract,high,name_mismatch,2026-10-20
 11620,IXS,IXS,ix-swap,matched_contract,high,,2026-10-20
 11621,PUNK,Punk Vault (NFTX),punk-vault-nftx,matched_contract,high,,2026-10-20
+11646,REGEN,Regen Network,regen,matched_name_price,medium,name_mismatch,2026-10-21
 11649,WNT,Wicrypt,wicrypt,matched_contract,high,,2026-10-20
 11664,YAY,YAY Network,yay-games,matched_contract,high,,2026-10-20
 11670,FIWA,DeFi Warrior (FIWA),defi-warrior,matched_contract,high,name_mismatch,2026-10-20
@@ -1425,7 +1426,7 @@ cmc_id,cmc_symbol,cmc_name,cg_id,match_method,confidence,flags,last_verified
 15841,KNIGHT,KnightSwap,knightswap,matched_contract,high,,2026-10-20
 15858,GCOIN,Galaxy Fight Club,galaxy-fight-club,matched_contract,high,,2026-10-20
 15870,LOA,League of Ancients,league-of-ancients,matched_contract,high,,2026-10-20
-15876,BOMB,Bomb Money,bomb-money,matched_contract,high,,2026-10-20
+15893,RBC,Ruby Coin,ruby-coin,matched_name_price,medium,symbol_mismatch,2026-10-21
 15973,MEOW,MEOW,zero-tech,matched_contract,high,,2026-10-20
 16007,RVC,Revenue Coin,revenue-coin,matched_contract,high,,2026-10-20
 16010,SILO,Silo Finance,silo-finance-2,matched_contract,high,,2026-10-20
@@ -3286,7 +3287,6 @@ cmc_id,cmc_symbol,cmc_name,cg_id,match_method,confidence,flags,last_verified
 33039,USDS,USDS,usds,matched_contract,high,,2026-10-20
 33041,AGENT,AgentLayer,agentlayer,matched_contract,high,,2026-10-20
 33050,PEPE,Based Pepe,based-pepe,matched_contract,high,,2026-10-20
-33051,JIN,JinPeng,jinpeng,matched_contract,high,,2026-10-20
 33055,slisBNBx,slisBNBx,slisbnb-non-transferable-receipt,matched_contract,high,name_mismatch,2026-10-20
 33072,UNCN,Unseen,unseen,matched_contract,high,,2026-10-20
 33076,MOODENG,MOO DENG (moodeng.vip),moo-deng-2,matched_contract,high,name_mismatch,2026-10-20
@@ -3982,6 +3982,7 @@ cmc_id,cmc_symbol,cmc_name,cg_id,match_method,confidence,flags,last_verified
 35689,TEVA,Tevaera,tevaera,matched_contract,high,,2026-10-20
 35690,B3,B3 (Base),b3,matched_contract,high,,2026-10-20
 35693,BORGY,BORGY,borgy,matched_contract,high,symbol_mismatch,2026-10-20
+35697,PI,Pi,pi-network,matched_name_price,medium,name_mismatch,2026-10-21
 35701,GOHOME,GOHOME,gohome,matched_contract,high,,2026-10-20
 35702,NIL,Nillion,nillion,matched_contract,high,,2026-10-20
 35706,ANITA,Anita AI,anita-ai,matched_contract,high,,2026-10-20
@@ -4907,7 +4908,6 @@ cmc_id,cmc_symbol,cmc_name,cg_id,match_method,confidence,flags,last_verified
 38452,ETAN,Etarn,etarn,matched_contract,high,,2026-10-20
 38454,GRIPPY,GRIPPY,grippy,matched_contract,high,,2026-10-20
 38455,XMN,xMoney,xmoney-2,matched_contract,high,,2026-10-20
-38456,KO,Kyuzo's Friends,kyuzo-s-friends,matched_contract,high,,2026-10-20
 38457,XMD,Metal Dollar,metal-dollar,matched_name_symbol,high,network_unmapped,2026-10-20
 38461,DUST,Dust,dust-3,matched_contract,high,,2026-10-20
 38464,NOM,Nomina,nomina,matched_contract,high,,2026-10-20
@@ -4983,7 +4983,6 @@ cmc_id,cmc_symbol,cmc_name,cg_id,match_method,confidence,flags,last_verified
 38599,TRASH,TRASH COIN,trash-coin,matched_contract,high,,2026-10-20
 38602,SYND,Syndicate,syndicate-3,matched_contract,high,,2026-10-20
 38603,DEW,DEW,dew-2,matched_contract,high,,2026-10-20
-38604,HARIKO,Inu Hariko,inu-hariko,matched_contract,high,,2026-10-20
 38607,BABYASTER,Baby Aster,baby-aster,matched_contract,high,,2026-10-20
 38609,SANTA,Santacoin,santacoin,matched_contract,high,,2026-10-20
 38610,WBULL,Wall St. Bull,bnb-wallstreet-bull,matched_contract,high,name_mismatch,2026-10-20
@@ -5413,6 +5412,7 @@ cmc_id,cmc_symbol,cmc_name,cg_id,match_method,confidence,flags,last_verified
 39459,WOJAK,wojak (wojakcto.com),wojak-5,matched_contract,high,name_mismatch,2026-10-20
 39461,INX,Infinex,infinex-2,matched_contract,high,,2026-10-20
 39476,CATCOIN,Catcoin (catcoin.io),catcoin-3,matched_contract,high,name_mismatch,2026-10-20
+39490,TSM,Taiwan Semiconductor Manufacturing (Derivatives),taiwan-semiconductor-manufacturing-dinari-tokenized-stock,matched_name_price,medium,name_mismatch,2026-10-21
 39520,iUSDT,Tether Near Bridged,near-intents-bridged-usdt,matched_contract,high,name_mismatch|symbol_mismatch,2026-10-20
 39521,AZTEC,Aztec,aztec,matched_contract,high,,2026-10-20
 39522,MOLT,Moltbook,moltbook,matched_contract,high,,2026-10-20
@@ -6420,6 +6420,7 @@ Pre-IPO stock (Republic)",openai-republic-pre-ipo,matched_contract,high,name_mis
 42524,DNA,NeoSoul,neosoul,matched_contract,high,,2026-10-20
 42527,CATCOIN,CatCoin,catcoin-6,matched_contract,high,symbol_mismatch,2026-10-20
 42529,妖蝶,YAODIE,yaodie,matched_contract,high,,2026-10-20
+42537,UVXYB,ProShares Ultra VIX Short-Term Futures ETF  Tokenized bStocks,proshares-ultra-vix-short-term-futures-etf-bstocks-tokenized-etf,matched_contract,high,name_mismatch,2026-10-21
 42538,RWUSD,RWUSD,rwusd,matched_name_symbol,high,,2026-10-20
 42542,CRAWLER,Crawlerpad,crawlerpad,matched_contract,high,,2026-10-20
 42544,BIDUc,"Baidu, Inc. Tokenized Stock (Coinbase)",baidu-inc-coinbase-tokenized-stock,matched_contract,high,name_mismatch,2026-10-20

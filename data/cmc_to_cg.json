@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T15:40:48Z",
+ "generated_at": "2026-10-21T01:55:25Z",
  "mappings": [
   {
    "cmc_id": "1",
@@ -11462,6 +11462,16 @@
    "last_verified": "2026-10-20"
   },
   {
+   "cmc_id": "11646",
+   "cmc_symbol": "REGEN",
+   "cmc_name": "Regen Network",
+   "cg_id": "regen",
+   "match_method": "matched_name_price",
+   "confidence": "medium",
+   "flags": "name_mismatch",
+   "last_verified": "2026-10-21"
+  },
+  {
    "cmc_id": "11649",
    "cmc_symbol": "WNT",
    "cmc_name": "Wicrypt",
@@ -14262,14 +14272,14 @@
    "last_verified": "2026-10-20"
   },
   {
-   "cmc_id": "15876",
-   "cmc_symbol": "BOMB",
-   "cmc_name": "Bomb Money",
-   "cg_id": "bomb-money",
-   "match_method": "matched_contract",
-   "confidence": "high",
-   "flags": "",
-   "last_verified": "2026-10-20"
+   "cmc_id": "15893",
+   "cmc_symbol": "RBC",
+   "cmc_name": "Ruby Coin",
+   "cg_id": "ruby-coin",
+   "match_method": "matched_name_price",
+   "confidence": "medium",
+   "flags": "symbol_mismatch",
+   "last_verified": "2026-10-21"
   },
   {
    "cmc_id": "15973",
@@ -32872,16 +32882,6 @@
    "last_verified": "2026-10-20"
   },
   {
-   "cmc_id": "33051",
-   "cmc_symbol": "JIN",
-   "cmc_name": "JinPeng",
-   "cg_id": "jinpeng",
-   "match_method": "matched_contract",
-   "confidence": "high",
-   "flags": "",
-   "last_verified": "2026-10-20"
-  },
-  {
    "cmc_id": "33055",
    "cmc_symbol": "slisBNBx",
    "cmc_name": "slisBNBx",
@@ -39830,6 +39830,16 @@
    "confidence": "high",
    "flags": "symbol_mismatch",
    "last_verified": "2026-10-20"
+  },
+  {
+   "cmc_id": "35697",
+   "cmc_symbol": "PI",
+   "cmc_name": "Pi",
+   "cg_id": "pi-network",
+   "match_method": "matched_name_price",
+   "confidence": "medium",
+   "flags": "name_mismatch",
+   "last_verified": "2026-10-21"
   },
   {
    "cmc_id": "35701",
@@ -49082,16 +49092,6 @@
    "last_verified": "2026-10-20"
   },
   {
-   "cmc_id": "38456",
-   "cmc_symbol": "KO",
-   "cmc_name": "Kyuzo's Friends",
-   "cg_id": "kyuzo-s-friends",
-   "match_method": "matched_contract",
-   "confidence": "high",
-   "flags": "",
-   "last_verified": "2026-10-20"
-  },
-  {
    "cmc_id": "38457",
    "cmc_symbol": "XMD",
    "cmc_name": "Metal Dollar",
@@ -49836,16 +49836,6 @@
    "cmc_symbol": "DEW",
    "cmc_name": "DEW",
    "cg_id": "dew-2",
-   "match_method": "matched_contract",
-   "confidence": "high",
-   "flags": "",
-   "last_verified": "2026-10-20"
-  },
-  {
-   "cmc_id": "38604",
-   "cmc_symbol": "HARIKO",
-   "cmc_name": "Inu Hariko",
-   "cg_id": "inu-hariko",
    "match_method": "matched_contract",
    "confidence": "high",
    "flags": "",
@@ -54140,6 +54130,16 @@
    "confidence": "high",
    "flags": "name_mismatch",
    "last_verified": "2026-10-20"
+  },
+  {
+   "cmc_id": "39490",
+   "cmc_symbol": "TSM",
+   "cmc_name": "Taiwan Semiconductor Manufacturing (Derivatives)",
+   "cg_id": "taiwan-semiconductor-manufacturing-dinari-tokenized-stock",
+   "match_method": "matched_name_price",
+   "confidence": "medium",
+   "flags": "name_mismatch",
+   "last_verified": "2026-10-21"
   },
   {
    "cmc_id": "39520",
@@ -64190,6 +64190,16 @@
    "confidence": "high",
    "flags": "",
    "last_verified": "2026-10-20"
+  },
+  {
+   "cmc_id": "42537",
+   "cmc_symbol": "UVXYB",
+   "cmc_name": "ProShares Ultra VIX Short-Term Futures ETF  Tokenized bStocks",
+   "cg_id": "proshares-ultra-vix-short-term-futures-etf-bstocks-tokenized-etf",
+   "match_method": "matched_contract",
+   "confidence": "high",
+   "flags": "name_mismatch",
+   "last_verified": "2026-10-21"
   },
   {
    "cmc_id": "42538",
