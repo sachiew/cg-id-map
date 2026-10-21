@@ -4,6 +4,19 @@ One section per run that changed the published mappings.
 
 ## 2026-10-21
 
++1 new, -0 removed, ~1 changed
+
+### New mappings (1)
+
+- `29647` KERMIT (Kermit) → `kermit-cc0e2d66-4b46-4eaf-9f4e-5caa883d1c09`
+
+### Confidence / method / flag changes (1)
+
+- `31567` flags: many_to_one → -
+
+
+## 2026-10-21
+
 +6 new, -4 removed, ~0 changed
 
 ### New mappings (6)
