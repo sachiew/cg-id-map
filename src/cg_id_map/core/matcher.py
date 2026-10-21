@@ -40,6 +40,8 @@ class Candidate(BaseModel):
     mcap_usd: float | None = None
     price_diff_pct: float | None = None
     mcap_diff_pct: float | None = None
+    # Provider ID of another coin whose accepted mapping already holds this CG coin.
+    claimed_by: str | None = None
 
 
 class MatchRow(BaseModel):
@@ -244,14 +246,7 @@ class Matcher:
                 return row
 
         # Step 3-4: uncertain -> price/mcap guardrail over plausible candidates.
-        plausible = exact or [
-            c
-            for c in row.candidates
-            if (c.symbol_equal and (c.name_score >= self.t.name_fuzzy_min or c.slug_equal))
-            or (c.name_equal and not c.symbol_equal)
-            or c.slug_equal
-            or c.via == "contract_other_network"
-        ]
+        plausible = exact or [c for c in row.candidates if self._plausible(c)]
         if not plausible:
             if row.candidates:  # symbol-only collisions with unrelated names
                 row.flag(Flag.AMBIGUOUS_MULTIPLE_CANDIDATES)
@@ -284,6 +279,15 @@ class Matcher:
         return self._unresolved(row, plausible, Status.FLAGGED, Confidence.LOW)
 
     # ------------------------------------------------------------------ helpers
+
+    def _plausible(self, c: Candidate) -> bool:
+        """Worth a price check: same ticker with a close name, same name, or slug == CG id."""
+        return (
+            (c.symbol_equal and (c.name_score >= self.t.name_fuzzy_min or c.slug_equal))
+            or (c.name_equal and not c.symbol_equal)
+            or c.slug_equal
+            or c.via == "contract_other_network"
+        )
 
     def _was(self, provider_id: str, cg_id: str) -> bool:
         return self.previous.get(provider_id) == cg_id
@@ -397,6 +401,75 @@ def resolve_many_to_one(
                 r.status, r.confidence, r.cg_id = Status.FLAGGED, Confidence.LOW, None
 
 
+# Flags describing why a row was unresolved; cleared when the second pass resolves it.
+_UNRESOLVED_FLAGS = frozenset(
+    {
+        Flag.AMBIGUOUS_MULTIPLE_CANDIDATES,
+        Flag.MANY_TO_ONE,
+        Flag.PRICE_DISCREPANCY,
+        Flag.MCAP_DISCREPANCY,
+        Flag.NAME_MISMATCH,
+        Flag.SYMBOL_MISMATCH,
+        Flag.NO_MARKET_DATA,
+    }
+)
+
+
+def resolve_claimed(rows: list[MatchRow], m: Matcher) -> None:
+    """Second pass: a CG coin already held by another provider coin can't also be this one.
+
+    For every flagged/ambiguous row, candidates claimed by another accepted row are marked
+    (`claimed_by`) and taken out of play. If exactly one remaining plausible candidate passes the
+    price guardrail, it is accepted (matched_name_price, medium). Otherwise the suggestion moves to
+    the best unclaimed candidate. Two rows resolving to the same coin are both left for review.
+    """
+    claimed = {r.cg_id: r.provider_id for r in rows if r.status is Status.ACCEPTED and r.cg_id}
+    resolved: dict[str, list[tuple[MatchRow, Candidate]]] = defaultdict(list)
+    for r in rows:
+        if r.status not in (Status.FLAGGED, Status.AMBIGUOUS):
+            continue
+        for c in r.candidates:
+            holder = claimed.get(c.cg_id)
+            c.claimed_by = holder if holder != r.provider_id else None
+        free = [c for c in r.candidates if c.claimed_by is None]
+        if not free:
+            # Every candidate already belongs to another coin: usually a duplicate or copycat
+            # listing with no CoinGecko equivalent. Don't point reviewers at a taken coin.
+            r.status, r.confidence, r.suggested_cg_id = Status.UNMATCHED, Confidence.NONE, None
+            r.cg_price_usd = r.cg_mcap_usd = r.price_diff_pct = r.mcap_diff_pct = None
+            r.note = "all candidates already mapped to other coins (duplicate or copycat listing?)"
+            continue
+        if len(free) == len(r.candidates):
+            continue  # nothing eliminated: the first pass already judged this set
+        passing = [
+            c
+            for c in free
+            if m._plausible(c) and m._market_ok(c, keep=m._was(r.provider_id, c.cg_id))
+        ]
+        if len(passing) == 1 and r.price_usd is not None:
+            resolved[passing[0].cg_id].append((r, passing[0]))
+            continue
+        _point_at(r, sorted(free, key=_candidate_order)[0])
+
+    for claims in resolved.values():
+        if len(claims) > 1:
+            for r, c in claims:
+                _point_at(r, c)
+            continue
+        r, c = claims[0]
+        held = sorted(f"{x.cg_id} (by {x.claimed_by})" for x in r.candidates if x.claimed_by)
+        r.flags = [f for f in r.flags if f not in _UNRESOLVED_FLAGS]
+        md = {c.cg_id: MarketData(price_usd=c.price_usd, mcap_usd=c.mcap_usd)}
+        m._accept(r, c.cg_id, Method.NAME_PRICE, Confidence.MEDIUM, md)
+        r.note = "other candidates already mapped: " + ", ".join(held)
+
+
+def _point_at(r: MatchRow, c: Candidate) -> None:
+    r.suggested_cg_id = c.cg_id
+    r.cg_price_usd, r.cg_mcap_usd = c.price_usd, c.mcap_usd
+    r.price_diff_pct, r.mcap_diff_pct = c.price_diff_pct, c.mcap_diff_pct
+
+
 def match_all(
     matcher: Matcher,
     plans: list[CoinPlan],
@@ -405,4 +478,5 @@ def match_all(
 ) -> list[MatchRow]:
     rows = [matcher.decide(p, prov_md, cg_md) for p in plans]
     resolve_many_to_one(rows, matcher.t, matcher.previous)
+    resolve_claimed(rows, matcher)
     return rows

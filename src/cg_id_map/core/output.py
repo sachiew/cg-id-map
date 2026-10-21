@@ -88,6 +88,8 @@ def _cands(cands: list[Candidate], with_market: bool) -> str:
             "via": c.via,
             "name_score": c.name_score,
         }
+        if c.claimed_by:
+            d["claimed_by"] = c.claimed_by
         if with_market:
             d |= {
                 "price_usd": sig(c.price_usd) or None,

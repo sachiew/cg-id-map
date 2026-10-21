@@ -336,7 +336,7 @@ def test_many_to_one_demotes_name_based_rows() -> None:
         [cg("zeta", "zet", "Zeta", ethereum=addr)],
     )
     assert rows["23"].status is Status.ACCEPTED and Flag.MANY_TO_ONE in rows["23"].flags
-    assert (rows["24"].status, rows["24"].cg_id) == (Status.FLAGGED, None)
+    assert (rows["24"].status, rows["24"].cg_id) == (Status.UNMATCHED, None)
     assert Flag.MANY_TO_ONE in rows["24"].flags
 
 
@@ -387,7 +387,8 @@ def test_many_to_one_copycat_resolved_by_price() -> None:
         cg_md={"dogecoin": md(0.2001)},
     )
     assert (rows["74"].status, rows["74"].cg_id) == (Status.ACCEPTED, "dogecoin")
-    assert (rows["31093"].status, rows["31093"].cg_id) == (Status.FLAGGED, None)
+    # The copycat loses the claim; with no other candidate left it is unmatched (no CG equivalent).
+    assert (rows["31093"].status, rows["31093"].cg_id) == (Status.UNMATCHED, None)
     assert Flag.MANY_TO_ONE in rows["74"].flags and Flag.MANY_TO_ONE in rows["31093"].flags
 
 
@@ -408,7 +409,7 @@ def test_many_to_one_prefers_exact_name_over_price_match() -> None:
         prov_md={"30168": md(0.05), "1343": md(0.05)},
         cg_md={"stratis": md(0.05)},
     )
-    assert rows["30168"].cg_id == "stratis" and rows["1343"].status is Status.FLAGGED
+    assert rows["30168"].cg_id == "stratis" and rows["1343"].status is Status.UNMATCHED
 
 
 def run_prev(
@@ -441,3 +442,114 @@ def test_buffer_zone_only_applies_to_the_previously_published_cg_id() -> None:
     coins, cgs = [pc("11646", "Regen Network", "REGEN")], [cg("regen", "regen", "Regen")]
     r = run_prev(coins, cgs, {"11646": md(1.07)}, {"regen": md(1.00)}, {"11646": "other-coin"})
     assert r["11646"].status is Status.FLAGGED
+
+
+# ------------------------------------------------------------------ second pass: claimed candidates
+
+DRAGON_ADDR = "0x" + "d0" * 20
+DRAGON_CG = [
+    cg("black-dragon", "blackdragon", "Black Dragon", ethereum=DRAGON_ADDR),
+    cg("dragon-4", "dragon", "DRAGON"),
+    cg("blackdragon-token", "bdt", "BlackDragon"),
+]
+
+
+def test_candidate_held_by_another_coin_is_excluded_and_price_decides() -> None:
+    # CMC lists two tokens: "Black Dragon"/BLACKDRAGON (contract match) and "BLACK DRAGON"/DRAGON.
+    rows = run(
+        [
+            pc("29627", "Black Dragon", "BLACKDRAGON", contracts=[("1", DRAGON_ADDR)]),
+            pc("29340", "BLACK DRAGON", "DRAGON", slug="black-dragon"),
+        ],
+        DRAGON_CG,
+        # First pass: black-dragon and dragon-4 both pass on price -> ambiguous. Second pass:
+        # black-dragon is held by 29627's contract match, leaving dragon-4.
+        prov_md={"29627": md(0.05), "29340": md(0.05)},
+        cg_md={"black-dragon": md(0.05), "dragon-4": md(0.0505), "blackdragon-token": md(7.0)},
+    )
+    assert rows["29627"].cg_id == "black-dragon" and rows["29627"].method is Method.CONTRACT
+    r = rows["29340"]
+    assert (r.status, r.cg_id, r.method, r.confidence) == (
+        Status.ACCEPTED,
+        "dragon-4",
+        Method.NAME_PRICE,
+        Confidence.MEDIUM,
+    )
+    assert Flag.AMBIGUOUS_MULTIPLE_CANDIDATES not in r.flags
+    assert "black-dragon (by 29627)" in r.note
+    assert {c.cg_id: c.claimed_by for c in r.candidates}["black-dragon"] == "29627"
+
+
+def test_claimed_candidates_move_the_suggestion_when_still_unresolved() -> None:
+    rows = run(
+        [
+            pc("29627", "Black Dragon", "BLACKDRAGON", contracts=[("1", DRAGON_ADDR)]),
+            pc("29340", "BLACK DRAGON", "DRAGON", slug="black-dragon"),
+        ],
+        DRAGON_CG,
+        prov_md={"29627": md(1.0), "29340": md(0.05)},
+        cg_md={"black-dragon": md(1.0), "dragon-4": md(0.0505), "blackdragon-token": md(0.0501)},
+    )
+    r = rows["29340"]
+    assert r.status is Status.AMBIGUOUS and r.cg_id is None
+    assert r.suggested_cg_id in {"dragon-4", "blackdragon-token"}  # never the claimed coin
+
+
+def test_pi_resolves_once_the_iou_listing_is_claimed() -> None:
+    rows = run(
+        [pc("16193", "Pi Network IOU", "PI"), pc("35697", "Pi", "PI", slug="pi")],
+        [cg("pi-network-iou", "pi", "Pi Network IOU"), cg("pi-network", "pi", "Pi Network")],
+        prov_md={"16193": md(0.30), "35697": md(0.30)},
+        cg_md={"pi-network-iou": md(0.301), "pi-network": md(0.302)},
+    )
+    assert rows["16193"].cg_id == "pi-network-iou"
+    assert (rows["35697"].cg_id, rows["35697"].method) == ("pi-network", Method.NAME_PRICE)
+
+
+def test_two_rows_resolving_to_the_same_free_coin_stay_in_review() -> None:
+    addr = "0x" + "e1" * 20
+    rows = run(
+        [
+            pc("1", "Zed", "ZED", contracts=[("1", addr)]),
+            pc("2", "Zed", "ZED", slug="zed-two"),
+            pc("3", "Zed", "ZED", slug="zed-three"),
+        ],
+        [cg("zed", "zed", "Zed", ethereum=addr), cg("zed-free", "zed", "Zed Coin")],
+        prov_md={"1": md(1.0), "2": md(2.0), "3": md(2.0)},
+        cg_md={"zed": md(1.0), "zed-free": md(2.0)},
+    )
+    assert rows["2"].status is not Status.ACCEPTED and rows["3"].status is not Status.ACCEPTED
+    assert rows["2"].suggested_cg_id == rows["3"].suggested_cg_id == "zed-free"
+
+
+def test_real_black_dragon_case_no_longer_suggests_the_claimed_coin() -> None:
+    # Live data 2026-10-20: CMC 29340 priced 2e-14, nothing on CG is close -> stays in review,
+    # but the suggestion must not be black-dragon (held by 29627).
+    rows = run(
+        [
+            pc("29627", "Black Dragon", "BLACKDRAGON", contracts=[("1", DRAGON_ADDR)]),
+            pc("29340", "BLACK DRAGON", "DRAGON", slug="black-dragon"),
+        ],
+        DRAGON_CG,
+        prov_md={"29627": md(1.0972e-08), "29340": md(2.0154e-14)},
+        cg_md={
+            "black-dragon": md(1.0925e-08),
+            "dragon-4": md(0.000483),
+            "blackdragon-token": md(0.165757),
+        },
+    )
+    r = rows["29340"]
+    assert r.status is not Status.ACCEPTED and r.suggested_cg_id == "dragon-4"
+    assert {c.cg_id: c.claimed_by for c in r.candidates}["black-dragon"] == "29627"
+
+
+def test_row_whose_candidates_are_all_taken_becomes_unmatched() -> None:
+    rows = run(
+        [pc("74", "Dogecoin", "DOGE"), pc("31093", "Dogecoin", "DOGE")],
+        [cg("dogecoin", "doge", "Dogecoin")],
+        prov_md={"74": md(0.20), "31093": md(0.0001)},
+        cg_md={"dogecoin": md(0.2001)},
+    )
+    r = rows["31093"]
+    assert (r.status, r.suggested_cg_id, r.cg_id) == (Status.UNMATCHED, None, None)
+    assert r.candidates[0].claimed_by == "74" and "copycat" in r.note

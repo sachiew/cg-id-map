@@ -99,6 +99,11 @@ way coins sitting near the line don't flip in and out of the published file ever
 When two CMC coins claim the same CoinGecko coin (CMC lists some copycats with identical name and
 ticker), a contract match wins; otherwise only the claimant whose price agrees keeps the mapping.
 
+A CoinGecko coin already mapped to one CMC coin is then taken out of play for every other CMC
+coin still under review: those candidates are marked `claimed_by` in `review_queue.csv`, and if
+exactly one remaining candidate passes the price check it is accepted (`matched_name_price`). The
+review queue never suggests a coin that is already taken.
+
 Overrides in `overrides/` always win.
 
 ## Output files
@@ -137,7 +142,7 @@ CMC ID now points to a different CoinGecko coin.
 | `accepted` | `cg_id` is set and published |
 | `flagged` | there is a suggestion, but a guardrail failed (price, market data, many-to-one) |
 | `ambiguous` | several plausible CoinGecko coins; all are listed |
-| `unmatched` | no candidate at all |
+| `unmatched` | no usable candidate: none found, or every candidate already belongs to another CMC coin (typically a duplicate or copycat listing) |
 | `excluded` | an override says this coin has no CoinGecko equivalent |
 
 **`match_method`** (accepted rows)
