@@ -2,6 +2,52 @@
 
 One section per run that changed the published mappings.
 
+## 2026-10-22
+
++14 new, -16 removed, ~2 changed
+
+### New mappings (14)
+
+- `27673` XD (XDoge) → `xdoge-4`
+- `31162` BDAG (BlockDAG Network) → `blockdag`
+- `38456` KO (Kyuzo's Friends) → `kyuzo-s-friends`
+- `39615` META (Meta Platforms Tokenized Stock (Hyperliquid)) → `meta-platforms-dinari-tokenized-stock`
+- `40904` CNX (Crynux (crynux.io)) → `crynux`
+- `42525` AXIS (Axis Robotics) → `axis-robotics`
+- `42611` TMFB (Direxion Daily 20 Year Treasury Bull 3X ETF Tokenized bStocks) → `direxion-daily-20-year-treasury-bull-3x-etf-bstocks-tokenized-etf`
+- `42612` BRKBB (Berkshire Hathaway Tokenized bStocks) → `berkshire-hathaway-bstocks-tokenized-stock`
+- `42613` BOTB (RoboStrategy Inc Tokenized bStocks) → `robostrategy-bstocks-tokenized-stock`
+- `42614` VSTB (Vistra Corp Tokenized bStocks) → `vistra-corp-bstocks-tokenized-stock`
+- `42615` KSTRB (KraneShares STAR Market 50 ETF Tokenized bStocks) → `kraneshares-star-market-50-etf-bstocks-tokenized-etf`
+- `42635` USDN (Nova USD) → `nova-usd`
+- `42641` KIMCHI (Aura Final Boss) → `aura-final-boss-2`
+- `42643` GLITCH (Infinite Money Glitch (glitchonsol.com)) → `infinite-money-glitch-3`
+
+### Removed mappings (16)
+
+- `17543` MNFT (MongolNFT Coin) → `mongol-nft`
+- `19091` H2O (H2O DAO) → `h2o-dao`
+- `19675` BTE (Betero) → `betero`
+- `20014` KRD (Krypton DAO) → `krypton-dao`
+- `21849` DLC (Diverge Loop) → `diamond-launch`
+- `22008` VBG (Vibing) → `vibing`
+- `24022` CHT (CyberHarbor) → `cyberharbor`
+- `27435` SHRED (ShredN) → `shredn`
+- `30968` LONG (Long) → `long-3`
+- `34916` SEN (Sentio AI) → `sentio-protocol`
+- `35427` L1X (Layer One X) → `layer-one-x-2`
+- `36817` NAKA (Naka Go) → `naka-go`
+- `39703` VTx (Vanguard Total World Tokenised ETF (xStock)) → `vanguard-total-world-xstock`
+- `40059` QUILL (Quill) → `quill`
+- `40586` ASSETFUNDS (AssetFunds) → `assetfunds`
+- `41078` EMRL.D (Emerald Security Token) → `emerald-security-token`
+
+### Confidence / method / flag changes (2)
+
+- `20721` flags: matched_contract_other_network|name_mismatch → matched_contract_other_network
+- `38869` match_method: matched_name_symbol → matched_contract
+
+
 ## 2026-10-21
 
 +1 new, -0 removed, ~1 changed
