@@ -2,6 +2,31 @@
 
 One section per run that changed the published mappings.
 
+## 2026-10-23
+
++4 new, -6 removed, ~1 changed
+
+### New mappings (4)
+
+- `21768` HOICHI (Hoichi) → `hoichi`
+- `40203` CRDO (Credo Technology Group Holding Ltd (Derivatives)) → `credo-technology-group-holding-ltd-ordinary-shares-robinhood-token`
+- `42645` UHI (Universal High Income) → `universal-high-income-2`
+- `42647` WOON (Woon) → `woon`
+
+### Removed mappings (6)
+
+- `8985` EFI (Efinity Token) → `efinity`
+- `9588` O3 (O3 Swap) → `o3-swap`
+- `21775` YYAVAX (Yield Yak AVAX) → `yield-yak-avax`
+- `23151` BTTY (Bitcointry Token) → `bitcointry-token`
+- `39619` AMZN (Amazon Tokenized Stock (Hyperliquid)) → `amazon-dinari-tokenized-stock`
+- `41057` MIXUx (Mixue Tokenized Stock (xStock)) → `mixue-xstock`
+
+### Confidence / method / flag changes (1)
+
+- `29270` match_method: matched_contract → matched_name_symbol
+
+
 ## 2026-10-22
 
 +14 new, -16 removed, ~2 changed
