@@ -2,6 +2,39 @@
 
 One section per run that changed the published mappings.
 
+## 2026-10-24
+
++6 new, -8 removed, ~2 changed
+
+### New mappings (6)
+
+- `1503` JUP (Jupiter) → `jupiter`
+- `5125` MCM (Mochimo) → `mochimo`
+- `15893` RBC (Ruby Coin) → `ruby-coin`
+- `29941` MAGAIBA (Magaiba) → `magaiba`
+- `31692` TRUMP (MAGA) → `maga`
+- `39528` STNXM (Ease Staked NXM) → `ease-staked-nxm`
+
+### Removed mappings (8)
+
+- `4813` XBT (XBIT) → `xbt`
+- `18787` FULA (Functionland) → `functionland`
+- `25013` EUSD (eUSD) → `eusd-27a558b0-8b5b-4225-a614-63539da936f4`
+- `27872` TRUMP (MAGA (magamemecoin.com)) → `maga`
+- `31048` ROCKY (ROCKY) → `rocky-on-base`
+- `32867` CTO (BaseCTO) → `basecto`
+- `34084` D.O.G.E (Department Of Government Efficiency(Base)) → `department-of-government-efficiency-5`
+- `39109` XNT (Neptune) → `neptune-privacy`
+
+### cg_id changed (1)
+
+- `29270` AERO: `aerodrome-finance` → `aero`
+
+### Confidence / method / flag changes (1)
+
+- `33291` flags: many_to_one|name_mismatch → name_mismatch
+
+
 ## 2026-10-23
 
 +4 new, -6 removed, ~1 changed
