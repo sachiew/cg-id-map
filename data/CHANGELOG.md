@@ -2,6 +2,37 @@
 
 One section per run that changed the published mappings.
 
+## 2026-10-25
+
++7 new, -13 removed, ~0 changed
+
+### New mappings (7)
+
+- `4172` LUNC (Terra Classic) → `terra-luna`
+- `4813` XBT (XBIT) → `xbt`
+- `27872` TRUMP (MAGA (magamemecoin.com)) → `maga`
+- `33091` GINNAN (Ginnan Doge's Brother) → `ginnan-doge-s-brother`
+- `34866` KEKE (KEKE Terminal) → `keke-terminal`
+- `35161` MONSTA (Based Monsta) → `based-monsta`
+- `42491` CRWVc (CoreWeave, Inc. Tokenized Stock (Coinbase)) → `coreweave-inc-coinbase-tokenized-stock`
+
+### Removed mappings (13)
+
+- `8476` PREMIA (Premia) → `premia`
+- `15893` RBC (Ruby Coin) → `ruby-coin`
+- `31051` LOBO (LOBO•THE•WOLF•PUP (Bitcoin)) → `lobo-the-wolf-pup-runes`
+- `31162` BDAG (BlockDAG Network) → `blockdag`
+- `31692` TRUMP (MAGA) → `maga`
+- `32710` COLON (Colon) → `colon`
+- `33584` BOPPY (BOPPY) → `boppy-the-bat`
+- `35023` ROCKET (AI ROCKET by Virtuals) → `ai-rocket-by-virtuals`
+- `35706` ANITA (Anita AI) → `anita-ai`
+- `36337` DON (Salamanca) → `salamanca`
+- `37601` IMAGINE (Grok Imagine) → `imagine-3`
+- `39968` DIAMOND (Diamond Hands on TON) → `diamond-hands-4`
+- `40061` WALLI (Wallitelli) → `wallitelli`
+
+
 ## 2026-10-24
 
 +6 new, -8 removed, ~2 changed
