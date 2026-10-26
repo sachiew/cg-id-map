@@ -4,6 +4,39 @@ One section per run that changed the published mappings.
 
 ## 2026-10-26
 
++1 new, -1 removed, ~17 changed
+
+### New mappings (1)
+
+- `24527` XRPC (Xrp Classic (new)) → `xrp-classic-new`
+
+### Removed mappings (1)
+
+- `21926` LEOX (LEOX) → `leox`
+
+### Confidence / method / flag changes (17)
+
+- `74` flags: many_to_one → -
+- `1376` flags: many_to_one → -
+- `16868` flags: many_to_one → -
+- `20317` flags: many_to_one → -
+- `24302` flags: many_to_one → -
+- `27704` flags: many_to_one → -
+- `27872` flags: many_to_one|name_mismatch → name_mismatch
+- `28524` flags: many_to_one|name_mismatch → name_mismatch
+- `29210` flags: many_to_one → -
+- `33211` flags: many_to_one → -
+- `33297` flags: many_to_one|name_mismatch → name_mismatch
+- `34134` flags: many_to_one → -
+- `36321` flags: many_to_one → -
+- `36760` flags: many_to_one → -
+- `38349` flags: many_to_one → -
+- `40000` flags: many_to_one → -
+- `40732` flags: many_to_one|name_mismatch → name_mismatch
+
+
+## 2026-10-26
+
 +5 new, -15 removed, ~0 changed
 
 ### New mappings (5)
