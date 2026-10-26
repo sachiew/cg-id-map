@@ -94,10 +94,13 @@ candidate listed, never guessed.
 
 A match that depends on price is only *newly* accepted within those thresholds, but once it is
 published it stays until prices drift past a wider buffer (default ±10%, market cap ±50%). That
-way coins sitting near the line don't flip in and out of the published file every day.
+way coins sitting near the line don't flip in and out of the published file every day. If two
+CoinGecko candidates both price close, the one already published is kept.
 
 When two CMC coins claim the same CoinGecko coin (CMC lists some copycats with identical name and
-ticker), a contract match wins; otherwise only the claimant whose price agrees keeps the mapping.
+ticker), a contract match wins; otherwise only the claimant whose price agrees keeps the mapping,
+and the one already published wins ties. A CMC coin can't take over a CoinGecko coin published for
+another active CMC coin on name and ticker alone: its price has to agree too.
 
 A CoinGecko coin already mapped to one CMC coin is then taken out of play for every other CMC
 coin still under review: those candidates are marked `claimed_by` in `review_queue.csv`, and if

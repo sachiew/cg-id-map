@@ -256,6 +256,9 @@ class Matcher:
             row.flag(Flag.NO_MARKET_DATA)
             return self._unresolved(row, plausible, Status.FLAGGED, Confidence.LOW)
         passing = [c for c in plausible if self._market_ok(c, keep=self._was(coin.id, c.cg_id))]
+        if len(passing) > 1:
+            # Several candidates price alike: stay on the one already published.
+            passing = [c for c in passing if self._was(coin.id, c.cg_id)] or passing
         if len(passing) == 1:
             c = passing[0]
             self._accept(row, c.cg_id, Method.NAME_PRICE, Confidence.MEDIUM, cg_md)
@@ -370,8 +373,28 @@ def resolve_many_to_one(
 
     Providers often list copycats with the same name and ticker (a second "Dogecoin"), so a
     name-based claim survives only if no contract/override row claims the same coin and it is the
-    single claimant whose price agrees (an exact name+symbol match preferred). The rest are demoted.
+    single claimant whose price agrees (the previously published holder preferred, then an exact
+    name+symbol match). The rest are demoted. A name-based row also can't take over a CG coin
+    published for another, still active, provider coin unless its own price agrees.
     """
+    previous = previous or {}
+    active = {r.provider_id for r in rows}
+    holders: dict[str, str] = {}
+    for pid, cg_id in sorted(previous.items()):
+        if pid in active:
+            holders.setdefault(cg_id, pid)
+    for r in rows:
+        holder = holders.get(r.cg_id or "")
+        if (
+            r.status is Status.ACCEPTED
+            and r.method in (Method.NAME_SYMBOL, Method.NAME_PRICE)
+            and holder not in (None, r.provider_id)
+            and not within(r.price_diff_pct, None, t, keep=False)
+        ):
+            r.flag(Flag.MANY_TO_ONE)
+            r.note = f"{r.cg_id} is published for {holder}; taking it over needs a matching price"
+            r.status, r.confidence, r.cg_id = Status.FLAGGED, Confidence.LOW, None
+
     by_cg: dict[str, list[MatchRow]] = defaultdict(list)
     for r in rows:
         if r.status is Status.ACCEPTED and r.cg_id:
@@ -387,12 +410,13 @@ def resolve_many_to_one(
             priced = [
                 r
                 for r in by_name
-                if within(
-                    r.price_diff_pct, None, t, keep=(previous or {}).get(r.provider_id) == r.cg_id
-                )
+                if within(r.price_diff_pct, None, t, keep=previous.get(r.provider_id) == r.cg_id)
             ]
+            sticky = [r for r in priced if previous.get(r.provider_id) == r.cg_id]
             exact = [r for r in priced if r.method is Method.NAME_SYMBOL]
-            if len(exact) == 1:
+            if len(sticky) == 1:
+                keep = sticky[0]
+            elif len(exact) == 1:
                 keep = exact[0]
             elif not exact and len(priced) == 1:
                 keep = priced[0]

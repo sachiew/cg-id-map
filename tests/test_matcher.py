@@ -444,6 +444,51 @@ def test_buffer_zone_only_applies_to_the_previously_published_cg_id() -> None:
     assert r["11646"].status is Status.FLAGGED
 
 
+def test_published_match_stays_when_two_candidates_price_alike() -> None:
+    # CMC "XBIT"/XBT vs CG "xbt" and "xbt-2", both within 1% on 2026-10-24: kept on "xbt".
+    coins = [pc("4813", "XBIT", "XBT")]
+    cgs = [cg("xbt", "xbt", "XBT"), cg("xbt-2", "xbt", "XBT")]
+    prov, cgm = {"4813": md(9.58e-05)}, {"xbt": md(9.68e-05), "xbt-2": md(9.52e-05)}
+    assert run_prev(coins, cgs, prov, cgm, {})["4813"].status is Status.AMBIGUOUS
+    kept = run_prev(coins, cgs, prov, cgm, {"4813": "xbt"})["4813"]
+    assert (kept.status, kept.cg_id) == (Status.ACCEPTED, "xbt")
+
+
+MAGA = [
+    pc("27872", "MAGA (magamemecoin.com)", "TRUMP"),
+    pc("31692", "MAGA", "TRUMP", slug="magatrumponbase"),
+]
+
+
+def test_many_to_one_keeps_the_published_holder_over_an_exact_name_match() -> None:
+    rows = run_prev(
+        MAGA,
+        [cg("maga", "trump", "MAGA")],
+        {"27872": md(0.0225), "31692": md(0.0224)},
+        {"maga": md(0.0226)},
+        {"27872": "maga"},
+    )
+    assert rows["27872"].cg_id == "maga" and rows["31692"].cg_id is None
+
+
+def test_copycat_cannot_take_over_a_published_coin_on_name_alone() -> None:
+    # 2026-10-24: the real MAGA's CG price jumped 14% so it dropped out, and the Base copycat
+    # (exact name+ticker, price 20x off) took "maga". It now needs a matching price to do that.
+    rows = run_prev(
+        MAGA,
+        [cg("maga", "trump", "MAGA")],
+        {"27872": md(0.0225), "31692": md(0.00125)},
+        {"maga": md(0.0258)},
+        {"27872": "maga"},
+    )
+    assert rows["31692"].status is Status.FLAGGED and rows["31692"].cg_id is None
+    assert rows["31692"].suggested_cg_id == "maga" and Flag.MANY_TO_ONE in rows["31692"].flags
+    # Without a published holder, the exact name+ticker match is still accepted outright.
+    fresh = run_prev(MAGA[1:], [cg("maga", "trump", "MAGA")], {"31692": md(0.00125)},
+                     {"maga": md(0.0258)}, {"27872": "maga"})  # fmt: skip
+    assert fresh["31692"].cg_id == "maga"
+
+
 # ------------------------------------------------------------------ second pass: claimed candidates
 
 DRAGON_ADDR = "0x" + "d0" * 20
