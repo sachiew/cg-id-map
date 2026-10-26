@@ -2,6 +2,37 @@
 
 One section per run that changed the published mappings.
 
+## 2026-10-26
+
++5 new, -15 removed, ~0 changed
+
+### New mappings (5)
+
+- `31162` BDAG (BlockDAG Network) → `blockdag`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `42291` DOGSHIT (Dogshit (dogshit-bnb.com)) → `dogshit-3`
+- `42655` HELL (Hellhound) → `hellhound`
+- `42659` AMD (Advanced Micro Devices tokenized stock (Backpack)) → `advanced-micro-devices-backpack-securities`
+
+### Removed mappings (15)
+
+- `1503` JUP (Jupiter) → `jupiter`
+- `2892` WWB (Wowbit) → `wowbit-2`
+- `21951` OKI (HDOKI) → `hdoki`
+- `24527` XRPC (Xrp Classic (new)) → `xrp-classic-new`
+- `28973` OPSEC (OpSec) → `opsec`
+- `31390` ACHI (achi) → `achi`
+- `31826` BMONEY (B-money) → `b-money`
+- `33201` MISHA (MISHA) → `misha`
+- `34570` TREEINCAT (Tree Stuck in Cat) → `tree-stuck-in-cat`
+- `35081` WEBSIM (The Css God by Virtuals) → `the-css-god-by-virtuals`
+- `35161` MONSTA (Based Monsta) → `based-monsta`
+- `36592` KAKA (KAKA) → `kaka`
+- `38235` PEG (PEPEGOLD) → `pepegold-2`
+- `39886` RIZO (Haha Yes Hedgehog) → `haha-yes-hedgehog`
+- `42645` UHI (Universal High Income) → `universal-high-income-2`
+
+
 ## 2026-10-25
 
 +7 new, -13 removed, ~0 changed
