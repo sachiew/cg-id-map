@@ -2,6 +2,38 @@
 
 One section per run that changed the published mappings.
 
+## 2026-10-27
+
++2 new, -10 removed, ~3 changed
+
+### New mappings (2)
+
+- `42445` CRCLc (Circle Internet Group Inc. Tokenized Stock (Coinbase)) → `circle-internet-group-inc-coinbase-tokenized-stock`
+- `42531` MSTU (T-Rex 2X Long MSTR Daily Target ETF (Derivatives)) → `t-rex-2x-long-mstr-daily-target-etf-dinari-tokenized-etf`
+
+### Removed mappings (10)
+
+- `5919` MTRG (Meter Governance) → `meter`
+- `6627` MTR (Meter Stable) → `meter-stable`
+- `6930` KEX (KIRA) → `kira-network`
+- `27023` FOOM (FOOM) → `foom`
+- `29647` KERMIT (Kermit) → `kermit-cc0e2d66-4b46-4eaf-9f4e-5caa883d1c09`
+- `31162` BDAG (BlockDAG Network) → `blockdag`
+- `31851` FROG (Frog) → `frog-on-eth`
+- `34777` XYZ (XYZVerse) → `xyzverse`
+- `36491` GORTH (Gorth) → `gorth`
+- `41969` GOOSE (Goose Token) → `goose-token`
+
+### cg_id changed (1)
+
+- `42617` DACITY: `dacity-coin-3` → `dacity-coin-2`
+
+### Confidence / method / flag changes (2)
+
+- `20641` flags: many_to_one → -
+- `40732` flags: name_mismatch → many_to_one|name_mismatch
+
+
 ## 2026-10-26
 
 +1 new, -1 removed, ~17 changed
