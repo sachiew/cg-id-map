@@ -2,6 +2,39 @@
 
 One section per run that changed the published mappings.
 
+## 2026-10-28
+
++10 new, -12 removed, ~0 changed
+
+### New mappings (10)
+
+- `6930` KEX (KIRA) → `kira-network`
+- `17573` RPC (Ripio Coin) → `ripio-coin`
+- `30297` SISC (Shirushi Coin) → `shirushi-coin`
+- `31162` BDAG (BlockDAG Network) → `blockdag`
+- `36337` DON (Salamanca) → `salamanca`
+- `36353` DIVINER (DIVINER) → `diviner-2`
+- `42310` RITUAL (Ritual) → `ritual`
+- `42691` BTC (Big Titty Coin (bigtittycoinrh.com)) → `big-titty-coin`
+- `42693` ELON2028 (ELON 2028) → `elon-2028`
+- `42694` JOB (DogWifJob) → `dogwifjob`
+
+### Removed mappings (12)
+
+- `20642` CSR (CSR) → `csr`
+- `28249` ZTX (ZTX) → `ztx`
+- `28306` MANDOX (Mandox Token) → `mandox-2`
+- `28939` DRAGON (DragonCoin) → `dragoncoin`
+- `29791` FREN (FREN) → `ada-peepos`
+- `30767` TICO (Funtico) → `tico`
+- `31106` DOKY (Donkey King) → `donkey-king`
+- `33343` TAXI (Robotaxi) → `robotaxi`
+- `33599` FLAVIA (Flavia Is Online) → `flavia-is-online`
+- `33989` MLP (Matrix Layer Protocol) → `matrix-layer-protocol`
+- `42426` ASTSc (AST SpaceMobile, Inc. Tokenized Stock (Coinbase)) → `ast-spacemobile-inc-coinbase-tokenized-stock`
+- `42474` DJTc (Trump Media & Technology Group Corp. Tokenized Stock (Coinbase)) → `trump-media-technology-group-corp-coinbase-tokenized-stock`
+
+
 ## 2026-10-27
 
 +2 new, -10 removed, ~3 changed
