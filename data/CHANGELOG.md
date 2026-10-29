@@ -2,6 +2,52 @@
 
 One section per run that changed the published mappings.
 
+## 2026-10-29
+
++5 new, -17 removed, ~7 changed
+
+### New mappings (5)
+
+- `32732` SUNPEPE (sunpepe) → `sunpepe`
+- `39622` GOOGL (Alphabet Tokenized Stock (Hyperliquid)) → `alphabet-dinari-tokenized-stock`
+- `39624` AAPL (Apple Tokenized Stock (Hyperliquid)) → `apple-dinari-tokenized-stock`
+- `42505` INTCc (Intel Corporation Tokenized Stock (Coinbase)) → `intel-corporation-coinbase-tokenized-stock`
+- `42642` PREDICT (Predict.fun) → `predict-fun`
+
+### Removed mappings (17)
+
+- `12240` MARS4 (MARS4) → `mars4`
+- `31788` EAI (Eagle AI) → `eagle-ai`
+- `31913` FLAPPY (Flappy) → `flappy`
+- `34146` FROX (Frox) → `frox`
+- `36274` BDTC (BDTCOIN) → `bdtcoin`
+- `38781` TONXX (Ton Strategy tokenized stock (xStock)) → `ton-xstock`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `40079` SBETX (SharpLink Gaming tokenized stock(xStock)) → `sharplink-gaming-xstock`
+- `41889` DOGO (DogBull) → `dogbull`
+- `42423` WENc (Wendy's Co Tokenized Stock (Coinbase)) → `wendy-s-co-coinbase-tokenized-stock`
+- `42433` BEc (Bloom Energy Corporation Tokenized Stock (Coinbase)) → `bloom-energy-corporation-coinbase-tokenized-stock`
+- `42456` PFEc (Pfizer Inc Tokenized Stock (Coinbase)) → `pfizer-inc-coinbase-tokenized-stock`
+- `42457` QUBTc (Quantum Computing Inc. Tokenized Stock (Coinbase)) → `quantum-computing-inc-coinbase-tokenized-stock`
+- `42470` PMc (Philip Morris International Inc. Tokenized Stock (Coinbase)) → `philip-morris-international-inc-coinbase-tokenized-stock`
+- `42475` PTONc (Peloton Interactive, Inc. Tokenized Stock (Coinbase)) → `peloton-interactive-inc-coinbase-tokenized-stock`
+- `42493` MRNAc (Moderna, Inc. Tokenized Stock (Coinbase)) → `moderna-inc-coinbase-tokenized-stock`
+- `42693` ELON2028 (ELON 2028) → `elon-2028`
+
+### cg_id changed (2)
+
+- `10403` KOM: `kommunitas-2` → `kommunitas`
+- `40867` KTI: `kotai` → `kotai-2`
+
+### Confidence / method / flag changes (5)
+
+- `8690` match_method: matched_contract → matched_name_symbol
+- `24302` flags: - → many_to_one
+- `36896` flags: symbol_mismatch → -
+- `42409` flags: - → name_mismatch
+- `42691` flags: name_mismatch → -
+
+
 ## 2026-10-28
 
 +10 new, -12 removed, ~0 changed
