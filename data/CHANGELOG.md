@@ -2,6 +2,56 @@
 
 One section per run that changed the published mappings.
 
+## 2026-10-30
+
++13 new, -12 removed, ~8 changed
+
+### New mappings (13)
+
+- `11696` WONE (Wrapped Harmony) → `wrapped-one`
+- `29647` KERMIT (Kermit) → `kermit-cc0e2d66-4b46-4eaf-9f4e-5caa883d1c09`
+- `31687` SL (SASEUL) → `saseul`
+- `35542` TOKEN (Token.com) → `token`
+- `36228` GLDS (Glades) → `glades`
+- `38971` FROGE (FROGE) → `froge-4`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `42680` SKDDB (GraniteShares 2x Short SK Hynix Daily ETF Tokenized bStocks) → `graniteshares-2x-short-sk-hynix-daily-etf-bbstocks-tokenized-etf`
+- `42681` GEVB (GE Vernova Inc Tokenized bStocks) → `ge-vernova-bstocks-tokenized-stock`
+- `42682` BSPB (Bending Spoons Tokenized bStocks) → `bending-spoons-bstocks-tokenized-stock`
+- `42683` APPB (Applovin Corp Tokenized bStocks) → `applovin-bstocks-tokenized-stock`
+- `42684` SKUUB (GraniteShares 2x Long SK Hynix Daily ETF Tokenized bStocks) → `graniteshares-2x-long-sk-hynix-daily-etf-bstocks-tokenized-etf`
+- `42706` SI (Super Inu (superinuerc20.vip)) → `super-inu-3`
+
+### Removed mappings (12)
+
+- `2001` COLX (ColossusXT) → `colossuscoinxt`
+- `2359` POLIS (Polis) → `polis`
+- `3449` MMO (MMOCoin) → `mmocoin-2`
+- `8497` BANANA (ApeSwap) → `apeswap-finance`
+- `11649` WNT (Wicrypt) → `wicrypt`
+- `15617` KRRX (Kyrrex) → `kyrrex`
+- `31371` ARG (ArgentinaCoin) → `argentinacoin`
+- `38291` SHARDS (WorldShards) → `worldshards`
+- `38384` GOLD (Digital Gold) → `digital-gold-2`
+- `42428` DUOLc (Duolingo, Inc. Tokenized Stock (Coinbase)) → `duolingo-inc-coinbase-tokenized-stock`
+- `42450` NVAXc (Novavax Inc Tokenized Stock (Coinbase)) → `novavax-inc-coinbase-tokenized-stock`
+- `42531` MSTU (T-Rex 2X Long MSTR Daily Target ETF (Derivatives)) → `t-rex-2x-long-mstr-daily-target-etf-dinari-tokenized-etf`
+
+### cg_id changed (1)
+
+- `10403` KOM: `kommunitas` → `kommunitas-2`
+
+### Confidence / method / flag changes (7)
+
+- `16800` match_method: matched_name_symbol → matched_contract
+- `19225` flags: - → name_mismatch
+- `20641` flags: - → many_to_one
+- `24302` flags: many_to_one → -
+- `35433` match_method: matched_contract → matched_name_symbol
+- `38455` match_method: matched_contract → matched_name_symbol
+- `42635` match_method: matched_name_symbol → matched_contract
+
+
 ## 2026-10-29
 
 +5 new, -17 removed, ~7 changed
