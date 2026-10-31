@@ -2,6 +2,34 @@
 
 One section per run that changed the published mappings.
 
+## 2026-10-31
+
++3 new, -10 removed, ~1 changed
+
+### New mappings (3)
+
+- `12054` MDF (MatrixETF) → `matrixetf`
+- `15893` RBC (Ruby Coin) → `ruby-coin`
+- `42688` XTEN (Extended) → `extended-2`
+
+### Removed mappings (10)
+
+- `15312` MOOO (Hashtagger.com) → `hashtagger`
+- `21198` GHNY (Grizzly Honey) → `grizzly-honey`
+- `27856` PENGY (Pengycoin) → `pengycoin`
+- `27872` TRUMP (MAGA (magamemecoin.com)) → `maga`
+- `33614` MemesAI (Memes AI) → `memes-ai-2`
+- `36064` DOODI (Doodipals) → `doodipals`
+- `36447` CIK (Christ is King) → `christ-is-king`
+- `38971` FROGE (FROGE) → `froge-4`
+- `39622` GOOGL (Alphabet Tokenized Stock (Hyperliquid)) → `alphabet-dinari-tokenized-stock`
+- `41862` X (X100) → `x100-2`
+
+### Confidence / method / flag changes (1)
+
+- `20641` flags: many_to_one → -
+
+
 ## 2026-10-30
 
 +13 new, -12 removed, ~8 changed
