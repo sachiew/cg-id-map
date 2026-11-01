@@ -2,6 +2,40 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-01
+
++10 new, -9 removed, ~1 changed
+
+### New mappings (10)
+
+- `162` MIM (Magic Internet Money) → `magic-internet-money-optimism`
+- `8252` pBTC35A (pBTC35A) → `pbtc35a`
+- `24791` OGSM (OGSMINEM) → `og-sminem`
+- `27872` TRUMP (MAGA (magamemecoin.com)) → `maga`
+- `31007` BIRDDOG (BIRDDOG) → `birddog`
+- `31314` KANG (Kangamoon) → `kangamoon`
+- `32689` AGETH (Kelp DAO's Airdrop Gain ETH) → `kelp-gain`
+- `38971` FROGE (FROGE) → `froge-2`
+- `42606` ESGIN (ESGIN Token) → `esgin`
+- `42692` 1WIN (1win Token) → `1win-token`
+
+### Removed mappings (9)
+
+- `8495` ID (Everest) → `everid`
+- `11714` BFT (Brazil National Football Team Fan Token) → `brazil-fan-token`
+- `15893` RBC (Ruby Coin) → `ruby-coin`
+- `28106` ZF (zkSwap Finance) → `zkswap-finance`
+- `29647` KERMIT (Kermit) → `kermit-cc0e2d66-4b46-4eaf-9f4e-5caa883d1c09`
+- `31298` JUNGLE (JUNGLEDOGE) → `jungledoge`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `39180` TUNA (Tuna) → `tuna`
+- `40701` IONQ (IonQ Tokenized Stock (Robinhood)) → `ionq-robinhood-tokenized-stock`
+
+### Confidence / method / flag changes (1)
+
+- `20641` flags: - → many_to_one
+
+
 ## 2026-10-31
 
 +3 new, -10 removed, ~1 changed
