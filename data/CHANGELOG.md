@@ -2,6 +2,36 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-02
+
++7 new, -6 removed, ~3 changed
+
+### New mappings (7)
+
+- `15893` RBC (Ruby Coin) → `ruby-coin`
+- `31948` WVTRS (Vitreus) → `vitreus`
+- `36245` STKGHO (Aave stkGHO) → `aave-stkgho`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `39622` GOOGL (Alphabet Tokenized Stock (Hyperliquid)) → `alphabet-dinari-tokenized-stock`
+- `42587` RKLBc (Rocket Lab Corporation Tokenized Stock (Coinbase)) → `rocket-lab-corporation-coinbase-tokenized-stock`
+- `42738` WINGS (Wingbits (wingbits.com)) → `wingbits`
+
+### Removed mappings (6)
+
+- `162` MIM (Magic Internet Money) → `magic-internet-money-optimism`
+- `24679` BULL (Bull Market) → `bull-market`
+- `28608` BSSB (BitStable) → `bitstable-finance`
+- `38137` HYPR (Hypr) → `hypr`
+- `38563` BABY4 (Baby 4) → `baby-4`
+- `42691` BTC (Big Titty Coin) → `big-titty-coin`
+
+### Confidence / method / flag changes (3)
+
+- `27872` flags: many_to_one|name_mismatch → name_mismatch
+- `29270` flags: name_mismatch → -
+- `39070` match_method: matched_contract → matched_name_symbol
+
+
 ## 2026-11-01
 
 +10 new, -9 removed, ~1 changed
