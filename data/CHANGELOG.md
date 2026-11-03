@@ -2,6 +2,31 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-03
+
++1 new, -9 removed, ~1 changed
+
+### New mappings (1)
+
+- `34384` DAY (Dayhub) → `dayhyb`
+
+### Removed mappings (9)
+
+- `9938` OOE (OpenOcean) → `openocean`
+- `11696` WONE (Wrapped Harmony) → `wrapped-one`
+- `22633` C4E (C4E) → `chain4energy`
+- `30196` NEURA (Neurahub) → `neurahub`
+- `30662` PAC (PacMoon) → `pacmoon`
+- `31948` WVTRS (Vitreus) → `vitreus`
+- `33571` SWORLD (Seedworld) → `seedworld`
+- `36245` STKGHO (Aave stkGHO) → `aave-stkgho`
+- `36446` BRICS (BRICS Chain) → `brics-chain`
+
+### Confidence / method / flag changes (1)
+
+- `42409` flags: name_mismatch → -
+
+
 ## 2026-11-02
 
 +7 new, -6 removed, ~3 changed
