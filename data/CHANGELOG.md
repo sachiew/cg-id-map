@@ -2,6 +2,47 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-05
+
++5 new, -18 removed, ~4 changed
+
+### New mappings (5)
+
+- `36778` TAP (The America Party) → `the-america-party`
+- `42493` MRNAc (Moderna, Inc. Tokenized Stock (Coinbase)) → `moderna-inc-coinbase-tokenized-stock`
+- `42576` WDCc (Western Digital Corporation Tokenized Stock (Coinbase)) → `western-digital-corporation-coinbase-tokenized-stock`
+- `42732` APE (Ape.fun (ape.fun)) → `ape-fun`
+- `42772` KOR (Kor Protocol) → `kor-protocol`
+
+### Removed mappings (18)
+
+- `8357` BITCI (Bitcicoin) → `bitcicoin`
+- `12851` BODAV2 (BODA Token) → `boda-token`
+- `25396` TWELVE (TWELVE ZODIAC) → `twelve-zodiac`
+- `29292` CASINU (Casinu Inu) → `casinu-inu`
+- `29599` USDB (USDB) → `usdb`
+- `31162` BDAG (BlockDAG Network) → `blockdag`
+- `32187` FOUR (4) → `4`
+- `32516` NRN (Neuron) → `neuron`
+- `32893` UFO (UFOPepe) → `ufopepe`
+- `34384` DAY (Dayhub) → `dayhyb`
+- `34824` SKINUT (Skimask Pnut) → `skimask-pnut`
+- `35301` NODE (noderzz by Virtuals) → `noderzz-by-virtuals`
+- `36216` GIZA (Giza) → `giza`
+- `36615` BTC2 (Bitcoin 2.0) → `bitcoin-2-0-2`
+- `38836` HAVEN (Haven) → `haven-2`
+- `38870` 8LNDS (8lends) → `8lends`
+- `38971` FROGE (FROGE) → `froge-2`
+- `42617` DACITY (Dacity Coin) → `dacity-coin-2`
+
+### Confidence / method / flag changes (4)
+
+- `8037` flags: name_mismatch → -
+- `30528` flags: - → name_mismatch|symbol_mismatch
+- `35433` match_method: matched_name_symbol → matched_contract
+- `42692` match_method: matched_name_symbol → matched_contract
+
+
 ## 2026-11-03
 
 +1 new, -9 removed, ~1 changed
