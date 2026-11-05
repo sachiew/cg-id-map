@@ -72,9 +72,21 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "data: daily update $(date -u +%F) ($(cat output/change_summary.txt))"
-          git pull --rebase --quiet origin "${GITHUB_REF_NAME}"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
-          echo "changed=true" >> "$GITHUB_OUTPUT"
+          # Retry pull+push: GitHub occasionally returns a transient 500 on push.
+          for attempt in 1 2 3; do
+            if git pull --rebase --quiet origin "${GITHUB_REF_NAME}" \
+               && git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            if [ "$attempt" -lt 3 ]; then
+              echo "::warning::push attempt $attempt failed; retrying in $((attempt * 20))s"
+              sleep $((attempt * 20))
+            fi
+          done
+          echo "::error::push failed after 3 attempts"
+          exit 1
 
       # Rolling release with stable download URLs:
       #   https://github.com/<owner>/<repo>/releases/download/latest/cmc_to_cg.csv
