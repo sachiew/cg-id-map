@@ -2,6 +2,37 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-06
+
++8 new, -8 removed, ~1 changed
+
+### New mappings (8)
+
+- `19205` SIFU (Sifu Vision) → `sifu-vision-2`
+- `31162` BDAG (BlockDAG Network) → `blockdag`
+- `35427` L1X (Layer One X) → `layer-one-x-2`
+- `36387` $WSOD (World Series of Degens) → `world-series-of-degens`
+- `42531` MSTU (T-Rex 2X Long MSTR Daily Target ETF (Derivatives)) → `t-rex-2x-long-mstr-daily-target-etf-dinari-tokenized-etf`
+- `42644` GIGATENEV (Giga Tenev) → `giga-tenev`
+- `42780` HIGH (higher.fun) → `higher-fun`
+- `42782` LWP (LumiWave Protocol) → `lumiwave-protocol`
+
+### Removed mappings (8)
+
+- `4134` KAON (Kaon) → `akropolis`
+- `19677` HAWK (HawkFi) → `hawksight`
+- `33507` HEDGE (HedgeFi) → `hedgefi`
+- `33648` TATE (Tate Terminal) → `tate-terminal`
+- `34221` BONKEY (Bonkey) → `bonkey`
+- `35155` STSHIP (Starship On Solana) → `starship-4`
+- `37409` UPTOP (UPTOP) → `uptop`
+- `39418` ARC (Redemption Arc) → `redemption-arc`
+
+### Confidence / method / flag changes (1)
+
+- `39611` flags: network_unmapped → many_to_one|network_unmapped
+
+
 ## 2026-11-05
 
 +5 new, -18 removed, ~4 changed
