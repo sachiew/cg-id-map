@@ -2,6 +2,33 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-07
+
++3 new, -6 removed, ~4 changed
+
+### New mappings (3)
+
+- `39542` USAD (USAD) → `usad`
+- `42362` CON (ConConAI) → `conconai`
+- `42552` AAOIc (Applied Optoelectronics Inc Tokenized Stock (Coinbase)) → `applied-optoelectronics-inc-coinbase-tokenized-stock`
+
+### Removed mappings (6)
+
+- `24791` OGSM (OGSMINEM) → `og-sminem`
+- `34832` SYNDOG (Synthesizer Dog) → `synthesizer-dog`
+- `37644` MAGAL (Magallaneer) → `magallaneer`
+- `37655` SCAN (SCAN) → `scan`
+- `38201` GUGO (GUGO) → `gugo`
+- `39624` AAPL (Apple Tokenized Stock (Hyperliquid)) → `apple-dinari-tokenized-stock`
+
+### Confidence / method / flag changes (4)
+
+- `20641` flags: many_to_one → -
+- `30543` match_method: matched_contract → matched_name_symbol
+- `31094` match_method: matched_contract → matched_name_symbol
+- `39611` flags: many_to_one|network_unmapped → network_unmapped
+
+
 ## 2026-11-06
 
 +8 new, -8 removed, ~1 changed
