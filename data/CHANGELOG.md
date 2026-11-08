@@ -2,6 +2,32 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-08
+
++3 new, -8 removed, ~1 changed
+
+### New mappings (3)
+
+- `29647` KERMIT (Kermit) → `kermit-cc0e2d66-4b46-4eaf-9f4e-5caa883d1c09`
+- `42547` LITEc (Lumentum Holdings Inc Tokenized Stock (Coinbase)) → `lumentum-holdings-inc-coinbase-tokenized-stock`
+- `42781` USDU (USD Universal) → `universal-usd`
+
+### Removed mappings (8)
+
+- `6930` KEX (KIRA) → `kira-network`
+- `9628` RPTR (Raptor Finance) → `raptor-finance-2`
+- `34043` SENDOR (Sendor) → `sendor`
+- `34842` DEPINS (DePINs) → `depins`
+- `34972` KEKIUS (Kekius Maximus (kekiusmaximus.wtf)) → `kekius-maximus-3`
+- `35006` TARDI (Tardi) → `tardi`
+- `37505` SLIPPY (Slippy) → `slippy`
+- `39625` HOOD (Robinhood Tokenized Stock (Hyperliquid)) → `robinhood-dinari-tokenized-stock`
+
+### Confidence / method / flag changes (1)
+
+- `37471` match_method: matched_contract → matched_name_symbol
+
+
 ## 2026-11-07
 
 +3 new, -6 removed, ~4 changed
