@@ -2,6 +2,33 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-09
+
++1 new, -10 removed, ~2 changed
+
+### New mappings (1)
+
+- `1894` TCC (The ChampCoin) → `the-champcoin-2`
+
+### Removed mappings (10)
+
+- `5450` WBX (Wibx) → `wibx`
+- `5836` IDNA (Idena) → `idena`
+- `22724` VASCO (Vasco da Gama Fan Token) → `vasco-da-gama-fan-token`
+- `28945` CC (CC) → `ccqkl`
+- `29060` RIB (Ribus) → `ribus`
+- `33468` SEED (SEED) → `seed-3`
+- `35169` SENTAI (SentAI) → `sentai-2`
+- `37213` WMRVLX (Wrapped Marvell Tokenized stock (xStock)) → `wrapped-marvell-xstock`
+- `37407` YNUSDX (ynUSD Max) → `ynusd-max`
+- `40030` ARCANE (Arcane) → `arcane-2`
+
+### Confidence / method / flag changes (2)
+
+- `20641` flags: - → many_to_one
+- `30528` flags: name_mismatch|symbol_mismatch → -
+
+
 ## 2026-11-08
 
 +3 new, -8 removed, ~1 changed
