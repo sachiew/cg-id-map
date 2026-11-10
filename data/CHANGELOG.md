@@ -2,6 +2,57 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-10
+
++2 new, -32 removed, ~3 changed
+
+### New mappings (2)
+
+- `18890` UNITS (UnitedCoin) → `unitedcoin`
+- `30196` NEURA (Neurahub) → `neurahub`
+
+### Removed mappings (32)
+
+- `35` PXC (Phoenixcoin) → `phoenixcoin`
+- `1660` TKN (Monolith) → `tokencard`
+- `2083` BTG (Bitcoin Gold) → `bitcoin-gold`
+- `2297` STMX (StormX) → `storm`
+- `2313` SRN (SIRIN LABS Token) → `sirin-labs-token`
+- `2320` UTK (Utrust) → `utrust`
+- `2447` CRPT (Crypterium) → `crypterium`
+- `2553` RFR (Refereum) → `refereum`
+- `2921` OLT (OneLedger) → `one-ledger`
+- `4028` MOTA (MotaCoin) → `motacoin`
+- `4105` XCM (Coinmetro Token) → `coinmetro`
+- `4118` FOR (ForTube) → `force-protocol`
+- `7619` BCA (Bitcoiva) → `bitcoiva`
+- `8387` AUTO (Auto) → `auto`
+- `8717` ODDZ (Oddz) → `oddz`
+- `9666` TRR (Terran Coin) → `terran-coin`
+- `10897` ALT (Alitas) → `alitas`
+- `11621` PUNK (Punk Vault (NFTX)) → `punk-vault-nftx`
+- `15893` RBC (Ruby Coin) → `ruby-coin`
+- `18897` THT (Thought) → `thought`
+- `25796` JW (Jasan Wellness) → `jasan-wellness`
+- `28170` CAL (Calcium) → `calcium`
+- `29633` GROW (ValleyDAO) → `valleydao`
+- `35735` CX (Cortex Protocol) → `cortex-2`
+- `35937` XPI (XPi) → `xpi`
+- `36508` FDC (FooDriver) → `fdrive-coin`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `39358` NOTIFAI (NotifAi News) → `notifai-news`
+- `39667` SN3 (Nebula3 GameFi) → `nebula3`
+- `42381` SECZ (Securitize Corp (Derivatives)) → `securitize-corp`
+- `42397` PORKU (HoodPork) → `hoodpork`
+- `42424` RDDTc (Reddit, Inc. Tokenized Stock (Coinbase)) → `reddit-inc-coinbase-tokenized-stock`
+
+### Confidence / method / flag changes (3)
+
+- `30543` match_method: matched_name_symbol → matched_contract
+- `39542` flags: many_to_one → -
+- `40732` flags: many_to_one|name_mismatch → name_mismatch
+
+
 ## 2026-11-09
 
 +1 new, -10 removed, ~2 changed
