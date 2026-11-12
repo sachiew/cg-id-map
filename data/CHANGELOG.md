@@ -4,6 +4,44 @@ One section per run that changed the published mappings.
 
 ## 2026-11-12
 
++7 new, -11 removed, ~3 changed
+
+### New mappings (7)
+
+- `15893` RBC (Ruby Coin) → `ruby-coin`
+- `37205` WKOX (Wrapped Coca-Cola Tokenized stock (xStock)) → `wrapped-coca-cola-xstock`
+- `37209` WMCDX (Wrapped McDonald's Tokenized stock (xStock)) → `wrapped-mcdonald-s-xstock`
+- `40055` CEGX (Constellation Energy Corporation tokenized stock(xStock)) → `constellation-energy-corporation-xstock`
+- `42801` CVNAx (Carvana Co tokenized stock (xStock)) → `carvana-xstock`
+- `42807` GEx (GE Aerospace tokenized stock (xStock)) → `ge-aerospace-xstock`
+- `42812` FINDEXY (FINDEXY) → `findexy`
+
+### Removed mappings (11)
+
+- `1503` JUP (Jupiter) → `jupiter`
+- `24771` WEFI (WeFi) → `wefi-finance`
+- `25208` TRAC (trac (Ordinals)) → `trac`
+- `28463` PTH (Plastic Hero) → `plastichero`
+- `28857` ZKF (ZKFair) → `zkfair`
+- `29092` FPS (Web3War) → `web3war`
+- `29318` WUSD (Worldwide USD) → `worldwide-usd`
+- `30102` WSDM (Wisdomise AI) → `wisdomise`
+- `30315` OMNI (Omni Network) → `omni-network`
+- `30633` GBE (Gambex) → `gambex`
+- `35432` CRADLE (Cradle) → `cradle-games`
+
+### cg_id changed (1)
+
+- `29647` KERMIT: `kermit-cc0e2d66-4b46-4eaf-9f4e-5caa883d1c09` → `kermit-2`
+
+### Confidence / method / flag changes (2)
+
+- `32403` flags: many_to_one → -
+- `42798` flags: many_to_one|name_mismatch → name_mismatch
+
+
+## 2026-11-12
+
 +19 new, -50 removed, ~10 changed
 
 ### New mappings (19)
