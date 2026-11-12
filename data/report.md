@@ -1,15 +1,15 @@
 # CMC → CoinGecko mapping report
 
-Generated: 2026-11-10T11:22:02Z
+Generated: 2026-11-12T06:44:20Z
 
 ## Match rate
 
 | scope | accepted |
 |---|---:|
-| all | 6330/7994 (79.18%) |
+| all | 6299/7977 (78.96%) |
 | top 100 by CMC rank | 100/100 (100.00%) |
-| top 1,000 by CMC rank | 981/1000 (98.10%) |
-| top 5,000 by CMC rank | 4519/5002 (90.34%) |
+| top 1,000 by CMC rank | 979/1000 (97.90%) |
+| top 5,000 by CMC rank | 4498/5000 (89.96%) |
 
 ## Gold set
 
@@ -22,40 +22,41 @@ Precision: 34/34 (100.0%)
 
 | value | count |
 |---|---:|
-| accepted | 6330 |
-| unmatched | 1014 |
-| ambiguous | 508 |
-| flagged | 142 |
+| accepted | 6299 |
+| unmatched | 1036 |
+| ambiguous | 506 |
+| flagged | 136 |
 
 ### By method
 
 | value | count |
 |---|---:|
-| matched_contract | 5624 |
-| matched_name_symbol | 590 |
-| matched_contract_other_network | 59 |
-| matched_name_price | 57 |
+| matched_contract | 5594 |
+| matched_name_symbol | 585 |
+| matched_name_price | 61 |
+| matched_contract_other_network | 57 |
+| override | 2 |
 
 ### By confidence (accepted)
 
 | value | count |
 |---|---:|
-| high | 6214 |
-| medium | 116 |
+| high | 6181 |
+| medium | 118 |
 
 ### By flag
 
 | value | count |
 |---|---:|
-| name_mismatch | 1712 |
-| ambiguous_multiple_candidates | 613 |
-| symbol_mismatch | 152 |
-| price_discrepancy | 137 |
-| network_unmapped | 97 |
-| matched_contract_other_network | 61 |
-| many_to_one | 29 |
-| mcap_discrepancy | 27 |
-| no_market_data | 20 |
+| name_mismatch | 1713 |
+| ambiguous_multiple_candidates | 614 |
+| symbol_mismatch | 147 |
+| price_discrepancy | 135 |
+| network_unmapped | 95 |
+| matched_contract_other_network | 59 |
+| many_to_one | 33 |
+| mcap_discrepancy | 26 |
+| no_market_data | 19 |
 
 ## Networks
 
@@ -63,15 +64,15 @@ Precision: 34/34 (100.0%)
 
 | value | count |
 |---|---:|
-| accepted | 66 |
-| needs_review | 33 |
+| accepted | 67 |
+| needs_review | 32 |
 | unmapped | 3 |
 
 ### By method (accepted)
 
 | value | count |
 |---|---:|
-| chain_id+overlap | 53 |
+| chain_id+overlap | 54 |
 | name+overlap | 12 |
 | chain_id | 1 |
 

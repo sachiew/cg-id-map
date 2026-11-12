@@ -2,6 +2,102 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-12
+
++19 new, -50 removed, ~10 changed
+
+### New mappings (19)
+
+- `1503` JUP (Jupiter) → `jupiter`
+- `6930` KEX (KIRA) → `kira-network`
+- `8457` B20 (B20) → `b20`
+- `17543` MNFT (MongolNFT Coin) → `mongol-nft`
+- `20475` USDZ (Zedxion) → `usdz`
+- `26265` NIHAO (NiHao) → `nihao`
+- `32403` MAO (mao) → `mao`
+- `37191` WBRK.BX (Wrapped Berkshire Hathaway Tokenized stock (xStock)) → `wrapped-berkshire-hathaway-xstock`
+- `38142` ABE (Abe) → `abe-2`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `39423` XBETH (OKX Staked ETH) → `okx-wrapped-staked-eth`
+- `39624` AAPL (Apple Tokenized Stock (Hyperliquid)) → `apple-dinari-tokenized-stock`
+- `41636` wMUx (Wrapped Micron Technology Tokenized Stock (xStock)) → `wrapped-micron-technology-xstock`
+- `42381` SECZ (Securitize Corp (Derivatives)) → `securitize-corp`
+- `42793` ADIx (Analog Devices Inc tokenized stock (xStock)) → `analog-devices-xstock`
+- `42795` AMGNx (Amgen Inc tokenized stock (xStock)) → `amgen-xstock`
+- `42798` DACITY (Dacity Coin (dacity.pplx.app)) → `dacity-coin-2`
+- `42799` BIG5on (Big 5 Core Allocation Portfolio Tokenized Assets (Ondo)) → `ondo-big-5-core-allocation-portfolio`
+- `42800` SPYSHIELDon (US 500 Capital Shielded Portfolio Tokenized Assets (Ondo)) → `ondo-us-500-capital-shielded-portfolio`
+
+### Removed mappings (50)
+
+- `3` NMC (Namecoin) → `namecoin`
+- `1619` SKY (Skycoin) → `skycoin`
+- `2529` CAS (Cashaa) → `cashaa`
+- `2642` CVT (CyberVein) → `cybervein`
+- `2933` BMX (BitMart Token) → `bitmart-token`
+- `2941` CET (CoinEx Token) → `coinex-token`
+- `3142` BAAS (BaaSid) → `baasid`
+- `4228` FRM (Ferrum Network) → `ferrum-network`
+- `5600` ATT (Attila) → `attila`
+- `7558` DOC (Dollar on Chain) → `dollar-on-chain`
+- `7719` XKR (Kryptokrona) → `kryptokrona`
+- `10260` XRUNE (Thorstarter) → `thorstarter`
+- `10364` APW (Spectra) → `apwine`
+- `12692` PKN (Poken) → `poken`
+- `13425` CHAMP (NFT Champions) → `nft-champions`
+- `15535` FLX (Flux) → `flux-token`
+- `15565` CHEESE (CheeseSwap) → `cheese-swap`
+- `16201` DBD (Day By Day) → `day-by-day`
+- `17050` MULTI (Multichain) → `multichain`
+- `17076` WMEMO (Wonderful Memories) → `wrapped-memory`
+- `17131` IXT (Planet IX(formerly IX token)) → `ix-token`
+- `20921` BOMB (Bombcrypto (MATIC)) → `bombcrypto-coin`
+- `22278` THE (The Protocol) → `the-protocol`
+- `23246` TOMI (TOMI) → `tominet`
+- `23486` ARC (Arcadeum) → `arcadeum`
+- `23546` CSIX (Carbon browser) → `carbon-browser`
+- `23712` LFG (LFGSwap Finance (Core)) → `lfgswap-finance-core`
+- `23931` DOGECUBE (DOGECUBE) → `dogecube`
+- `24193` SPACE (MicroVisionChain) → `microvisionchain`
+- `27363` DLLR (Sovryn Dollar) → `sovryn-dollar`
+- `28418` TPAD (Trustpad (New)) → `trustpad-2-0`
+- `29433` AIUS (Arbius) → `arbius`
+- `30688` $BLUE (blue on base) → `blue-on-base`
+- `32570` JOULE (Joule) → `joule-2`
+- `32712` BEBE (BEBE) → `bebe-dog`
+- `33852` DUCKY (Ducky) → `ducky-4`
+- `33924` TEA (Tea-Fi) → `teafi-token`
+- `35147` TRUST ($TRUST ME BROs by Virtuals) → `trust-me-bros-by-virtuals`
+- `35247` DEFAI (DeFAIRewards) → `eliza-finance`
+- `36638` NURA (Nura Labs) → `nura-labs`
+- `36738` MAIV (Multi Asset Investment Vehicle) → `multi-asset-investment-vehicle`
+- `37200` WHOODX (Wrapped Robinhood Tokenized stock (xStock)) → `wrapped-robinhood-xstock`
+- `37202` WINTCX (Wrapped Intel Tokenized stock (xStock)) → `wrapped-intel-xstock`
+- `37533` MAO (MAO) → `mao`
+- `37654` SUSD1+ (Lorenzo staked USD1+) → `staked-usd1`
+- `37724` ASC (AllinX SMART CHAIN) → `all-inx-smart-chain`
+- `38123` TTAJ (TTAJ) → `ttaj`
+- `40520` BBD (BigBull Decentralized (bigbull.finance)) → `bigbull-decentralized-2`
+- `40783` CRWD (CrowdStrike Holdings Tokenized Stock (Robinhood)) → `crowdstrike-holdings-robinhood-tokenized-stock`
+- `42531` MSTU (T-Rex 2X Long MSTR Daily Target ETF (Derivatives)) → `t-rex-2x-long-mstr-daily-target-etf-dinari-tokenized-etf`
+
+### cg_id changed (2)
+
+- `12319` JEWEL: `wjewel` → `defi-kingdoms`
+- `36963` YURU: `yuru-coin` → `yuru-coin-2`
+
+### Confidence / method / flag changes (8)
+
+- `2396` match_method: matched_contract → override
+- `20641` flags: many_to_one → -
+- `29593` match_method: matched_contract → matched_name_symbol
+- `32193` match_method: matched_contract → override
+- `37471` match_method: matched_name_symbol → matched_contract
+- `39542` flags: - → many_to_one
+- `40732` flags: name_mismatch → many_to_one|name_mismatch
+- `41876` match_method: matched_name_price → matched_contract; confidence: medium → high
+
+
 ## 2026-11-10
 
 +2 new, -32 removed, ~3 changed
