@@ -213,6 +213,11 @@ class Matcher:
 
         # Step 2: contract on the mapped network.
         if p.contract_ids:
+            kept = self._kept_over_contract(coin.id, p.contract_ids, by_id)
+            if kept is not None:
+                self._accept(row, kept, Method.NAME_SYMBOL, Confidence.HIGH, cg_md)
+                row.note = f"kept published mapping; provider contract points to {p.contract_ids}"
+                return row
             if len(p.contract_ids) == 1:
                 self._accept(row, p.contract_ids[0], Method.CONTRACT, Confidence.HIGH, cg_md)
                 return row
@@ -291,6 +296,26 @@ class Matcher:
             or c.slug_equal
             or c.via == "contract_other_network"
         )
+
+    def _kept_over_contract(
+        self, provider_id: str, contract_ids: list[str], by_id: dict[str, Candidate]
+    ) -> str | None:
+        """Published CG id to keep when the provider's contract now points elsewhere.
+
+        CMC lists one platform per coin and sometimes switches it to a bridged copy (WETH ->
+        Taiko, ALEO -> a BSC bridge, 2026-11-11). The contract hit then lands on a different CG
+        coin with a different name. Keep the published mapping when it is still an exact
+        name+ticker candidate whose price agrees and no contract hit carries the coin's name.
+        """
+        prev = self.previous.get(provider_id)
+        c = by_id.get(prev) if prev else None
+        if c is None or prev in contract_ids:
+            return None
+        if any(by_id[i].name_equal for i in contract_ids):
+            return None
+        if not (c.name_equal and c.symbol_equal and self._market_ok(c, keep=True)):
+            return None
+        return prev
 
     def _was(self, provider_id: str, cg_id: str) -> bool:
         return self.previous.get(provider_id) == cg_id

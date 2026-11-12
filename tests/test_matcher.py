@@ -598,3 +598,34 @@ def test_row_whose_candidates_are_all_taken_becomes_unmatched() -> None:
     r = rows["31093"]
     assert (r.status, r.suggested_cg_id, r.cg_id) == (Status.UNMATCHED, None, None)
     assert r.candidates[0].claimed_by == "74" and "copycat" in r.note
+
+
+# CMC switched WETH's only listed platform to a bridged copy (Taiko) on 2026-11-11.
+WETH_BRIDGE = "0x" + "b" * 40
+WETH_COINS = [pc("2396", "WETH", "WETH", slug="weth", contracts=[("14", WETH_BRIDGE)])]
+WETH_CGS = [
+    cg("weth", "weth", "WETH", ethereum="0x" + "c" * 40),
+    cg("wrapped-eth-bridged", "weth", "Wrapped ETH (Bridged)", binance_smart_chain=WETH_BRIDGE),
+]
+
+
+def test_published_mapping_survives_a_contract_switch_to_a_bridged_copy() -> None:
+    prov, cgm = {"2396": md(2059.0)}, {"weth": md(2058.0), "wrapped-eth-bridged": md(2057.0)}
+    new = run_prev(WETH_COINS, WETH_CGS, prov, cgm, {})["2396"]
+    assert (new.cg_id, new.method) == ("wrapped-eth-bridged", Method.CONTRACT)
+    kept = run_prev(WETH_COINS, WETH_CGS, prov, cgm, {"2396": "weth"})["2396"]
+    assert (kept.status, kept.cg_id, kept.method) == (Status.ACCEPTED, "weth", Method.NAME_SYMBOL)
+    assert "wrapped-eth-bridged" in kept.note
+
+
+def test_contract_switch_wins_when_the_published_price_disagrees() -> None:
+    prov, cgm = {"2396": md(2059.0)}, {"weth": md(1500.0), "wrapped-eth-bridged": md(2057.0)}
+    r = run_prev(WETH_COINS, WETH_CGS, prov, cgm, {"2396": "weth"})["2396"]
+    assert (r.cg_id, r.method) == ("wrapped-eth-bridged", Method.CONTRACT)
+
+
+def test_contract_hit_with_the_same_name_beats_the_published_mapping() -> None:
+    cgs = [WETH_CGS[0], cg("weth-bsc", "weth", "WETH", binance_smart_chain=WETH_BRIDGE)]
+    prov, cgm = {"2396": md(2059.0)}, {"weth": md(2058.0), "weth-bsc": md(2057.0)}
+    r = run_prev(WETH_COINS, cgs, prov, cgm, {"2396": "weth"})["2396"]
+    assert (r.cg_id, r.method) == ("weth-bsc", Method.CONTRACT)

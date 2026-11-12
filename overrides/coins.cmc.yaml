@@ -4,4 +4,11 @@
 # - id: "1027"
 #   cg_id: ethereum
 #   reason: why this pin exists
-[]
+
+# CMC lists one platform per coin and switched these to bridged copies on 2026-11-11.
+- id: "2396"
+  cg_id: weth
+  reason: CMC platform switched to Taiko; contract hit is wrapped-eth-taiko
+- id: "32193"
+  cg_id: aleo
+  reason: CMC platform switched to a BSC bridge; contract hit is verulink-bridged-aleo-bsc
