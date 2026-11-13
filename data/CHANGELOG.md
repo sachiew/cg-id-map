@@ -2,6 +2,61 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-13
+
++10 new, -30 removed, ~1 changed
+
+### New mappings (10)
+
+- `33310` xSolvBTC (xSolvBTC) → `solv-protocol-solvbtc-bbn`
+- `40986` MOW (MowCat) → `mowcat`
+- `42645` UHI (Universal High Income) → `universal-high-income-4`
+- `42806` MAX (Max coin) → `max-coin`
+- `42808` GILDx (Gilead Sciences tokenized stock (xStock)) → `gilead-sciences-xstock`
+- `42809` IBKRx (Interactive Brokers Group tokenized stock (xStock)) → `interactive-brokers-xstock`
+- `42810` MPx (Mp Materials Corp tokenized stock (xStock)) → `mp-materials-xstock`
+- `42811` MPWRx (Monolithic Power Systems Inc tokenized stock (xStock)) → `monolithic-power-systems-xstock`
+- `42846` BIG (Big Guy (bigguy.win)) → `big-guy`
+- `42849` TTMIx (TTM Technologies Inc tokenized stock (xStock)) → `ttm-technologies-xstock`
+
+### Removed mappings (30)
+
+- `8230` AIN (AI Network) → `ai-network`
+- `9868` XCAD (XCAD Network) → `xcad-network`
+- `11446` SCCP (S.C. Corinthians Fan Token) → `s-c-corinthians-fan-token`
+- `19205` SIFU (Sifu Vision) → `sifu-vision-2`
+- `24543` PER (Perproject) → `per-project`
+- `29286` EDUM (EDUM) → `edum`
+- `30792` COLLE (Colle AI) → `colle-ai`
+- `31504` ULTI (Ultiverse) → `ultiverse`
+- `31782` LFIT (LFIT) → `lfit`
+- `31881` LKI (Laika AI) → `laika-ai`
+- `31886` LB (LoveBit) → `lovebit`
+- `31891` DJT (TrumpCoin) → `trumpcoin`
+- `31909` aUSDT (aUSDT) → `alloy-tether`
+- `32272` PUMPBTC (pumpBTC (Rehypothecated BTC)) → `pumpbtc`
+- `32574` SKX (SKPANAX) → `skpanax`
+- `32780` MIRAI (MIRAI) → `mirai-2`
+- `32993` FTW (Black Agnus) → `black-agnus`
+- `33335` MARS (MetaMars) → `metamars-2`
+- `33488` KIMA (Kima Network) → `kima`
+- `33518` PDOGE (Poor Doge) → `poor-doge`
+- `34310` KANGO (KANGO) → `kango`
+- `34966` MINIDOGE (Minidoge (mini-doge.com)) → `minidoge-3`
+- `37148` TRIX (TikTrix) → `tiktrix`
+- `37511` SPURDO (Spurdo) → `spurdo-2`
+- `38256` HAUST (Haust Network) → `haust`
+- `38431` W (W) → `w`
+- `39198` DUCKY (DUCKY (Duckythebrain)) → `ducky-3`
+- `39913` WZRA (Wrapped Zera) → `wrapped-zera`
+- `41431` wIBMx (Wrapped International Business Tokenized Stock (xStock)) → `wrapped-international-business-machines-xstock`
+- `41865` SILV (Dominion Silver) → `dominion-silver`
+
+### Confidence / method / flag changes (1)
+
+- `29593` match_method: matched_name_symbol → matched_contract
+
+
 ## 2026-11-12
 
 +7 new, -11 removed, ~3 changed
