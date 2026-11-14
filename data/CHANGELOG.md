@@ -2,6 +2,37 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-14
+
++3 new, -10 removed, ~4 changed
+
+### New mappings (3)
+
+- `8245` HYDRA (Hydra) → `hydra`
+- `36640` VNX (VNX Community Hub) → `vnx`
+- `40063` USDT.c (Tether USD Bridged TC20 (TetheCat)) → `tethecat-bridged-usdt`
+
+### Removed mappings (10)
+
+- `29665` KNINE (K9 Finance) → `k9-finance-dao`
+- `29818` SORADOGE (Sora Doge) → `sora-doge`
+- `30549` BOSHI (Boshi) → `boshi`
+- `31748` CHRETT (Chinese BRETT) → `chinese-brett`
+- `32872` CSW (Crosswalk) → `crosswalk`
+- `34286` YELPE (Yellow Pepe) → `yellow-pepe`
+- `34813` FURM (Furmula) → `furmula`
+- `35542` TOKEN (Token.com) → `token`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `39217` RADR (Radr) → `radr`
+
+### Confidence / method / flag changes (4)
+
+- `29593` flags: - → name_mismatch
+- `32403` flags: - → many_to_one
+- `38634` flags: - → name_mismatch
+- `39542` flags: many_to_one → -
+
+
 ## 2026-11-13
 
 +10 new, -30 removed, ~1 changed
