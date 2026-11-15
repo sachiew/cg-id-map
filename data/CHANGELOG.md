@@ -2,6 +2,26 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-15
+
++6 new, -3 removed, ~0 changed
+
+### New mappings (6)
+
+- `19205` SIFU (Sifu Vision) → `sifu-vision-2`
+- `24543` PER (Perproject) → `per-project`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `39625` HOOD (Robinhood Tokenized Stock (Hyperliquid)) → `robinhood-dinari-tokenized-stock`
+- `42541` IMD6900 (Identity.md 6900) → `identity-md-6900`
+- `42805` DYPE (DYPE) → `dype`
+
+### Removed mappings (3)
+
+- `14449` JaiHo (JaiHo) → `jaiho-crypto`
+- `33420` ITO (ITO) → `ito`
+- `34312` LFDOG (lifedog) → `lifedog`
+
+
 ## 2026-11-14
 
 +3 new, -10 removed, ~4 changed
