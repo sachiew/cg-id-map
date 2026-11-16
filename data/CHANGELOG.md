@@ -2,6 +2,50 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-16
+
++5 new, -17 removed, ~5 changed
+
+### New mappings (5)
+
+- `16602` SETH2 (sETH2) → `seth2`
+- `31605` JJ (JEJE) → `jeje`
+- `38583` NOVA (Nova) → `nova-4`
+- `42791` XLA (Xsolla Gas) → `xsolla-gas`
+- `42858` TTWOx (TAKE-TWO INTERACTIVE SOFTWARE tokenized stock (xStock)) → `take-two-interactive-software-xstock`
+
+### Removed mappings (17)
+
+- `17543` MNFT (MongolNFT Coin) → `mongol-nft`
+- `25967` UGOLD (UGOLD Inc.) → `ugold-inc-2`
+- `31085` MOCHI (Mochi DeFi) → `mochi-defi`
+- `33181` DOE (Dogs of Elon) → `dogs-of-elon`
+- `33991` PUMP (PUMP) → `pump`
+- `34149` AIFUN (AI Agent Layer) → `ai-agent-layer`
+- `34591` RAI (Reploy) → `reploy`
+- `35672` USDN (SMARDEX USDN) → `smardex-usdn`
+- `36081` CTH (Changcoin) → `changcoin`
+- `36559` MIH (MINE COIN) → `mine-coin`
+- `37572` MM (MOMOFUN) → `momofun`
+- `38138` JBC (JimmyBossCollective) → `jimmyboss-collective`
+- `39039` TCT (Tectum Cash Token) → `tectum-cash-token`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `39389` IDNG (IDNGold) → `idngold`
+- `39536` DANKDOGEAI (DankDoge AI Agent) → `dankdoge-ai-agent`
+- `39693` HOOLI (Hooli) → `hooli`
+
+### cg_id changed (1)
+
+- `38476` GAIN: `griffin-ai` → `griffin-ai-2`
+
+### Confidence / method / flag changes (4)
+
+- `12573` flags: - → symbol_mismatch
+- `29593` flags: name_mismatch → -
+- `30493` match_method: matched_name_symbol → matched_contract
+- `39123` match_method: matched_name_symbol → matched_name_price; confidence: high → medium; flags: network_unmapped → name_mismatch|symbol_mismatch
+
+
 ## 2026-11-15
 
 +6 new, -3 removed, ~0 changed
