@@ -2,6 +2,35 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-17
+
++1 new, -10 removed, ~4 changed
+
+### New mappings (1)
+
+- `42531` MSTU (T-Rex 2X Long MSTR Daily Target ETF (Derivatives)) → `t-rex-2x-long-mstr-daily-target-etf-dinari-tokenized-etf`
+
+### Removed mappings (10)
+
+- `16602` SETH2 (sETH2) → `seth2`
+- `29473` MIM (Magic Internet Money) → `magic-internet-money-meme`
+- `33621` SDOGE (DOGE on Solana) → `doge-on-solana`
+- `34194` HELA (Science Cult Mascot) → `science-cult-mascot`
+- `35017` SHRUBIUS (Shrubius Maximus) → `shrubius-maximus`
+- `35877` YALA (Yala) → `yala`
+- `37566` DARKSTAR (DarkStar) → `darkstar`
+- `38342` PINGPONG (PINGPONG) → `pingpong`
+- `39123` REALB (RealToken) → `real-token`
+- `42451` RBLXc (Roblox Corporation Tokenized Stock (Coinbase)) → `roblox-corporation-coinbase-tokenized-stock`
+
+### Confidence / method / flag changes (4)
+
+- `12573` flags: symbol_mismatch → -
+- `32403` flags: many_to_one → -
+- `39387` flags: name_mismatch → -
+- `39542` flags: - → many_to_one
+
+
 ## 2026-11-16
 
 +5 new, -17 removed, ~5 changed
