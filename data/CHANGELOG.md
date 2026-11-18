@@ -2,6 +2,48 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-18
+
++5 new, -18 removed, ~2 changed
+
+### New mappings (5)
+
+- `37767` SYMM (SymVerse (symverse.org)) → `symverse-2`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `39616` MSFT (Microsoft Tokenized Stock (Hyperliquid)) → `microsoft-dinari-tokenized-stock`
+- `40002` GD (Golden Dragon) → `golden-dragon`
+- `42884` CLEAR (Clearpool) → `clearpool-2`
+
+### Removed mappings (18)
+
+- `3194` RATING (DPRating) → `dprating`
+- `6638` LAYER (UniLayer) → `unilayer`
+- `8669` SOV (Sovryn) → `sovryn`
+- `10954` MCONTENT (MContent) → `mcontent`
+- `17313` QTC (Qitcoin) → `qitchain-network`
+- `28856` FREN (Frencoin) → `frencoin-3`
+- `31845` LAIKA (LAIKA The Cosmodog) → `the-soldog`
+- `32158` TRALA (TRALA) → `trala-token`
+- `33569` NACHO (Nacho the Kat) → `nacho-the-kat`
+- `33898` KONG (KongSwap) → `kongswap`
+- `36411` BOOM (Boom) → `boom-2`
+- `36448` TGT (TOKYO GAMES TOKEN) → `tokyo-games-token`
+- `36953` XO (XOCIETY) → `xociety`
+- `38257` BOT (Hyperbot) → `hyperbot`
+- `38318` SWTCH (Switchboard Protocol) → `switchboard`
+- `39983` SN59 (Agent Arena by Masa) → `agent-arena-by-masa`
+- `41010` POPMTx (Pop Mart International Tokenized Stock (xStock)) → `pop-mart-international-xstock`
+- `41956` NATG (NatGold) → `natgold`
+
+### cg_id changed (1)
+
+- `40948` SPX: `shopinx` → `shopinx-2`
+
+### Confidence / method / flag changes (1)
+
+- `32299` flags: symbol_mismatch → -
+
+
 ## 2026-11-17
 
 +1 new, -10 removed, ~4 changed
