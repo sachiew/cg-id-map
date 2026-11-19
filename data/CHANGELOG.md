@@ -2,6 +2,42 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-19
+
++2 new, -23 removed, ~0 changed
+
+### New mappings (2)
+
+- `34384` DAY (Dayhub) → `dayhyb`
+- `42865` IWMB (iShares Russell 2000 Index Fund Tokenized bStocks) → `ishares-russell-2000-index-fund-bstocks-tokenized-etf`
+
+### Removed mappings (23)
+
+- `5332` CNX (Cofinex) → `cofinex-2`
+- `16010` SILO (Silo Finance) → `silo-finance-2`
+- `16279` CNG (Changer) → `changer`
+- `17972` RBT (Rubix) → `rubix`
+- `20475` USDZ (Zedxion) → `usdz`
+- `21513` EGO (EGO) → `ego-2`
+- `27905` BABYSHIB (Baby Shiba Inu) → `baby-shiba-inu-erc`
+- `29350` VSG (Vector Smart Gas) → `vitalik-smart-gas`
+- `29750` HOTKEY (HotKeySwap) → `hotkeyswap`
+- `30196` NEURA (Neurahub) → `neurahub`
+- `30230` ORBIO (Orbio) → `pikamoon`
+- `35084` H4CK (H4CK Terminal by Virtuals) → `h4ck-terminal-by-virtuals`
+- `36110` ROUTINE (Morning Routine) → `morning-routine`
+- `36169` DEURO (Decentralized Euro) → `decentralized-euro`
+- `37682` XAI (xAI tokenized stock (PreStocks)) → `xai-prestocks-2`
+- `37726` MEA (MECCA) → `mecca`
+- `37767` SYMM (SymVerse (symverse.org)) → `symverse-2`
+- `38292` MIRROR (Black Mirror Experience) → `black-mirror`
+- `38488` EDOM (Edom) → `edom`
+- `38812` RIVERPTS (River PTS) → `river-pts`
+- `40713` GLW (Corning Tokenized Stock (Robinhood)) → `corning-robinhood-tokenized-stock`
+- `41012` XIAOx (Xiaomi Tokenized Stock (xStock)) → `xiaomi-xstock`
+- `42846` BIG (Big Guy (bigguy.win)) → `big-guy`
+
+
 ## 2026-11-18
 
 +5 new, -18 removed, ~2 changed
