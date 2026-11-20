@@ -2,6 +2,41 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-20
+
++13 new, -11 removed, ~0 changed
+
+### New mappings (13)
+
+- `33373` FIONA (Fiona) → `fiona`
+- `42787` RYFT (RYFT) → `neuralai-2`
+- `42859` MELIB (MercadoLibre Tokenized bStocks) → `mercadolibre-bstocks-tokenized-stock`
+- `42861` EWZB (iShares MSCI Brazil ETF Tokenized bStocks) → `ishares-msci-brazil-etf-bstocks-tokenized-etf`
+- `42862` NUB (Nu Holdings Tokenized bStocks) → `nu-holdings-bstocks-tokenized-stock`
+- `42863` EWJB (iShares MSCI Japan ETF Tokenized bStocks) → `ishares-msci-japan-etf-bstocks-tokenized-etf`
+- `42864` EWZSB (iShares MSCI Brazil Small-Cap ETF Tokenized bStocks) → `ishares-msci-brazil-small-cap-etf-bstocks-tokenized-etf`
+- `42866` EWTB (iShares MSCI Taiwan ETF Tokenized bStocks) → `ishares-msci-taiwan-etf-bstocks-tokenized-etf`
+- `42874` ANTon (Anthropic Tokenized Stock (Ondo)) → `anthropic-ondo-tokenized-stock`
+- `42885` ANTx (Anthropic tokenized stock (xStock)) → `anthropic-xstock`
+- `42891` MBG (Make Better Generation (mbg21.com)) → `make-better-generation`
+- `42896` ANT (Anthropic (Robinhood)) → `anthropic-pbc-robinhood-token`
+- `42897` ANTc (Anthropic PBC Tokenized Stock (Coinbase)) → `anthropic-pbc-coinbase-tokenized-stock`
+
+### Removed mappings (11)
+
+- `6649` CAT (Cat Token) → `cat-token`
+- `12054` MDF (MatrixETF) → `matrixetf`
+- `15893` RBC (Ruby Coin) → `ruby-coin`
+- `24857` LAMBO ($LAMBO) → `lambo-0fcbf0f7-1a8f-470d-ba09-797d5e95d836`
+- `28353` APX (AstroPepeX) → `astropepex`
+- `36353` DIVINER (DIVINER) → `diviner-2`
+- `38212` XLAB (Dexlab) → `dexlab-3`
+- `40223` JMDT (Jupiter Meta Data Token [ JMDT ]) → `jupiter-meta-data-token`
+- `40867` KTI (Kotai (kotaiproject.io)) → `kotai-2`
+- `42587` RKLBc (Rocket Lab Corporation Tokenized Stock (Coinbase)) → `rocket-lab-corporation-coinbase-tokenized-stock`
+- `42609` DOPE (Doge Pepe (dogepepeeth.lol)) → `doge-pepe`
+
+
 ## 2026-11-19
 
 +2 new, -23 removed, ~0 changed
