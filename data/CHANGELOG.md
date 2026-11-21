@@ -2,6 +2,35 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-21
+
++3 new, -15 removed, ~0 changed
+
+### New mappings (3)
+
+- `6759` DUST (Nifty Wizards Dust) → `dust-2`
+- `12287` BED (Bankless BED Index) → `bankless-bed-index`
+- `24464` MONKEYS (Monkeys) → `monkeys`
+
+### Removed mappings (15)
+
+- `11368` NFD (Feisty Doge NFT) → `feisty-doge-nft`
+- `16121` WHALE (White Whale) → `whale-2`
+- `22264` OHO (Oho) → `oho-blockchain`
+- `23640` MILK (Cool Cats MILK) → `milk`
+- `30030` EDGESOL (Edgevana Staked SOL) → `edgevana-staked-sol`
+- `32446` BULLISH (bullish) → `bullish`
+- `33103` BABYCATE (BabyCate) → `babycate`
+- `33856` TOAD (Acid Toad) → `acid-toad`
+- `34178` TYPUS (Typus) → `typus`
+- `34520` GOR (Gold Reserve) → `gold-reserve`
+- `34669` NFTXBT (nftxbt by Virtuals) → `nftxbt-by-virtuals`
+- `36248` BLIFFY (Bliffy) → `bliffy`
+- `39625` HOOD (Robinhood Tokenized Stock (Hyperliquid)) → `robinhood-dinari-tokenized-stock`
+- `40063` USDT.c (Tether USD Bridged TC20 (TetheCat)) → `tethecat-bridged-usdt`
+- `42541` IMD6900 (Identity.md 6900) → `identity-md-6900`
+
+
 ## 2026-11-20
 
 +13 new, -11 removed, ~0 changed
