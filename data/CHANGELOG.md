@@ -2,6 +2,38 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-22
+
++4 new, -13 removed, ~1 changed
+
+### New mappings (4)
+
+- `1503` JUP (Jupiter) → `jupiter`
+- `11368` NFD (Feisty Doge NFT) → `feisty-doge-nft`
+- `22264` OHO (Oho) → `oho-blockchain`
+- `38649` LSCAT (Light Speed Cat V2) → `light-speed-cat`
+
+### Removed mappings (13)
+
+- `2588` LOOM (Loom Network) → `loom-network-new`
+- `4813` XBT (XBIT) → `xbt`
+- `6759` DUST (Nifty Wizards Dust) → `dust-2`
+- `8826` MCO2 (Moss Carbon Credit) → `moss-carbon-credit`
+- `17794` PDT (ParagonsDAO) → `paragonsdao`
+- `24464` MONKEYS (Monkeys) → `monkeys`
+- `30996` WAI (AI Waifu) → `ai-waifu-2`
+- `31567` MARV (Marv) → `marv`
+- `33341` LEPER (Leper) → `leper`
+- `36619` ASRR (Assisterr AI) → `assisterr-ai`
+- `37248` SESH (Session Token) → `session-token`
+- `42460` GMEc (GameStop Corp. Tokenized Stock (Coinbase)) → `gamestop-corp-coinbase-tokenized-stock`
+- `42531` MSTU (T-Rex 2X Long MSTR Daily Target ETF (Derivatives)) → `t-rex-2x-long-mstr-daily-target-etf-dinari-tokenized-etf`
+
+### Confidence / method / flag changes (1)
+
+- `40732` flags: many_to_one|name_mismatch → name_mismatch
+
+
 ## 2026-11-21
 
 +3 new, -15 removed, ~0 changed
