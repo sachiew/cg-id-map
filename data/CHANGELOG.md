@@ -2,6 +2,74 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-23
+
++7 new, -42 removed, ~2 changed
+
+### New mappings (7)
+
+- `32542` KEN (Ken) → `ken`
+- `37112` WAMZNX (Wrapped Amazon Tokenized stock (xStock)) → `wrapped-amazon-xstock`
+- `42898` MOOG (Moogent) → `moogent`
+- `42902` FLOAT (FLOAT) → `float`
+- `42918` KOc (The Coca-Cola Company Tokenized Stock (Coinbase)) → `the-coca-cola-company-coinbase-tokenized-stock`
+- `42921` MCDc (McDonald's Corporation Tokenized Stock (Coinbase)) → `mcdonald-s-corporation-coinbase-tokenized-stock`
+- `42923` HOODc (Robinhood Markets, Inc. Tokenized Stock (Coinbase)) → `robinhood-markets-inc-coinbase-tokenized-stock`
+
+### Removed mappings (42)
+
+- `2572` BAX (BABB) → `babb`
+- `3722` TEMCO (TEMCO) → `temco`
+- `4467` EGG (Nestree) → `nestree`
+- `5410` PRQ (PARSIQ) → `parsiq`
+- `8252` pBTC35A (pBTC35A) → `pbtc35a`
+- `14363` GCAKE (Pancake Games) → `pancake-games`
+- `18624` AZIT (Azit) → `azit`
+- `21156` STAT (STAT) → `stat`
+- `26676` INU (INU) → `inu-token-63736428-0d5c-4281-8038-3e62c35ac278`
+- `30018` HOKK (Hokkaidu Inu) → `hokkaido-inu`
+- `33778` OGGIE (Oggie) → `oggie`
+- `36460` BERRY (Strawberry In Bloom) → `strawberry-in-bloom`
+- `36872` SN73 (Merit) → `merit-2`
+- `36874` SN5 (OpenKaito) → `openkaito`
+- `36877` SN14 (TAOHash) → `taohash`
+- `36884` SN11 (Dippy) → `dippy`
+- `36885` SN12 (Compute Horde) → `compute-horde`
+- `36886` SN13 (Data Universe) → `data-universe`
+- `36890` SN63 (Alpha Trader Exchange (ATX)) → `alpha-trader-exchange-atx`
+- `36891` SN53 (EfficientFrontier) → `efficientfrontier`
+- `36892` SN56 (Gradients) → `gradients`
+- `36893` SN3 (τemplar) → `templar`
+- `36896` VANTA (Vanta Network) → `proprietary-trading-network`
+- `36897` SN33 (ReadyAI) → `readyai`
+- `36899` SN41 (Sportstensor) → `sportstensor`
+- `36904` SN9 (iota) → `iota-2`
+- `36905` SN25 (Mainframe) → `mainframe-2`
+- `36906` SN88 (Sταking) → `staking-2`
+- `36909` SN47 (For Sale) → `for-sale`
+- `36910` SN93 (Bitcast) → `bitcast`
+- `36911` SN17 (404—GEN) → `404-gen`
+- `36912` SN4 (Targon) → `targon`
+- `36914` SN34 (BitMind) → `bitmind`
+- `36916` SN84 (Docs-Insights (Taτsu)) → `docs-insight-tatsu`
+- `36917` SN10 (Pareton) → `sturdy-subnet`
+- `37218` WORCLX (Wrapped Oracle Tokenized stock (xStock)) → `wrapped-oracle-xstock`
+- `37612` SPX6969 (SPX 6969) → `spx6969`
+- `39902` SN46 (Zipcode (prev: RESI)) → `neural3d`
+- `39984` SN79 (τaos) → `aos-2`
+- `39985` SN15 (BitQuant) → `bitquant`
+- `39987` SN120 (affine) → `affine`
+- `39988` SN68 (NOVA) → `nova-3`
+
+### cg_id changed (1)
+
+- `39328` GNK: `wrapped-gonka` → `gonka`
+
+### Confidence / method / flag changes (1)
+
+- `40732` flags: name_mismatch → many_to_one|name_mismatch
+
+
 ## 2026-11-22
 
 +4 new, -13 removed, ~1 changed
