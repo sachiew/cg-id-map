@@ -2,6 +2,47 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-24
+
++8 new, -11 removed, ~8 changed
+
+### New mappings (8)
+
+- `6759` DUST (Nifty Wizards Dust) → `dust-2`
+- `42871` FLGVon (Franklin US Treasury Bond Tokenized ETF (Ondo)) → `franklin-us-treasury-bond-etf-ondo-tokenized-etf`
+- `42872` TTWOon (Take-Two Interactive Software Tokenized Stock (Ondo)) → `take-two-interactive-software-ondo-tokenized-stock`
+- `42873` USPXon (Franklin US Equity Index Tokenized ETF (Ondo)) → `franklin-us-equity-index-etf-ondo-tokenized-etf`
+- `42875` FBEQon (Franklin US Equity Bitcoin DRIP Index Tokenized ETF (Ondo)) → `franklin-us-equity-bitcoin-drip-index-etf-ondo-tokenized-etf`
+- `42876` FLCBon (Franklin US Core Bond Tokenized ETF (Ondo)) → `franklin-us-core-bond-etf-ondo-tokenized-etf`
+- `42931` MONTRA (Montra) → `montra`
+- `42934` KWEB (KraneShares CSI China Internet ETF (Derivatives)) → `kraneshares-csi-china-internet-etf-dinari-tokenized-etf`
+
+### Removed mappings (11)
+
+- `6930` KEX (KIRA) → `kira-network`
+- `7616` LTX (Lattice Token) → `lattice-token`
+- `15447` LYRA (Lyra) → `lyra-3`
+- `17183` LUM (Lum Network) → `lum-network`
+- `18248` SOMM (Sommelier) → `sommelier`
+- `19899` EVMOS (Evmos) → `evmos`
+- `22959` ABEL (Abel finance) → `abel-finance`
+- `33940` PNUT (Peanut the Squirrel on Ethereum) → `peanut-3`
+- `36499` EDGEN (LayerEdge) → `edgen`
+- `36800` OBVIOUS (OBVIOUS COIN) → `obvious-coin`
+- `40002` GD (Golden Dragon) → `golden-dragon`
+
+### Confidence / method / flag changes (8)
+
+- `12468` match_method: matched_name_symbol → matched_contract; flags: network_unmapped → -
+- `16399` match_method: matched_name_symbol → matched_contract; flags: network_unmapped → -
+- `19294` match_method: matched_name_symbol → matched_contract; flags: network_unmapped → -
+- `24527` match_method: matched_name_price → matched_contract; confidence: medium → high; flags: name_mismatch|network_unmapped → name_mismatch
+- `34186` match_method: matched_contract_other_network → matched_contract; confidence: medium → high; flags: matched_contract_other_network|network_unmapped → -
+- `34914` match_method: matched_contract_other_network → matched_contract; confidence: medium → high; flags: matched_contract_other_network|name_mismatch|network_unmapped → name_mismatch
+- `37390` match_method: matched_contract_other_network → matched_contract; confidence: medium → high; flags: matched_contract_other_network|network_unmapped → -
+- `39059` flags: network_unmapped → -
+
+
 ## 2026-11-23
 
 +7 new, -42 removed, ~2 changed
