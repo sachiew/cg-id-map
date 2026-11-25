@@ -1,15 +1,15 @@
 # CMC → CoinGecko mapping report
 
-Generated: 2026-11-24T13:53:27Z
+Generated: 2026-11-25T13:06:59Z
 
 ## Match rate
 
 | scope | accepted |
 |---|---:|
-| all | 6159/7883 (78.13%) |
+| all | 6124/7841 (78.10%) |
 | top 100 by CMC rank | 100/100 (100.00%) |
-| top 1,000 by CMC rank | 974/1000 (97.40%) |
-| top 5,000 by CMC rank | 4444/5000 (88.88%) |
+| top 1,000 by CMC rank | 975/1000 (97.50%) |
+| top 5,000 by CMC rank | 4445/5000 (88.90%) |
 
 ## Gold set
 
@@ -22,18 +22,18 @@ Precision: 34/34 (100.0%)
 
 | value | count |
 |---|---:|
-| accepted | 6159 |
-| unmatched | 1101 |
-| ambiguous | 492 |
+| accepted | 6124 |
+| unmatched | 1091 |
+| ambiguous | 495 |
 | flagged | 131 |
 
 ### By method
 
 | value | count |
 |---|---:|
-| matched_contract | 5482 |
-| matched_name_symbol | 566 |
-| matched_name_price | 57 |
+| matched_contract | 5458 |
+| matched_name_symbol | 556 |
+| matched_name_price | 56 |
 | matched_contract_other_network | 52 |
 | override | 2 |
 
@@ -41,20 +41,20 @@ Precision: 34/34 (100.0%)
 
 | value | count |
 |---|---:|
-| high | 6050 |
-| medium | 109 |
+| high | 6016 |
+| medium | 108 |
 
 ### By flag
 
 | value | count |
 |---|---:|
-| name_mismatch | 1713 |
-| ambiguous_multiple_candidates | 611 |
-| symbol_mismatch | 144 |
-| price_discrepancy | 131 |
-| network_unmapped | 85 |
+| name_mismatch | 1711 |
+| ambiguous_multiple_candidates | 615 |
+| symbol_mismatch | 140 |
+| price_discrepancy | 128 |
+| network_unmapped | 84 |
 | matched_contract_other_network | 54 |
-| many_to_one | 31 |
+| many_to_one | 32 |
 | mcap_discrepancy | 28 |
 | no_market_data | 17 |
 

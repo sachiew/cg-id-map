@@ -2,6 +2,67 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-25
+
++4 new, -39 removed, ~4 changed
+
+### New mappings (4)
+
+- `23230` DOGGO (DOGGO) → `doggo-inu`
+- `34326` AVA (AVA Chiang Mai Night Safari) → `ava-chiang-mai-night-safari-ava`
+- `42531` MSTU (T-Rex 2X Long MSTR Daily Target ETF (Derivatives)) → `t-rex-2x-long-mstr-daily-target-etf-dinari-tokenized-etf`
+- `42860` ANTB (Anthropic Tokenized bStocks) → `anthropic-bstocks-tokenized-stock`
+
+### Removed mappings (39)
+
+- `1281` ION (ION) → `ion`
+- `1503` JUP (Jupiter) → `jupiter`
+- `3874` IRIS (IRISnet) → `iris-network`
+- `6759` DUST (Nifty Wizards Dust) → `dust-2`
+- `8279` NGM (e-Money) → `e-money`
+- `8905` BTSG (BitSong) → `bitsong`
+- `11646` REGEN (Regen Network) → `regen`
+- `13542` SDT (Stabledoc) → `stabledoc-token`
+- `14299` JUNO (JUNO) → `juno-network`
+- `15798` MPWR (Empower) → `clubrare-empower`
+- `16842` STARS (Stargaze) → `stargaze`
+- `17208` HUAHUA (Chihuahua) → `chihuahua-token`
+- `19111` BOOT (Bostrom) → `bostrom`
+- `19470` CKC (ChikinCoin) → `chikincoin`
+- `20381` GRAV (Graviton) → `graviton`
+- `21686` stATOM (Stride Staked ATOM) → `stride-staked-atom`
+- `21781` STRD (Stride) → `stride`
+- `22736` IST (Inter Stable Token) → `inter-stable-token`
+- `25261` JKL (Jackal Protocol) → `jackal-protocol`
+- `27966` DORA (Dora Factory) → `dora-factory-2`
+- `28030` PASG (Passage) → `passage`
+- `28660` LVN (Levana Protocol) → `levana-protocol`
+- `28804` PLQ (Planq) → `planq`
+- `29231` ANUS (Uranus (SOL)) → `uranus-sol`
+- `29427` stTIA (Stride Staked TIA) → `stride-staked-tia`
+- `29429` stOSMO (Stride Staked OSMO) → `stride-staked-osmo`
+- `30448` ORBT (Orbitt Token) → `orbitt-pro`
+- `31046` $MEWING (MEWING) → `mewing-coin`
+- `33514` HDRO (Hydro Protocol) → `hydro-protocol-2`
+- `34163` MGT (Moongate) → `moongate`
+- `34384` DAY (Dayhub) → `dayhyb`
+- `36599` allBTC (Osmosis allBTC) → `osmosis-allbtc`
+- `36835` KAPPA (the face of sarcasm) → `the-face-of-sarcasm`
+- `37632` RAGEGUY (RAGEGUY FFFFFFFFFFFFFUUUUUUUUUUUUUUUU) → `fffffffffffffuuuuuuuuuuuuuuuu`
+- `38411` DGN (Dragon Coin) → `dragon-coin-2`
+- `38878` ATONE (AtomOne) → `atomone`
+- `38940` PHOTON (Photon) → `photon-2`
+- `39058` SEEK (Talisman) → `talisman`
+- `39918` SNC (SNC SCANDIC COIN) → `scandic-coin`
+
+### Confidence / method / flag changes (4)
+
+- `7186` flags: - → name_mismatch
+- `36933` flags: - → name_mismatch
+- `40542` match_method: matched_name_symbol → matched_contract
+- `42798` flags: name_mismatch → many_to_one|name_mismatch
+
+
 ## 2026-11-24
 
 +8 new, -11 removed, ~8 changed
