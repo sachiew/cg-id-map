@@ -2,6 +2,52 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-26
+
++12 new, -19 removed, ~1 changed
+
+### New mappings (12)
+
+- `6930` KEX (KIRA) → `kira-network`
+- `15893` RBC (Ruby Coin) → `ruby-coin`
+- `26036` BIAO (Biaocoin) → `biaocoin`
+- `33940` PNUT (Peanut the Squirrel on Ethereum) → `peanut-3`
+- `35128` POPPY (Poppy) → `poppy`
+- `36896` VANTA (Vanta Network) → `proprietary-trading-network`
+- `39619` AMZN (Amazon Tokenized Stock (Hyperliquid)) → `amazon-dinari-tokenized-stock`
+- `42926` IBITB (iShares Bitcoin Trust Tokenized bStocks) → `ishares-bitcoin-trust-bstocks-tokenized-etf`
+- `42927` ARTYB (iShares Future AI & Tech ETF Tokenized bStocks) → `ishares-future-ai-tech-bstocks-tokenized-etf`
+- `42928` IGVB (iShares Expanded Tech-Software Sector ETF Tokenized bStocks) → `ishares-expanded-tech-software-sector-etf-bstocks-tokenized-etf`
+- `42929` SOXXB (iShares Semiconductor ETF Tokenized bStocks) → `ishares-semiconductor-etf-bstocks-tokenized-etf`
+- `42930` FRHCB (Freedom Holding Corp Tokenized bStocks) → `freedom-holding-corp-bstocks-tokenized-stock`
+
+### Removed mappings (19)
+
+- `3779` COT (CoTrader) → `cotrader`
+- `16148` FREE (FreeRossDAO) → `freerossdao`
+- `23396` LOCK (Houdini Swap) → `houdini-swap`
+- `28290` JUSDC (TON Bridged USDC) → `bridged-usd-coin-ton-bridge`
+- `29941` MAGAIBA (Magaiba) → `magaiba`
+- `30306` ALAN (Alan the Alien) → `alan-the-alien`
+- `32866` MCDULL (McDull) → `mcdull`
+- `33967` STOP (LETSTOP) → `letstop`
+- `34506` LIMITLESS (Limitless) → `limitless`
+- `36804` LUR (Lumera Health) → `lumera-health`
+- `37220` WPLTRX (Wrapped Palantir Tokenized stock (xStock)) → `wrapped-palantir-xstock`
+- `38218` QSTAY (QSTAY) → `qstay`
+- `38247` MCH (Moonchain) → `moonchain`
+- `38511` UP (DoubleUp) → `doubleup`
+- `38840` LUX (Luxxcoin) → `luxxcoin`
+- `38877` ARIAIP (Aria Protocol) → `aria-2`
+- `39109` XNT (Neptune) → `neptune-privacy`
+- `40203` CRDO (Credo Technology Group Holding Ltd (Derivatives)) → `credo-technology-group-holding-ltd-ordinary-shares-robinhood-token`
+- `41636` wMUx (Wrapped Micron Technology Tokenized Stock (xStock)) → `wrapped-micron-technology-xstock`
+
+### Confidence / method / flag changes (1)
+
+- `42798` flags: many_to_one|name_mismatch → name_mismatch
+
+
 ## 2026-11-25
 
 +4 new, -39 removed, ~4 changed
