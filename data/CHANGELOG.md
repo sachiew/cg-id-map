@@ -2,6 +2,45 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-27
+
++8 new, -15 removed, ~2 changed
+
+### New mappings (8)
+
+- `16121` WHALE (White Whale) → `whale-2`
+- `29263` USDC+ (Overnight USDC+) → `usdc-plus-overnight`
+- `32499` IRO (Iro-Chan) → `iro-chan`
+- `33201` MISHA (MISHA) → `misha`
+- `33778` OGGIE (Oggie) → `oggie`
+- `37583` PJN (PJN) → `pjn`
+- `40203` CRDO (Credo Technology Group Holding Ltd (Derivatives)) → `credo-technology-group-holding-ltd-ordinary-shares-robinhood-token`
+- `42924` SHARE (ShareX [New]) → `sharex-3`
+
+### Removed mappings (15)
+
+- `8579` POLK (Polkamarkets) → `polkamarkets`
+- `15858` GCOIN (Galaxy Fight Club) → `galaxy-fight-club`
+- `20782` KFI (Klever Finance) → `klever-finance`
+- `23230` DOGGO (DOGGO) → `doggo-inu`
+- `27112` PNP (Penpie) → `penpie`
+- `27318` LYUM (Layerium) → `layerium`
+- `31217` LOS (Lord Of SOL) → `lord-of-sol`
+- `31869` PTRUMP (Pepe Trump) → `pepe-trump`
+- `32732` SUNPEPE (sunpepe) → `sunpepe`
+- `36500` GIGGLES (Giggles) → `giggles`
+- `36754` YETI (YETI) → `yeti-2`
+- `38826` TTN (toyow) → `toyow-token`
+- `39615` META (Meta Platforms Tokenized Stock (Hyperliquid)) → `meta-platforms-dinari-tokenized-stock`
+- `40571` AATF (American Account Trust Fund) → `american-account-trust-fund`
+- `42531` MSTU (T-Rex 2X Long MSTR Daily Target ETF (Derivatives)) → `t-rex-2x-long-mstr-daily-target-etf-dinari-tokenized-etf`
+
+### Confidence / method / flag changes (2)
+
+- `34641` match_method: matched_contract → matched_name_symbol
+- `39611` flags: network_unmapped → many_to_one|network_unmapped
+
+
 ## 2026-11-26
 
 +12 new, -19 removed, ~1 changed
