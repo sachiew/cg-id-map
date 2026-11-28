@@ -2,6 +2,36 @@
 
 One section per run that changed the published mappings.
 
+## 2026-11-28
+
++10 new, -4 removed, ~2 changed
+
+### New mappings (10)
+
+- `1503` JUP (Jupiter) → `jupiter`
+- `6759` DUST (Nifty Wizards Dust) → `dust-2`
+- `9726` VCC (Victorum) → `victorum`
+- `16602` SETH2 (sETH2) → `seth2`
+- `33078` SUKI (SUKI) → `suki`
+- `33648` TATE (Tate Terminal) → `tate-terminal`
+- `35458` asUSDF (Aster asUSDF) → `astherus-staked-usdf`
+- `37654` SUSD1+ (Lorenzo staked USD1+) → `staked-usd1`
+- `42531` MSTU (T-Rex 2X Long MSTR Daily Target ETF (Derivatives)) → `t-rex-2x-long-mstr-daily-target-etf-dinari-tokenized-etf`
+- `42941` COT (Crypto of Thrones (cot.gg)) → `crypto-of-thrones`
+
+### Removed mappings (4)
+
+- `15188` RADAR (DappRadar) → `dappradar`
+- `19714` LUSD (ℓUSD) → `lusd-2`
+- `31871` AMC (AMC) → `amc-3`
+- `35372` USDR (StablR USD) → `stablr-usd`
+
+### Confidence / method / flag changes (2)
+
+- `36933` flags: name_mismatch → -
+- `39611` flags: many_to_one|network_unmapped → network_unmapped
+
+
 ## 2026-11-27
 
 +8 new, -15 removed, ~2 changed
